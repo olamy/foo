@@ -15,5 +15,7 @@ public class App
             prop -> System.out.println( prop + " :" + System.getProperty( prop ) ) );
 
 
+        System.out.println( "Runtime.getRuntime().availableProcessors():" + Runtime.getRuntime().availableProcessors() );
+
     }
 }
