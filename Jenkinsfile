@@ -1,8 +1,7 @@
-node("linux") {
+node() {
     //git "https://github.com/olamy/foo.git"
     checkout scm
-    withMaven(
-          maven: 'maven3') {
+    withMaven() {
         sh "mvn -V -B clean verify"
     }    
     
