@@ -39,7 +39,7 @@
         <version>1.6.0</version>
         <executions>
           <execution>
-            <id>setup home</id>
+            <id>setup home-foo</id>
             <phase>verify</phase>
             <configuration>
               <mainClass>org.olamy.App</mainClass>
