@@ -1,0 +1,5 @@
+<testsuite tests="1" time="0.045" errors="1">
+  <testcase classname="maven.invoker.it.beanshell" name="beanshell">
+    <system-out/>
+  </testcase>
+</testsuite>

@@ -1,0 +1,5 @@
+<testsuite tests="1" time="0.526" errors="1">
+  <testcase classname="maven.invoker.it.groovy" name="groovy">
+    <system-out/>
+  </testcase>
+</testsuite>

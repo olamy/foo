@@ -1,4 +1,4 @@
-<testsuite tests="1" time="1.87">
+<testsuite tests="1" time="1.16">
   <testcase classname="maven.invoker.it.mod2-parent" name="mod2-parent">
     <system-out>&lt;![CDATA[[INFO] Scanning for projects...
 [INFO] ------------------------------------------------------------------------
@@ -22,14 +22,14 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for mod2-parent 0.1-SNAPSHOT:
 [INFO] 
-[INFO] mod1 ............................................... SUCCESS [  0.006 s]
-[INFO] mod2-parent ........................................ SUCCESS [  0.003 s]
-[INFO] mod2 ............................................... SUCCESS [  0.002 s]
+[INFO] mod1 ............................................... SUCCESS [  0.003 s]
+[INFO] mod2-parent ........................................ SUCCESS [  0.001 s]
+[INFO] mod2 ............................................... SUCCESS [  0.001 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.209 s
-[INFO] Finished at: 2019-07-16T20:11:09+10:00
+[INFO] Total time:  0.118 s
+[INFO] Finished at: 2019-07-16T20:25:38+10:00
 [INFO] ------------------------------------------------------------------------
 ]]&gt;</system-out>
   </testcase>
