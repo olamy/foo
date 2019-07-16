@@ -1,4 +1,4 @@
-<testsuite tests="1" failures="1" time="1.167">
+<testsuite tests="1" failures="1" time="1.164">
   <testcase classname="maven.invoker.it.project" name="project">
     <system-out/>
   </testcase>
