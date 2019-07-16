@@ -1,5 +1,5 @@
-<testsuite tests="1" time="1.473">
-  <testcase name="basic">
+<testsuite tests="1" time="1.623">
+  <testcase classname="maven.invoker.it.basic" name="basic">
     <system-out>&lt;![CDATA[[INFO] Scanning for projects...
 [INFO] 
 [INFO] ----------------------------&lt; foo.it:basic &gt;----------------------------
@@ -8,12 +8,12 @@
 [INFO] 
 [INFO] --- MINVOKER-191-plugin:1.0-SNAPSHOT:touch (touch) @ basic ---
 [INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
-[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar (169 kB at 6.7 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar (169 kB at 4.6 MB/s)
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.252 s
-[INFO] Finished at: 2019-07-16T14:31:10+10:00
+[INFO] Total time:  0.297 s
+[INFO] Finished at: 2019-07-16T20:10:59+10:00
 [INFO] ------------------------------------------------------------------------
 ]]&gt;</system-out>
   </testcase>
