@@ -1,0 +1,1408 @@
+<testsuite tests="1" time="11.107">
+  <testcase classname="maven.invoker.it.invoker-report" name="invoker-report">
+    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
+Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
+Default locale: en_AU, platform encoding: UTF-8
+OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&quot;, family: &quot;mac&quot;
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* &lt; plexus.core
+[DEBUG]   Imported: javax.annotation.security.* &lt; plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* &lt; plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* &lt; plexus.core
+[DEBUG]   Imported: javax.inject.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.cli &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.exception &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.execution &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.model &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.project &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.repository &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.settings &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.usability &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version &lt; plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.event.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* &lt; plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: plain
+[DEBUG] Reading global settings from /Users/olamy/softs/maven/apache-maven-3.6.1/conf/settings.xml
+[DEBUG] Reading user settings from /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/interpolated-settings.xml
+[DEBUG] Reading global toolchains from /Users/olamy/softs/maven/apache-maven-3.6.1/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/olamy/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project org.apache.maven.plugins.invoker:invoker-report:pom:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: org.apache.maven.plugins.invoker:invoker-report:pom:1.0-SNAPSHOT
+[DEBUG] Tasks:   [integration-test, site]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ----------&lt; org.apache.maven.plugins.invoker:invoker-report &gt;-----------
+[INFO] Building Test 1.0-SNAPSHOT
+[INFO] --------------------------------[ pom ]---------------------------------
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.apache.maven.plugins.invoker:invoker-report:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] Repositories (dependencies): [local.central (file:///Users/olamy/.m2/repository, default, releases+snapshots), apache.snapshots (http://repository.apache.org/content/groups/snapshots-group/, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [local.central (file:///Users/olamy/.m2/repository, default, releases+snapshots), apache.snapshots (http://repository.apache.org/content/groups/snapshots-group/, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;configuration&gt;
+  &lt;addTestClassPath default-value=&quot;false&quot;&gt;${invoker.addTestClassPath}&lt;/addTestClassPath&gt;
+  &lt;cloneAllFiles default-value=&quot;false&quot;/&gt;
+  &lt;cloneClean default-value=&quot;true&quot;/&gt;
+  &lt;cloneProjectsTo&gt;${invoker.cloneProjectsTo}&lt;/cloneProjectsTo&gt;
+  &lt;debug default-value=&quot;false&quot;&gt;${invoker.debug}&lt;/debug&gt;
+  &lt;disableReports default-value=&quot;false&quot;&gt;${invoker.disableReports}&lt;/disableReports&gt;
+  &lt;encoding default-value=&quot;${project.build.sourceEncoding}&quot;&gt;${encoding}&lt;/encoding&gt;
+  &lt;failIfNoProjects&gt;${invoker.failIfNoProjects}&lt;/failIfNoProjects&gt;
+  &lt;goals&gt;
+    &lt;goal&gt;validate&lt;/goal&gt;
+  &lt;/goals&gt;
+  &lt;ignoreFailures default-value=&quot;false&quot;&gt;true&lt;/ignoreFailures&gt;
+  &lt;invokerPropertiesFile default-value=&quot;invoker.properties&quot;&gt;${invoker.invokerPropertiesFile}&lt;/invokerPropertiesFile&gt;
+  &lt;invokerTest&gt;${invoker.test}&lt;/invokerTest&gt;
+  &lt;javaHome&gt;${invoker.javaHome}&lt;/javaHome&gt;
+  &lt;junitPackageName default-value=&quot;maven.invoker.it&quot;&gt;${invoker.junitPackageName}&lt;/junitPackageName&gt;
+  &lt;localRepositoryPath default-value=&quot;${settings.localRepository}&quot;&gt;${invoker.localRepositoryPath}&lt;/localRepositoryPath&gt;
+  &lt;mavenExecutable&gt;${invoker.mavenExecutable}&lt;/mavenExecutable&gt;
+  &lt;mavenHome&gt;${invoker.mavenHome}&lt;/mavenHome&gt;
+  &lt;mavenOpts&gt;${invoker.mavenOpts}&lt;/mavenOpts&gt;
+  &lt;mergeUserSettings default-value=&quot;false&quot;&gt;${invoker.mergeUserSettings}&lt;/mergeUserSettings&gt;
+  &lt;mojoExecution default-value=&quot;${mojoExecution}&quot;/&gt;
+  &lt;noLog default-value=&quot;false&quot;&gt;${invoker.noLog}&lt;/noLog&gt;
+  &lt;parallelThreads default-value=&quot;1&quot;&gt;${invoker.parallelThreads}&lt;/parallelThreads&gt;
+  &lt;pluginArtifacts&gt;${plugin.artifacts}&lt;/pluginArtifacts&gt;
+  &lt;pom&gt;${invoker.pom}&lt;/pom&gt;
+  &lt;pomIncludes&gt;
+    &lt;pomInclude&gt;*/pom.xml&lt;/pomInclude&gt;
+  &lt;/pomIncludes&gt;
+  &lt;postBuildHookScript default-value=&quot;postbuild&quot;&gt;verify&lt;/postBuildHookScript&gt;
+  &lt;preBuildHookScript default-value=&quot;prebuild&quot;&gt;setup&lt;/preBuildHookScript&gt;
+  &lt;project default-value=&quot;${project}&quot;/&gt;
+  &lt;projectsDirectory default-value=&quot;${basedir}/src/it/&quot;&gt;${invoker.projectsDirectory}&lt;/projectsDirectory&gt;
+  &lt;reportsDirectory default-value=&quot;${project.build.directory}/invoker-reports&quot;&gt;${invoker.reportsDirectory}&lt;/reportsDirectory&gt;
+  &lt;selectorScript default-value=&quot;selector&quot;&gt;${invoker.selectorScript}&lt;/selectorScript&gt;
+  &lt;session default-value=&quot;${session}&quot;/&gt;
+  &lt;settings default-value=&quot;${settings}&quot;/&gt;
+  &lt;settingsFile&gt;${invoker.settingsFile}&lt;/settingsFile&gt;
+  &lt;showErrors default-value=&quot;false&quot;&gt;${invoker.showErrors}&lt;/showErrors&gt;
+  &lt;showVersion default-value=&quot;false&quot;&gt;${invoker.showVersion}&lt;/showVersion&gt;
+  &lt;skipInvocation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInvocation&gt;
+  &lt;streamLogs default-value=&quot;false&quot;&gt;${invoker.streamLogs}&lt;/streamLogs&gt;
+  &lt;suppressSummaries default-value=&quot;false&quot;/&gt;
+  &lt;testClassPath default-value=&quot;${project.testClasspathElements}&quot;/&gt;
+  &lt;testPropertiesFile default-value=&quot;test.properties&quot;&gt;${invoker.testPropertiesFile}&lt;/testPropertiesFile&gt;
+  &lt;timeoutInSeconds default-value=&quot;0&quot;&gt;${invoker.timeoutInSeconds}&lt;/timeoutInSeconds&gt;
+  &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
+&lt;/configuration&gt;
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-site-plugin:3.3:site (default-site)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;configuration&gt;
+  &lt;generateProjectInfo default-value=&quot;true&quot;&gt;${generateProjectInfo}&lt;/generateProjectInfo&gt;
+  &lt;generateReports default-value=&quot;true&quot;&gt;${generateReports}&lt;/generateReports&gt;
+  &lt;generateSitemap default-value=&quot;false&quot;&gt;${generateSitemap}&lt;/generateSitemap&gt;
+  &lt;generatedSiteDirectory default-value=&quot;${project.build.directory}/generated-site&quot;/&gt;
+  &lt;inputEncoding default-value=&quot;${project.build.sourceEncoding}&quot;&gt;${encoding}&lt;/inputEncoding&gt;
+  &lt;localRepository default-value=&quot;${localRepository}&quot;/&gt;
+  &lt;locales&gt;${locales}&lt;/locales&gt;
+  &lt;outputDirectory default-value=&quot;${project.reporting.outputDirectory}&quot;&gt;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/site&lt;/outputDirectory&gt;
+  &lt;outputEncoding default-value=&quot;${project.reporting.outputEncoding}&quot;&gt;${outputEncoding}&lt;/outputEncoding&gt;
+  &lt;reactorProjects default-value=&quot;${reactorProjects}&quot;/&gt;
+  &lt;relativizeDecorationLinks default-value=&quot;true&quot;&gt;${relativizeDecorationLinks}&lt;/relativizeDecorationLinks&gt;
+  &lt;reportPlugins&gt;
+    &lt;reportPlugin&gt;
+      &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+      &lt;artifactId&gt;maven-invoker-plugin&lt;/artifactId&gt;
+      &lt;version&gt;3.2.1-SNAPSHOT&lt;/version&gt;
+    &lt;/reportPlugin&gt;
+  &lt;/reportPlugins&gt;
+  &lt;reports default-value=&quot;${reports}&quot;/&gt;
+  &lt;repositories default-value=&quot;${project.remoteArtifactRepositories}&quot;/&gt;
+  &lt;siteDirectory default-value=&quot;${basedir}/src/site&quot;/&gt;
+  &lt;skip default-value=&quot;false&quot;&gt;${maven.site.skip}&lt;/skip&gt;
+  &lt;template&gt;${template}&lt;/template&gt;
+  &lt;templateDirectory default-value=&quot;src/site&quot;&gt;${templateDirectory}&lt;/templateDirectory&gt;
+  &lt;templateFile&gt;${templateFile}&lt;/templateFile&gt;
+  &lt;validate default-value=&quot;false&quot;&gt;${validate}&lt;/validate&gt;
+  &lt;xdocDirectory default-value=&quot;${basedir}/xdocs&quot;/&gt;
+  &lt;mavenSession default-value=&quot;${session}&quot;/&gt;
+  &lt;project default-value=&quot;${project}&quot;/&gt;
+&lt;/configuration&gt;
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=84365, ConflictMarker.markTime=407384, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=45504, ConflictIdSorter.topsortTime=668387, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1768999, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=181275, DefaultDependencyCollector.transformTime=5122256}
+[DEBUG] org.apache.maven.plugins.invoker:invoker-report:pom:1.0-SNAPSHOT
+[INFO] 
+[INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invoker-report ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3042632, ConflictMarker.markTime=827017, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=791411, ConflictIdSorter.topsortTime=131683, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11995787, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=895684993, DefaultDependencyCollector.transformTime=16944768}
+[DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
+[DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-impl:jar:2.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30:compile
+[DEBUG]             junit:junit:jar:3.8.1:compile
+[DEBUG]          xerces:xercesImpl:jar:2.9.1:compile
+[DEBUG]             xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.0.2:compile
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[DEBUG]          xmlunit:xmlunit:jar:1.5:compile
+[DEBUG]       commons-validator:commons-validator:jar:1.4.1:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.8.1:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.2:compile
+[DEBUG]    org.apache.maven.shared:maven-script-interpreter:jar:1.2:compile
+[DEBUG]       org.apache.ant:ant:jar:1.8.1:compile
+[DEBUG]    org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.6:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.5:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.7:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.7:compile
+[DEBUG]    org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-skin-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-xhtml:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-velocity:jar:1.2:compile
+[DEBUG]       org.apache.velocity:velocity:jar:1.7:compile
+[DEBUG]       org.apache.velocity:velocity-tools:jar:2.0:compile
+[DEBUG]          commons-chain:commons-chain:jar:1.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.1:compile
+[DEBUG]          oro:oro:jar:2.0.8:compile
+[DEBUG]          sslext:sslext:jar:1.2-0:compile
+[DEBUG]          org.apache.struts:struts-core:jar:1.3.8:compile
+[DEBUG]             antlr:antlr:jar:2.7.2:compile
+[DEBUG]          org.apache.struts:struts-taglib:jar:1.3.8:compile
+[DEBUG]          org.apache.struts:struts-tiles:jar:1.3.8:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.4:compile
+[DEBUG]    org.beanshell:bsh:jar:2.0b4:runtime
+[DEBUG]    org.codehaus.groovy:groovy-all:jar:2.4.8:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:compile
+[DEBUG]    org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG] Created new class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG]   Imported:  &lt; maven.api
+[DEBUG] Populating class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-impl:jar:2.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.6
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: xerces:xercesImpl:jar:2.9.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0.2
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0.1
+[DEBUG]   Included: xmlunit:xmlunit:jar:1.5
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.4.1
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.8.3
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.8.1
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.2
+[DEBUG]   Included: org.apache.maven.shared:maven-script-interpreter:jar:1.2
+[DEBUG]   Included: org.apache.ant:ant:jar:1.8.1
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-skin-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.2
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.7
+[DEBUG]   Included: org.apache.velocity:velocity-tools:jar:2.0
+[DEBUG]   Included: commons-chain:commons-chain:jar:1.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.1
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: sslext:sslext:jar:1.2-0
+[DEBUG]   Included: org.apache.struts:struts-core:jar:1.3.8
+[DEBUG]   Included: antlr:antlr:jar:2.7.2
+[DEBUG]   Included: org.apache.struts:struts-taglib:jar:1.3.8
+[DEBUG]   Included: org.apache.struts:struts-tiles:jar:1.3.8
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.4
+[DEBUG]   Included: org.beanshell:bsh:jar:2.0b4
+[DEBUG]   Included: org.codehaus.groovy:groovy-all:jar:2.4.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:run from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo &apos;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:run&apos; with basic configurator --&gt;
+[DEBUG]   (f) addTestClassPath = false
+[DEBUG]   (f) cloneAllFiles = false
+[DEBUG]   (f) cloneClean = true
+[DEBUG]   (f) debug = false
+[DEBUG]   (f) disableReports = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) goals = [validate]
+[DEBUG]   (f) ignoreFailures = true
+[DEBUG]   (f) invokerPropertiesFile = invoker.properties
+[DEBUG]   (f) junitPackageName = maven.invoker.it
+[DEBUG]   (f) localRepositoryPath = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[DEBUG]   (f) mergeUserSettings = false
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:run {execution: integration-test}
+[DEBUG]   (f) noLog = false
+[DEBUG]   (f) parallelThreads = 1
+[DEBUG]   (f) pluginArtifacts = [org.apache.maven.plugins:maven-invoker-plugin:maven-plugin:3.2.1-SNAPSHOT:, org.apache.maven.shared:maven-invoker:jar:3.0.1:compile, org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile, org.apache.maven:maven-core:jar:3.0:compile, org.apache.maven:maven-settings-builder:jar:3.0:compile, org.apache.maven:maven-repository-metadata:jar:3.0:compile, org.apache.maven:maven-model-builder:jar:3.0:compile, org.apache.maven:maven-aether-provider:jar:3.0:runtime, org.sonatype.aether:aether-impl:jar:1.7:compile, org.sonatype.aether:aether-spi:jar:1.7:compile, org.sonatype.aether:aether-api:jar:1.7:compile, org.sonatype.aether:aether-util:jar:1.7:compile, org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile, org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile, org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile, org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile, org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile, org.sonatype.plexus:plexus-cipher:jar:1.4:compile, org.apache.maven:maven-model:jar:3.0:compile, org.apache.maven:maven-plugin-api:jar:3.0:compile, org.apache.maven:maven-artifact:jar:3.0:compile, org.apache.maven:maven-settings:jar:3.0:compile, org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile, org.apache.maven.reporting:maven-reporting-impl:jar:2.4:compile, org.apache.maven.doxia:doxia-core:jar:1.6:compile, org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30:compile, junit:junit:jar:3.8.1:compile, xerces:xercesImpl:jar:2.9.1:compile, xml-apis:xml-apis:jar:1.3.04:compile, org.apache.httpcomponents:httpclient:jar:4.0.2:compile, org.apache.httpcomponents:httpcore:jar:4.0.1:compile, xmlunit:xmlunit:jar:1.5:compile, commons-validator:commons-validator:jar:1.4.1:compile, commons-beanutils:commons-beanutils:jar:1.8.3:compile, commons-digester:commons-digester:jar:1.8.1:compile, commons-logging:commons-logging:jar:1.2:compile, org.apache.maven.shared:maven-script-interpreter:jar:1.2:compile, org.apache.ant:ant:jar:1.8.1:compile, org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:compile, org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile, commons-codec:commons-codec:jar:1.6:compile, org.slf4j:slf4j-api:jar:1.7.5:compile, org.apache.maven.doxia:doxia-sink-api:jar:1.7:compile, org.apache.maven.doxia:doxia-logging-api:jar:1.7:compile, org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4:compile, org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4:compile, org.apache.maven.doxia:doxia-skin-model:jar:1.7.4:compile, org.apache.maven.doxia:doxia-module-xhtml:jar:1.7:compile, org.codehaus.plexus:plexus-velocity:jar:1.2:compile, org.apache.velocity:velocity:jar:1.7:compile, org.apache.velocity:velocity-tools:jar:2.0:compile, commons-chain:commons-chain:jar:1.1:compile, dom4j:dom4j:jar:1.1:compile, oro:oro:jar:2.0.8:compile, sslext:sslext:jar:1.2-0:compile, org.apache.struts:struts-core:jar:1.3.8:compile, antlr:antlr:jar:2.7.2:compile, org.apache.struts:struts-taglib:jar:1.3.8:compile, org.apache.struts:struts-tiles:jar:1.3.8:compile, commons-collections:commons-collections:jar:3.2.1:compile, commons-lang:commons-lang:jar:2.4:compile, org.beanshell:bsh:jar:2.0b4:runtime, org.codehaus.groovy:groovy-all:jar:2.4.8:runtime, org.codehaus.plexus:plexus-utils:jar:3.1.0:compile, commons-io:commons-io:jar:2.5:compile, org.codehaus.plexus:plexus-interpolation:jar:1.26:compile, org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile, org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile]
+[DEBUG]   (f) pomIncludes = [*/pom.xml]
+[DEBUG]   (f) postBuildHookScript = verify
+[DEBUG]   (f) preBuildHookScript = setup
+[DEBUG]   (f) project = MavenProject: org.apache.maven.plugins.invoker:invoker-report:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/pom.xml
+[DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it
+[DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/invoker-reports
+[DEBUG]   (f) selectorScript = selector
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a1e3ac1
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@6e78fcf5
+[DEBUG]   (f) showErrors = false
+[DEBUG]   (f) showVersion = false
+[DEBUG]   (f) skipInvocation = false
+[DEBUG]   (f) streamLogs = false
+[DEBUG]   (f) suppressSummaries = false
+[DEBUG]   (f) testClassPath = [/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/test-classes, /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/classes]
+[DEBUG]   (f) testPropertiesFile = test.properties
+[DEBUG]   (f) timeoutInSeconds = 0
+[DEBUG]   (f) writeJunitReport = false
+[DEBUG] -- end configuration --
+[DEBUG] Setup projects: []
+[DEBUG] Collecting parent/child projects of success/pom.xml
+[DEBUG] Collecting parent/child projects of failure-post/pom.xml
+[DEBUG] Collecting parent/child projects of failure-build/pom.xml
+[DEBUG] Collecting parent/child projects of skip-os/pom.xml
+[DEBUG] Collecting parent/child projects of skip-maven/pom.xml
+[DEBUG] Collecting parent/child projects of skip-jre/pom.xml
+[DEBUG] Collecting parent/child projects of failure-pre/pom.xml
+[WARNING] Filtering of parent/child POMs is not supported without cloning the projects
+[DEBUG] Setup projects: []
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2330863010433080885.xml
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/success/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/success/interpolated-pom.xml
+[INFO] Building: success/pom.xml
+[DEBUG] Using invoker properties:
+[DEBUG]   invoker.description = A build job that should succeed.
+[DEBUG]   invoker.name = Success
+[DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/success
+[DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/success
+[DEBUG] pre-build script: no script &apos;setup&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/success
+[DEBUG] Using MAVEN_OPTS: null
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/success &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2330863010433080885.xml validate
+[DEBUG] post-build script: no script &apos;verify&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/success
+[INFO]           success/pom.xml .................................. SUCCESS (1.9 s)
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post/interpolated-pom.xml
+[INFO] Building: failure-post/pom.xml
+[DEBUG] Using invoker properties:
+[DEBUG]   invoker.description = A build job without name.
+[DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post
+[DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post
+[DEBUG] pre-build script: no script &apos;setup&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post
+[DEBUG] Using MAVEN_OPTS: null
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2330863010433080885.xml validate
+[INFO] run post-build script verify.bsh
+[DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post/verify.bsh
+[DEBUG] Error evaluating post-build script /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-post/verify.bsh, java.lang.IllegalStateException: The post-build script failed as expected.
+java.lang.IllegalStateException: The post-build script failed as expected.
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (Native Method)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (NativeConstructorAccessorImpl.java:62)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (DelegatingConstructorAccessorImpl.java:45)
+    at java.lang.reflect.Constructor.newInstance (Constructor.java:423)
+    at bsh.Reflect.constructObject (Unknown Source)
+    at bsh.BSHAllocationExpression.constructObject (Unknown Source)
+    at bsh.BSHAllocationExpression.objectAllocation (Unknown Source)
+    at bsh.BSHAllocationExpression.eval (Unknown Source)
+    at bsh.BSHPrimaryExpression.eval (Unknown Source)
+    at bsh.BSHPrimaryExpression.eval (Unknown Source)
+    at bsh.BSHThrowStatement.eval (Unknown Source)
+    at bsh.Interpreter.eval (Unknown Source)
+    at bsh.Interpreter.eval (Unknown Source)
+    at bsh.Interpreter.eval (Unknown Source)
+    at org.apache.maven.shared.scriptinterpreter.BeanShellScriptInterpreter.evaluateScript (BeanShellScriptInterpreter.java:116)
+    at org.apache.maven.shared.scriptinterpreter.ScriptRunner.executeRun (ScriptRunner.java:256)
+    at org.apache.maven.shared.scriptinterpreter.ScriptRunner.run (ScriptRunner.java:180)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runPostBuildHook (AbstractInvokerMojo.java:2144)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:2115)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1665)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuilds (AbstractInvokerMojo.java:1373)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.execute (AbstractInvokerMojo.java:784)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+[INFO]   The post-build script did not succeed. The post-build script failed as expected.
+[INFO]           failure-post/pom.xml ............................. FAILED (1.9 s)
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build/interpolated-pom.xml
+[INFO] Building: failure-build/pom.xml
+[DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build
+[DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build
+[DEBUG] pre-build script: no script &apos;setup&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build
+[DEBUG] Using MAVEN_OPTS: null
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2330863010433080885.xml validate
+[DEBUG] post-build script: no script &apos;verify&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build
+[INFO]   The build exited with code 1. See /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-build/build.log for details.
+[INFO]           failure-build/pom.xml ............................ FAILED (1.5 s)
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/skip-os/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/skip-os/interpolated-pom.xml
+[INFO] Building: skip-os/pom.xml
+[INFO]           skip-os/pom.xml .................................. SKIPPED due to OS
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/skip-maven/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/skip-maven/interpolated-pom.xml
+[INFO] Building: skip-maven/pom.xml
+[INFO]           skip-maven/pom.xml ............................... SKIPPED due to Maven version
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/skip-jre/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/skip-jre/interpolated-pom.xml
+[INFO] Building: skip-jre/pom.xml
+[INFO]           skip-jre/pom.xml ................................. SKIPPED due to JRE version
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-pre/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-pre/interpolated-pom.xml
+[INFO] Building: failure-pre/pom.xml
+[DEBUG] Using invoker properties:
+[DEBUG]   invoker.name = No Description
+[DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-pre
+[DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-pre
+[INFO] run pre-build script setup.bsh
+[DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-pre/setup.bsh
+[DEBUG] Error evaluating pre-build script /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-pre/setup.bsh, java.lang.IllegalStateException: The pre-build script failed as expected.
+java.lang.IllegalStateException: The pre-build script failed as expected.
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (Native Method)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (NativeConstructorAccessorImpl.java:62)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (DelegatingConstructorAccessorImpl.java:45)
+    at java.lang.reflect.Constructor.newInstance (Constructor.java:423)
+    at bsh.Reflect.constructObject (Unknown Source)
+    at bsh.BSHAllocationExpression.constructObject (Unknown Source)
+    at bsh.BSHAllocationExpression.objectAllocation (Unknown Source)
+    at bsh.BSHAllocationExpression.eval (Unknown Source)
+    at bsh.BSHPrimaryExpression.eval (Unknown Source)
+    at bsh.BSHPrimaryExpression.eval (Unknown Source)
+    at bsh.BSHThrowStatement.eval (Unknown Source)
+    at bsh.Interpreter.eval (Unknown Source)
+    at bsh.Interpreter.eval (Unknown Source)
+    at bsh.Interpreter.eval (Unknown Source)
+    at org.apache.maven.shared.scriptinterpreter.BeanShellScriptInterpreter.evaluateScript (BeanShellScriptInterpreter.java:116)
+    at org.apache.maven.shared.scriptinterpreter.ScriptRunner.executeRun (ScriptRunner.java:256)
+    at org.apache.maven.shared.scriptinterpreter.ScriptRunner.run (ScriptRunner.java:180)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1997)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1665)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuilds (AbstractInvokerMojo.java:1373)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.execute (AbstractInvokerMojo.java:784)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+[DEBUG] post-build script: no script &apos;verify&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/it/failure-pre
+[INFO]   The pre-build script did not succeed. The pre-build script failed as expected.
+[INFO]           failure-pre/pom.xml .............................. ERROR (0.0 s)
+[INFO] -------------------------------------------------
+[INFO] Build Summary:
+[INFO]   Passed: 1, Failed: 2, Errors: 1, Skipped: 3
+[INFO] -------------------------------------------------
+[WARNING] The following builds failed:
+[WARNING] *  failure-post/pom.xml
+[WARNING] *  failure-build/pom.xml
+[INFO] -------------------------------------------------
+[WARNING] Ignoring that 2 builds failed.
+[WARNING] Ignoring that 1 build in error.
+[INFO] 
+[INFO] --- maven-site-plugin:3.3:site (default-site) @ invoker-report ---
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.1/maven-reporting-exec-1.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.1/maven-reporting-exec-1.1.pom (11 kB at 378 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/reporting/maven-reporting-exec/1.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/reporting/maven-reporting-exec/1.1/maven-reporting-exec-1.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.pom (4.0 kB at 670 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-archiver/2.4.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-components/16/maven-shared-components-16.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-components/16/maven-shared-components-16.pom (9.2 kB at 1.0 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-components/16/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-components/16/maven-shared-components-16.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-archiver/2.0.1/plexus-archiver-2.0.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-archiver/2.0.1/plexus-archiver-2.0.1.pom (2.8 kB at 562 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-archiver/2.0.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-archiver/2.0.1/plexus-archiver-2.0.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-io/2.0.1/plexus-io-2.0.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-io/2.0.1/plexus-io-2.0.1.pom (1.7 kB at 426 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-io/2.0.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-io/2.0.1/plexus-io-2.0.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.4/doxia-sink-api-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.4/doxia-sink-api-1.4.pom (1.5 kB at 510 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sink-api/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sink-api/1.4/doxia-sink-api-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia/1.4/doxia-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia/1.4/doxia-1.4.pom (18 kB at 3.6 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia/1.4/doxia-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.pom (1.5 kB at 256 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-logging-api/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-core/1.4/doxia-core-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-core/1.4/doxia-core-1.4.pom (4.1 kB at 678 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-core/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-core/1.4/doxia-core-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.10/plexus-utils-3.0.10.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.10/plexus-utils-3.0.10.pom (3.1 kB at 629 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/3.0.10/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/3.0.10/plexus-utils-3.0.10.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom (20 kB at 3.3 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus/3.3/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus/3.3/plexus-3.3.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.pom (1.6 kB at 272 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xhtml/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-modules/1.4/doxia-modules-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-modules/1.4/doxia-modules-1.4.pom (2.6 kB at 524 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-modules/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-modules/1.4/doxia-modules-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.4/doxia-module-apt-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.4/doxia-module-apt-1.4.pom (1.7 kB at 344 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-apt/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-apt/1.4/doxia-module-apt-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.4/doxia-module-xdoc-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.4/doxia-module-xdoc-1.4.pom (4.6 kB at 768 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xdoc/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xdoc/1.4/doxia-module-xdoc-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.pom (4.8 kB at 961 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-fml/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-markdown/1.4/doxia-module-markdown-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-markdown/1.4/doxia-module-markdown-1.4.pom (2.1 kB at 348 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-markdown/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-markdown/1.4/doxia-module-markdown-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/pegdown/pegdown/1.2.1/pegdown-1.2.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/pegdown/pegdown/1.2.1/pegdown-1.2.1.pom (1.9 kB at 234 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/pegdown/pegdown/1.2.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/pegdown/pegdown/1.2.1/pegdown-1.2.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.pom (2.6 kB at 430 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-java/1.1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.pom (1.7 kB at 434 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-core/1.1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm/4.1/asm-4.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm/4.1/asm-4.1.pom (1.9 kB at 483 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm/4.1/asm-4.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-parent/4.1/asm-parent-4.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-parent/4.1/asm-parent-4.1.pom (5.5 kB at 1.4 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-parent/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-parent/4.1/asm-parent-4.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.pom (2.1 kB at 520 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-tree/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.pom (2.1 kB at 209 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-analysis/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-util/4.1/asm-util-4.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-util/4.1/asm-util-4.1.pom (2.1 kB at 298 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-util/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-util/4.1/asm-util-4.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom (157 B at 52 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/javax/servlet/servlet-api/2.5/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.pom (2.7 kB at 668 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-decoration-model/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.4/doxia-sitetools-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.4/doxia-sitetools-1.4.pom (17 kB at 2.9 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sitetools/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sitetools/1.4/doxia-sitetools-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.pom (6.1 kB at 1.0 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-site-renderer/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-integration-tools/1.5/doxia-integration-tools-1.5.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-integration-tools/1.5/doxia-integration-tools-1.5.pom (6.9 kB at 1.7 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-integration-tools/1.5/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-integration-tools/1.5/doxia-integration-tools-1.5.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-tools/2/doxia-tools-2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-tools/2/doxia-tools-2.pom (12 kB at 2.9 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-tools/2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-tools/2/doxia-tools-2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.3/doxia-logging-api-1.3.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.3/doxia-logging-api-1.3.pom (1.6 kB at 274 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-logging-api/1.3/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-logging-api/1.3/doxia-logging-api-1.3.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia/1.3/doxia-1.3.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia/1.3/doxia-1.3.pom (18 kB at 4.5 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia/1.3/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia/1.3/doxia-1.3.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.3/doxia-decoration-model-1.3.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.3/doxia-decoration-model-1.3.pom (3.1 kB at 764 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-decoration-model/1.3/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-decoration-model/1.3/doxia-decoration-model-1.3.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.3/doxia-sitetools-1.3.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sitetools/1.3/doxia-sitetools-1.3.pom (16 kB at 2.6 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sitetools/1.3/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sitetools/1.3/doxia-sitetools-1.3.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.pom (1.8 kB at 438 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon/1.0/wagon-1.0.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon/1.0/wagon-1.0.pom (9.8 kB at 2.5 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon/1.0/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon/1.0/wagon-1.0.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-parent/20/maven-parent-20.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-parent/20/maven-parent-20.pom (25 kB at 6.2 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-parent/20/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-parent/20/maven-parent-20.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom (2.0 kB at 653 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.4.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.4.2/plexus-utils-1.4.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.pom (1.6 kB at 402 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-archiver/1.0/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-components/1.1.17/plexus-components-1.1.17.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-components/1.1.17/plexus-components-1.1.17.pom (5.2 kB at 1.7 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-components/1.1.17/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-components/1.1.17/plexus-components-1.1.17.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom (17 kB at 3.5 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus/2.0.5/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.pom (1.2 kB at 246 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-io/1.0/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.10/plexus-utils-1.5.10.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.10/plexus-utils-1.5.10.pom (5.6 kB at 1.1 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.5.10/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.5.10/plexus-utils-1.5.10.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty/6.1.25/jetty-6.1.25.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty/6.1.25/jetty-6.1.25.pom (6.3 kB at 782 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty/6.1.25/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty/6.1.25/jetty-6.1.25.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/project/6.1.25/project-6.1.25.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/project/6.1.25/project-6.1.25.pom (9.1 kB at 1.1 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/project/6.1.25/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/project/6.1.25/project-6.1.25.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-parent/10/jetty-parent-10.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-parent/10/jetty-parent-10.pom (3.3 kB at 1.1 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-parent/10/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-parent/10/jetty-parent-10.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/eclipse/jetty/jetty-parent/14/jetty-parent-14.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/eclipse/jetty/jetty-parent/14/jetty-parent-14.pom (16 kB at 3.3 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/eclipse/jetty/jetty-parent/14/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/eclipse/jetty/jetty-parent/14/jetty-parent-14.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-util/6.1.25/jetty-util-6.1.25.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-util/6.1.25/jetty-util-6.1.25.pom (3.9 kB at 646 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-util/6.1.25/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-util/6.1.25/jetty-util-6.1.25.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom (2.7 kB at 892 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/servlet-api/2.5-20081211/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-parent/7/jetty-parent-7.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-parent/7/jetty-parent-7.pom (12 kB at 2.5 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-parent/7/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-parent/7/jetty-parent-7.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.pom (17 kB at 2.9 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/commons-lang/commons-lang/2.5/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/commons-lang/commons-lang/2.5/commons-lang-2.5.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/commons/commons-parent/12/commons-parent-12.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/commons/commons-parent/12/commons-parent-12.pom (27 kB at 9.0 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/commons/commons-parent/12/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/commons/commons-parent/12/commons-parent-12.pom.lastUpdated
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=827006, ConflictMarker.markTime=301479, ConflictMarker.nodeCount=319, ConflictIdSorter.graphTime=353969, ConflictIdSorter.topsortTime=101027, ConflictIdSorter.conflictIdCount=84, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5959001, ConflictResolver.conflictItemCount=219, DefaultDependencyCollector.collectTime=784816635, DefaultDependencyCollector.transformTime=7606893}
+[DEBUG] org.apache.maven.plugins:maven-site-plugin:jar:3.3:
+[DEBUG]    org.apache.maven.reporting:maven-reporting-exec:jar:1.1:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:0.3:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.eclipse.aether:aether-util:jar:0.9.0.M2:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.4.2:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.4:compile
+[DEBUG]    org.apache.maven.doxia:doxia-logging-api:jar:1.4:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]    org.apache.maven.doxia:doxia-core:jar:1.4:compile
+[DEBUG]       xerces:xercesImpl:jar:2.9.1:compile
+[DEBUG]          xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.0.2:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.1.1:compile
+[DEBUG]          commons-codec:commons-codec:jar:1.3:compile
+[DEBUG]       org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[DEBUG]    org.apache.maven.doxia:doxia-module-xhtml:jar:1.4:compile
+[DEBUG]    org.apache.maven.doxia:doxia-module-apt:jar:1.4:runtime
+[DEBUG]    org.apache.maven.doxia:doxia-module-xdoc:jar:1.4:compile
+[DEBUG]    org.apache.maven.doxia:doxia-module-fml:jar:1.4:runtime
+[DEBUG]    org.apache.maven.doxia:doxia-module-markdown:jar:1.4:runtime
+[DEBUG]       org.pegdown:pegdown:jar:1.2.1:runtime
+[DEBUG]          org.parboiled:parboiled-java:jar:1.1.4:runtime
+[DEBUG]             org.parboiled:parboiled-core:jar:1.1.4:runtime
+[DEBUG]             org.ow2.asm:asm:jar:4.1:runtime
+[DEBUG]             org.ow2.asm:asm-tree:jar:4.1:runtime
+[DEBUG]             org.ow2.asm:asm-analysis:jar:4.1:runtime
+[DEBUG]             org.ow2.asm:asm-util:jar:4.1:runtime
+[DEBUG]    javax.servlet:servlet-api:jar:2.5:compile
+[DEBUG]    org.apache.maven.doxia:doxia-decoration-model:jar:1.4:compile
+[DEBUG]    org.apache.maven.doxia:doxia-site-renderer:jar:1.4:compile
+[DEBUG]       org.apache.velocity:velocity-tools:jar:2.0:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.7.0:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.8:compile
+[DEBUG]          commons-chain:commons-chain:jar:1.1:compile
+[DEBUG]          commons-validator:commons-validator:jar:1.3.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.1:compile
+[DEBUG]          sslext:sslext:jar:1.2-0:compile
+[DEBUG]          org.apache.struts:struts-core:jar:1.3.8:compile
+[DEBUG]             antlr:antlr:jar:2.7.2:compile
+[DEBUG]          org.apache.struts:struts-taglib:jar:1.3.8:compile
+[DEBUG]          org.apache.struts:struts-tiles:jar:1.3.8:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]    org.apache.maven.doxia:doxia-integration-tools:jar:1.5:compile
+[DEBUG]    org.apache.maven.wagon:wagon-provider-api:jar:1.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:1.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:1.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]    org.apache.velocity:velocity:jar:1.5:compile
+[DEBUG]       oro:oro:jar:2.0.8:compile
+[DEBUG]    org.codehaus.plexus:plexus-velocity:jar:1.1.8:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.5.10:compile
+[DEBUG]    org.mortbay.jetty:jetty:jar:6.1.25:compile
+[DEBUG]       org.mortbay.jetty:servlet-api:jar:2.5-20081211:compile
+[DEBUG]    org.mortbay.jetty:jetty-util:jar:6.1.25:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.5:compile
+[DEBUG]    commons-io:commons-io:jar:1.4:compile
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.1/maven-reporting-exec-1.1.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.4/doxia-sink-api-1.4.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.jar (20 kB at 4.0 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.1/maven-reporting-exec-1.1.jar (26 kB at 5.2 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.4/doxia-sink-api-1.4.jar (11 kB at 2.8 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.4/doxia-module-apt-1.4.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-core/1.4/doxia-core-1.4.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-apt/1.4/doxia-module-apt-1.4.jar (52 kB at 6.5 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.jar (11 kB at 1.3 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.4/doxia-module-xdoc-1.4.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.jar (15 kB at 1.7 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-markdown/1.4/doxia-module-markdown-1.4.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.jar (155 kB at 12 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/pegdown/pegdown/1.2.1/pegdown-1.2.1.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-core/1.4/doxia-core-1.4.jar (165 kB at 13 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.jar (38 kB at 2.9 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-markdown/1.4/doxia-module-markdown-1.4.jar (12 kB at 897 kB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-module-xdoc/1.4/doxia-module-xdoc-1.4.jar (37 kB at 2.8 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm/4.1/asm-4.1.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/pegdown/pegdown/1.2.1/pegdown-1.2.1.jar (59 kB at 4.2 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.jar (73 kB at 4.3 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-util/4.1/asm-util-4.1.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm/4.1/asm-4.1.jar (47 kB at 2.6 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.jar (22 kB at 1.2 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.jar (20 kB at 1.1 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.jar (185 kB at 8.8 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/ow2/asm/asm-util/4.1/asm-util-4.1.jar (38 kB at 1.7 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-integration-tools/1.5/doxia-integration-tools-1.5.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.jar (53 kB at 2.4 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.jar (61 kB at 2.6 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar (105 kB at 4.4 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/doxia/doxia-integration-tools/1.5/doxia-integration-tools-1.5.jar (45 kB at 1.8 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.10/plexus-utils-1.5.10.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar (139 kB at 5.1 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty/6.1.25/jetty-6.1.25.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.jar (53 kB at 1.9 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar (51 kB at 1.8 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-util/6.1.25/jetty-util-6.1.25.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar (177 kB at 5.9 MB/s)
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar (134 kB at 3.4 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty-util/6.1.25/jetty-util-6.1.25.jar (177 kB at 4.5 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.10/plexus-utils-1.5.10.jar (281 kB at 7.0 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/commons-lang/commons-lang/2.5/commons-lang-2.5.jar (279 kB at 6.5 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/mortbay/jetty/jetty/6.1.25/jetty-6.1.25.jar (539 kB at 12 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/reporting/maven-reporting-exec/1.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/reporting/maven-reporting-exec/1.1/maven-reporting-exec-1.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-utils/0.3/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-utils/0.3/maven-shared-utils-0.3.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-archiver/2.4.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-archiver/2.4.2/maven-archiver-2.4.2.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sink-api/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-sink-api/1.4/doxia-sink-api-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-logging-api/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-core/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-core/1.4/doxia-core-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xhtml/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-apt/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-apt/1.4/doxia-module-apt-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xdoc/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-xdoc/1.4/doxia-module-xdoc-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-fml/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-markdown/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-module-markdown/1.4/doxia-module-markdown-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/pegdown/pegdown/1.2.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/pegdown/pegdown/1.2.1/pegdown-1.2.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-java/1.1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-java/1.1.4/parboiled-java-1.1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-core/1.1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/parboiled/parboiled-core/1.1.4/parboiled-core-1.1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm/4.1/asm-4.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-tree/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-tree/4.1/asm-tree-4.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-analysis/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-analysis/4.1/asm-analysis-4.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-util/4.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/ow2/asm/asm-util/4.1/asm-util-4.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/javax/servlet/servlet-api/2.5/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-decoration-model/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-site-renderer/1.4/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/commons-validator/commons-validator/1.3.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-integration-tools/1.5/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/doxia/doxia-integration-tools/1.5/doxia-integration-tools-1.5.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0/wagon-provider-api-1.0.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-archiver/1.0/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-io/1.0/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.5.10/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.5.10/plexus-utils-1.5.10.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty/6.1.25/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty/6.1.25/jetty-6.1.25.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/servlet-api/2.5-20081211/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-util/6.1.25/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/mortbay/jetty/jetty-util/6.1.25/jetty-util-6.1.25.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/commons-lang/commons-lang/2.5/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/commons-lang/commons-lang/2.5/commons-lang-2.5.jar.lastUpdated
+[DEBUG] Created new class realm plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG] Importing foreign packages into class realm plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported:  &lt; maven.api
+[DEBUG] Populating class realm plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Included: org.apache.maven.plugins:maven-site-plugin:jar:3.3
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-exec:jar:1.1
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.3
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:0.9.0.M2
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.4.2
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.4
+[DEBUG]   Included: xerces:xercesImpl:jar:2.9.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0.2
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.1.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.3
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-apt:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xdoc:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-fml:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-markdown:jar:1.4
+[DEBUG]   Included: org.pegdown:pegdown:jar:1.2.1
+[DEBUG]   Included: org.parboiled:parboiled-java:jar:1.1.4
+[DEBUG]   Included: org.parboiled:parboiled-core:jar:1.1.4
+[DEBUG]   Included: org.ow2.asm:asm:jar:4.1
+[DEBUG]   Included: org.ow2.asm:asm-tree:jar:4.1
+[DEBUG]   Included: org.ow2.asm:asm-analysis:jar:4.1
+[DEBUG]   Included: org.ow2.asm:asm-util:jar:4.1
+[DEBUG]   Included: javax.servlet:servlet-api:jar:2.5
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.4
+[DEBUG]   Included: org.apache.velocity:velocity-tools:jar:2.0
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.7.0
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.8
+[DEBUG]   Included: commons-chain:commons-chain:jar:1.1
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.3.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.1
+[DEBUG]   Included: sslext:sslext:jar:1.2-0
+[DEBUG]   Included: org.apache.struts:struts-core:jar:1.3.8
+[DEBUG]   Included: antlr:antlr:jar:2.7.2
+[DEBUG]   Included: org.apache.struts:struts-taglib:jar:1.3.8
+[DEBUG]   Included: org.apache.struts:struts-tiles:jar:1.3.8
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: org.apache.maven.doxia:doxia-integration-tools:jar:1.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.5
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.1.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.10
+[DEBUG]   Included: org.mortbay.jetty:jetty:jar:6.1.25
+[DEBUG]   Included: org.mortbay.jetty:servlet-api:jar:2.5-20081211
+[DEBUG]   Included: org.mortbay.jetty:jetty-util:jar:6.1.25
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.5
+[DEBUG]   Included: commons-io:commons-io:jar:1.4
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-site-plugin:3.3:site from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Setting property: classpath.resource.loader.class =&gt; &apos;org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader&apos;.
+[DEBUG] Setting property: site.resource.loader.class =&gt; &apos;org.codehaus.plexus.velocity.SiteResourceLoader&apos;.
+[DEBUG] Setting property: velocimacro.messages.on =&gt; &apos;false&apos;.
+[DEBUG] Setting property: resource.loader =&gt; &apos;classpath,site&apos;.
+[DEBUG] Setting property: runtime.log.invalid.references =&gt; &apos;false&apos;.
+[DEBUG] Setting property: resource.manager.logwhenfound =&gt; &apos;false&apos;.
+[DEBUG] Setting property: velocimacro.permissions.allow.inline.to.replace.global =&gt; &apos;true&apos;.
+[DEBUG] *******************************************************************
+[DEBUG] Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+[DEBUG] RuntimeInstance initializing.
+[DEBUG] Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+[DEBUG] LogSystem has been deprecated. Please use a LogChute implementation.
+[DEBUG] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+[DEBUG] ResourceLoader instantiated: org.codehaus.plexus.velocity.ContextClassLoaderResourceLoader
+[DEBUG] ResourceLoader instantiated: org.codehaus.plexus.velocity.SiteResourceLoader
+[DEBUG] ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+[DEBUG] Default ResourceManager initialization complete.
+[DEBUG] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+[DEBUG] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+[DEBUG] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+[DEBUG] Loaded System Directive: org.apache.velocity.runtime.directive.Include
+[DEBUG] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+[DEBUG] Created &apos;20&apos; parsers.
+[DEBUG] Velocimacro : initialization starting.
+[DEBUG] Velocimacro : allowInline = true : VMs can be defined inline in templates
+[DEBUG] Velocimacro : allowInlineToOverride = true : VMs defined inline may replace previous VM definitions
+[DEBUG] Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+[DEBUG] Velocimacro : autoload off : VM system will not automatically reload global library macros
+[DEBUG] Velocimacro : Velocimacro : initialization complete.
+[DEBUG] RuntimeInstance successfully initialized.
+[DEBUG] Configuring mojo &apos;org.apache.maven.plugins:maven-site-plugin:3.3:site&apos; with basic configurator --&gt;
+[DEBUG]   (f) generateProjectInfo = true
+[DEBUG]   (f) generateReports = true
+[DEBUG]   (f) generateSitemap = false
+[DEBUG]   (f) generatedSiteDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/generated-site
+[DEBUG]   (f) inputEncoding = UTF-8
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/
+   layout: default
+snapshots: [enabled =&gt; true, update =&gt; always]
+ releases: [enabled =&gt; true, update =&gt; always]
+
+[DEBUG]   (f) outputDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/site
+[DEBUG]   (f) reactorProjects = [MavenProject: org.apache.maven.plugins.invoker:invoker-report:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/pom.xml]
+[DEBUG]   (f) relativizeDecorationLinks = true
+[DEBUG]   (s) groupId = org.apache.maven.plugins
+[DEBUG]   (s) artifactId = maven-invoker-plugin
+[DEBUG]   (s) version = 3.2.1-SNAPSHOT
+[DEBUG]   (f) reportPlugins = [org.apache.maven.reporting.exec.ReportPlugin@5527b211]
+[DEBUG]   (f) reports = []
+[DEBUG]   (f) repositories = [      id: local.central
+      url: file:///Users/olamy/.m2/repository
+   layout: default
+snapshots: [enabled =&gt; true, update =&gt; daily]
+ releases: [enabled =&gt; true, update =&gt; daily]
+,       id: apache.snapshots
+      url: http://repository.apache.org/content/groups/snapshots-group/
+   layout: default
+snapshots: [enabled =&gt; true, update =&gt; daily]
+ releases: [enabled =&gt; false, update =&gt; daily]
+,       id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled =&gt; false, update =&gt; daily]
+ releases: [enabled =&gt; true, update =&gt; daily]
+]
+[DEBUG]   (f) siteDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/site
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) templateDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/site
+[DEBUG]   (f) validate = false
+[DEBUG]   (f) xdocDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/xdocs
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@4a1e3ac1
+[DEBUG]   (f) project = MavenProject: org.apache.maven.plugins.invoker:invoker-report:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/pom.xml
+[DEBUG] -- end configuration --
+[DEBUG] executing Site Mojo
+[DEBUG] DefaultMavenReportExecutor.buildMavenReports()
+[DEBUG] resolving version for org.apache.maven.plugins:maven-invoker-plugin
+[DEBUG] resolved org.apache.maven.plugins:maven-invoker-plugin version from the reporting.plugins section: 3.2.1-SNAPSHOT
+[INFO] configuring report plugin org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=426976, ConflictMarker.markTime=245254, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=154366, ConflictIdSorter.topsortTime=51394, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3660534, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=15795663, DefaultDependencyCollector.transformTime=4593531}
+[DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
+[DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-impl:jar:2.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30:compile
+[DEBUG]             junit:junit:jar:3.8.1:compile
+[DEBUG]          xerces:xercesImpl:jar:2.9.1:compile
+[DEBUG]             xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.0.2:compile
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[DEBUG]          xmlunit:xmlunit:jar:1.5:compile
+[DEBUG]       commons-validator:commons-validator:jar:1.4.1:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.8.1:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.2:compile
+[DEBUG]    org.apache.maven.shared:maven-script-interpreter:jar:1.2:compile
+[DEBUG]       org.apache.ant:ant:jar:1.8.1:compile
+[DEBUG]    org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.6:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.5:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.7:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.7:compile
+[DEBUG]    org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-skin-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-xhtml:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-velocity:jar:1.2:compile
+[DEBUG]       org.apache.velocity:velocity:jar:1.7:compile
+[DEBUG]       org.apache.velocity:velocity-tools:jar:2.0:compile
+[DEBUG]          commons-chain:commons-chain:jar:1.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.1:compile
+[DEBUG]          oro:oro:jar:2.0.8:compile
+[DEBUG]          sslext:sslext:jar:1.2-0:compile
+[DEBUG]          org.apache.struts:struts-core:jar:1.3.8:compile
+[DEBUG]             antlr:antlr:jar:2.7.2:compile
+[DEBUG]          org.apache.struts:struts-taglib:jar:1.3.8:compile
+[DEBUG]          org.apache.struts:struts-tiles:jar:1.3.8:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.4:compile
+[DEBUG]    org.beanshell:bsh:jar:2.0b4:runtime
+[DEBUG]    org.codehaus.groovy:groovy-all:jar:2.4.8:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:compile
+[DEBUG]    org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG] Created new class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT--1248308692
+[DEBUG] Importing foreign packages into class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT--1248308692
+[DEBUG]   Imported:  &lt; maven.api
+[DEBUG]   Imported: org.apache.maven.doxia.logging.Log &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.apache.maven.doxia.logging.LogEnabled &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.apache.maven.doxia.sink.Sink &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.apache.maven.doxia.sink.SinkEventAttributes &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.apache.maven.doxia.sink.SinkFactory &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.apache.maven.doxia.siterenderer.Renderer &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.apache.maven.reporting.MavenMultiPageReport &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.apache.maven.reporting.MavenReport &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG]   Imported: org.codehaus.doxia.sink.Sink &lt; plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3
+[DEBUG] Populating class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT--1248308692
+[DEBUG]   Included: org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-impl:jar:2.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.6
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: xerces:xercesImpl:jar:2.9.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0.2
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0.1
+[DEBUG]   Included: xmlunit:xmlunit:jar:1.5
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.4.1
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.8.3
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.8.1
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.2
+[DEBUG]   Included: org.apache.maven.shared:maven-script-interpreter:jar:1.2
+[DEBUG]   Included: org.apache.ant:ant:jar:1.8.1
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-skin-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.2
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.7
+[DEBUG]   Included: org.apache.velocity:velocity-tools:jar:2.0
+[DEBUG]   Included: commons-chain:commons-chain:jar:1.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.1
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: sslext:sslext:jar:1.2-0
+[DEBUG]   Included: org.apache.struts:struts-core:jar:1.3.8
+[DEBUG]   Included: antlr:antlr:jar:2.7.2
+[DEBUG]   Included: org.apache.struts:struts-taglib:jar:1.3.8
+[DEBUG]   Included: org.apache.struts:struts-tiles:jar:1.3.8
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.4
+[DEBUG]   Included: org.beanshell:bsh:jar:2.0b4
+[DEBUG]   Included: org.codehaus.groovy:groovy-all:jar:2.4.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG] class org.apache.maven.plugins.invoker.HelpMojo isMavenReport: false
+[DEBUG] skip non MavenReport org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:help
+[DEBUG] class org.apache.maven.plugins.invoker.InstallMojo isMavenReport: false
+[DEBUG] skip non MavenReport org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:install
+[DEBUG] class org.apache.maven.plugins.invoker.IntegrationTestMojo isMavenReport: false
+[DEBUG] skip non MavenReport org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test
+[DEBUG] class org.apache.maven.plugins.invoker.InvokerReport isMavenReport: true
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:report from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT--1248308692, parent: ClassRealm[plugin&gt;org.apache.maven.plugins:maven-site-plugin:3.3, parent: sun.misc.Launcher$AppClassLoader@5c647e05]]
+[DEBUG] Configuring mojo &apos;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:report&apos; with basic configurator --&gt;
+[DEBUG]   (f) inputEncoding = UTF-8
+[DEBUG]   (f) outputDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/site
+[DEBUG]   (f) project = MavenProject: org.apache.maven.plugins.invoker:invoker-report:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/pom.xml
+[DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/invoker-reports
+[DEBUG] -- end configuration --
+[DEBUG] class org.apache.maven.plugins.invoker.InvokerMojo isMavenReport: false
+[DEBUG] skip non MavenReport org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:run
+[DEBUG] class org.apache.maven.plugins.invoker.VerifyMojo isMavenReport: false
+[DEBUG] skip non MavenReport org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify
+[DEBUG] Mapped url: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/src/site to relative path: src/site
+[WARNING] No project URL defined - decoration links will not be relativized!
+[INFO] Rendering site with org.apache.maven.skins:maven-default-skin:jar:1.0 skin.
+[DEBUG] Generating /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/site/invoker-report.html
+[INFO] Generating &quot;Invoker Build Results&quot; report    --- maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG] Multipage report: 0 subreports
+[DEBUG] Velocimacro : added #link(  href name target img position alt border width height title ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #image(  img alt border width height title ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #banner(  banner id ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #links(  links ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #breadcrumbs(  breadcrumbs ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #displayTree(  display item ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #menuItem(  item ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #mainMenu(  menus ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #copyright(  ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #publishDate(  position decorationPublishDate version ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #poweredByLogo(  poweredBy ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #googleAnalytics(  accountId ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Generating /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/site/project-reports.html
+[DEBUG] Velocimacro : added #link(  href name target img position alt border width height title ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #image(  img alt border width height title ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #banner(  banner id ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #links(  links ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #breadcrumbs(  breadcrumbs ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #displayTree(  display item ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #menuItem(  item ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #mainMenu(  menus ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #copyright(  ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #publishDate(  position decorationPublishDate version ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #poweredByLogo(  poweredBy ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] Velocimacro : added #googleAnalytics(  accountId ) : source = org/apache/maven/doxia/siterenderer/resources/default-site.vm
+[DEBUG] The file &apos;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/site/css/site.css&apos; does not exists. Creating an empty file.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.566 s
+[INFO] Finished at: 2019-07-17T16:52:13+10:00
+[INFO] ------------------------------------------------------------------------
+Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/verify.bsh
+Checking for existence of report file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/target/site/invoker-report.html
+Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invoker-report/verify.bsh
+]]&gt;</system-out>
+  </testcase>
+</testsuite>

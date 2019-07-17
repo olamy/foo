@@ -1,0 +1,486 @@
+<testsuite tests="1" time="4.253">
+  <testcase classname="maven.invoker.it.fail-build-with-verify" name="fail-build-with-verify">
+    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
+Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
+Default locale: en_AU, platform encoding: UTF-8
+OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&quot;, family: &quot;mac&quot;
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* &lt; plexus.core
+[DEBUG]   Imported: javax.annotation.security.* &lt; plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* &lt; plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* &lt; plexus.core
+[DEBUG]   Imported: javax.inject.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.cli &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.exception &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.execution &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.model &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.project &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.repository &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.settings &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.usability &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version &lt; plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.event.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* &lt; plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: plain
+[DEBUG] Reading global settings from /Users/olamy/softs/maven/apache-maven-3.6.1/conf/settings.xml
+[DEBUG] Reading user settings from /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/interpolated-settings.xml
+[DEBUG] Reading global toolchains from /Users/olamy/softs/maven/apache-maven-3.6.1/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/olamy/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project org.apache.maven.plugins.invoker:fail-build:pom:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: org.apache.maven.plugins.invoker:fail-build:pom:1.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, initialize]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ------------&lt; org.apache.maven.plugins.invoker:fail-build &gt;-------------
+[INFO] Building fail-build 1.0-SNAPSHOT
+[INFO] --------------------------------[ pom ]---------------------------------
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       org.apache.maven.plugins.invoker:fail-build:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] Repositories (dependencies): [local.central (file:///Users/olamy/.m2/repository, default, releases+snapshots), apache.snapshots (http://repository.apache.org/content/groups/snapshots-group/, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [local.central (file:///Users/olamy/.m2/repository, default, releases+snapshots), apache.snapshots (http://repository.apache.org/content/groups/snapshots-group/, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;configuration&gt;
+  &lt;directory default-value=&quot;${project.build.directory}&quot;/&gt;
+  &lt;excludeDefaultDirectories default-value=&quot;false&quot;&gt;${clean.excludeDefaultDirectories}&lt;/excludeDefaultDirectories&gt;
+  &lt;failOnError default-value=&quot;true&quot;&gt;${maven.clean.failOnError}&lt;/failOnError&gt;
+  &lt;followSymLinks default-value=&quot;false&quot;&gt;${clean.followSymLinks}&lt;/followSymLinks&gt;
+  &lt;outputDirectory default-value=&quot;${project.build.outputDirectory}&quot;/&gt;
+  &lt;reportDirectory default-value=&quot;${project.reporting.outputDirectory}&quot;/&gt;
+  &lt;retryOnError default-value=&quot;true&quot;&gt;${maven.clean.retryOnError}&lt;/retryOnError&gt;
+  &lt;skip default-value=&quot;false&quot;&gt;${clean.skip}&lt;/skip&gt;
+  &lt;testOutputDirectory default-value=&quot;${project.build.testOutputDirectory}&quot;/&gt;
+  &lt;verbose&gt;${clean.verbose}&lt;/verbose&gt;
+&lt;/configuration&gt;
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test (integration-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;configuration&gt;
+  &lt;addTestClassPath default-value=&quot;false&quot;&gt;${invoker.addTestClassPath}&lt;/addTestClassPath&gt;
+  &lt;cloneAllFiles default-value=&quot;false&quot;/&gt;
+  &lt;cloneClean default-value=&quot;true&quot;/&gt;
+  &lt;cloneProjectsTo&gt;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it&lt;/cloneProjectsTo&gt;
+  &lt;debug default-value=&quot;false&quot;&gt;true&lt;/debug&gt;
+  &lt;disableReports default-value=&quot;false&quot;&gt;${invoker.disableReports}&lt;/disableReports&gt;
+  &lt;encoding default-value=&quot;${project.build.sourceEncoding}&quot;&gt;${encoding}&lt;/encoding&gt;
+  &lt;goals&gt;
+    &lt;goal&gt;validate&lt;/goal&gt;
+  &lt;/goals&gt;
+  &lt;invokerPropertiesFile default-value=&quot;invoker.properties&quot;&gt;${invoker.invokerPropertiesFile}&lt;/invokerPropertiesFile&gt;
+  &lt;invokerTest&gt;${invoker.test}&lt;/invokerTest&gt;
+  &lt;javaHome&gt;${invoker.javaHome}&lt;/javaHome&gt;
+  &lt;junitPackageName default-value=&quot;maven.invoker.it&quot;&gt;${invoker.junitPackageName}&lt;/junitPackageName&gt;
+  &lt;localRepositoryPath default-value=&quot;${settings.localRepository}&quot;&gt;${invoker.localRepositoryPath}&lt;/localRepositoryPath&gt;
+  &lt;mavenExecutable&gt;${invoker.mavenExecutable}&lt;/mavenExecutable&gt;
+  &lt;mavenHome&gt;${invoker.mavenHome}&lt;/mavenHome&gt;
+  &lt;mavenOpts&gt;${invoker.mavenOpts}&lt;/mavenOpts&gt;
+  &lt;mergeUserSettings default-value=&quot;false&quot;&gt;${invoker.mergeUserSettings}&lt;/mergeUserSettings&gt;
+  &lt;mojoExecution default-value=&quot;${mojoExecution}&quot;/&gt;
+  &lt;noLog default-value=&quot;false&quot;&gt;${invoker.noLog}&lt;/noLog&gt;
+  &lt;parallelThreads default-value=&quot;1&quot;&gt;${invoker.parallelThreads}&lt;/parallelThreads&gt;
+  &lt;pluginArtifacts&gt;${plugin.artifacts}&lt;/pluginArtifacts&gt;
+  &lt;pom&gt;${invoker.pom}&lt;/pom&gt;
+  &lt;pomIncludes&gt;
+    &lt;pomInclude&gt;*/pom.xml&lt;/pomInclude&gt;
+  &lt;/pomIncludes&gt;
+  &lt;postBuildHookScript default-value=&quot;postbuild&quot;&gt;${invoker.postBuildHookScript}&lt;/postBuildHookScript&gt;
+  &lt;preBuildHookScript default-value=&quot;prebuild&quot;&gt;${invoker.preBuildHookScript}&lt;/preBuildHookScript&gt;
+  &lt;project default-value=&quot;${project}&quot;/&gt;
+  &lt;projectsDirectory default-value=&quot;${basedir}/src/it/&quot;&gt;${invoker.projectsDirectory}&lt;/projectsDirectory&gt;
+  &lt;reportsDirectory default-value=&quot;${project.build.directory}/invoker-reports&quot;&gt;${invoker.reportsDirectory}&lt;/reportsDirectory&gt;
+  &lt;selectorScript default-value=&quot;selector&quot;&gt;${invoker.selectorScript}&lt;/selectorScript&gt;
+  &lt;session default-value=&quot;${session}&quot;/&gt;
+  &lt;settings default-value=&quot;${settings}&quot;/&gt;
+  &lt;settingsFile&gt;${invoker.settingsFile}&lt;/settingsFile&gt;
+  &lt;showErrors default-value=&quot;false&quot;&gt;${invoker.showErrors}&lt;/showErrors&gt;
+  &lt;showVersion default-value=&quot;false&quot;&gt;${invoker.showVersion}&lt;/showVersion&gt;
+  &lt;skipInvocation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInvocation&gt;
+  &lt;streamLogs default-value=&quot;false&quot;&gt;${invoker.streamLogs}&lt;/streamLogs&gt;
+  &lt;suppressSummaries default-value=&quot;false&quot;/&gt;
+  &lt;testClassPath default-value=&quot;${project.testClasspathElements}&quot;/&gt;
+  &lt;testPropertiesFile default-value=&quot;test.properties&quot;&gt;${invoker.testPropertiesFile}&lt;/testPropertiesFile&gt;
+  &lt;timeoutInSeconds default-value=&quot;0&quot;&gt;${invoker.timeoutInSeconds}&lt;/timeoutInSeconds&gt;
+  &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
+&lt;/configuration&gt;
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;configuration&gt;
+  &lt;failIfNoProjects&gt;${invoker.failIfNoProjects}&lt;/failIfNoProjects&gt;
+  &lt;ignoreFailures default-value=&quot;false&quot;&gt;${maven.test.failure.ignore}&lt;/ignoreFailures&gt;
+  &lt;reportsDirectory default-value=&quot;${project.build.directory}/invoker-reports&quot;&gt;${invoker.reportsDirectory}&lt;/reportsDirectory&gt;
+  &lt;skipInvocation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInvocation&gt;
+  &lt;suppressSummaries default-value=&quot;false&quot;/&gt;
+&lt;/configuration&gt;
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=42145, ConflictMarker.markTime=268833, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23830, ConflictIdSorter.topsortTime=351951, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=943391, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=194422, DefaultDependencyCollector.transformTime=2928731}
+[DEBUG] org.apache.maven.plugins.invoker:fail-build:pom:1.0-SNAPSHOT
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fail-build ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=691300, ConflictMarker.markTime=67757, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=118658, ConflictIdSorter.topsortTime=26082, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1315151, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22857049, DefaultDependencyCollector.transformTime=2288987}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin&gt;org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin&gt;org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  &lt; maven.api
+[DEBUG] Populating class realm plugin&gt;org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo &apos;org.apache.maven.plugins:maven-clean-plugin:2.5:clean&apos; with basic configurator --&gt;
+[DEBUG]   (f) directory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/classes
+[DEBUG]   (f) reportDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/test-classes
+[DEBUG] -- end configuration --
+[DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target
+[DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/classes
+[DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/test-classes
+[DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/site
+[INFO] 
+[INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test (integration-test) @ fail-build ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1286943, ConflictMarker.markTime=1040979, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=545448, ConflictIdSorter.topsortTime=94127, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7818495, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=412773798, DefaultDependencyCollector.transformTime=10831641}
+[DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
+[DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-impl:jar:2.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30:compile
+[DEBUG]             junit:junit:jar:3.8.1:compile
+[DEBUG]          xerces:xercesImpl:jar:2.9.1:compile
+[DEBUG]             xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.0.2:compile
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[DEBUG]          xmlunit:xmlunit:jar:1.5:compile
+[DEBUG]       commons-validator:commons-validator:jar:1.4.1:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.8.1:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.2:compile
+[DEBUG]    org.apache.maven.shared:maven-script-interpreter:jar:1.2:compile
+[DEBUG]       org.apache.ant:ant:jar:1.8.1:compile
+[DEBUG]    org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.6:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.5:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.7:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.7:compile
+[DEBUG]    org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-skin-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-xhtml:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-velocity:jar:1.2:compile
+[DEBUG]       org.apache.velocity:velocity:jar:1.7:compile
+[DEBUG]       org.apache.velocity:velocity-tools:jar:2.0:compile
+[DEBUG]          commons-chain:commons-chain:jar:1.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.1:compile
+[DEBUG]          oro:oro:jar:2.0.8:compile
+[DEBUG]          sslext:sslext:jar:1.2-0:compile
+[DEBUG]          org.apache.struts:struts-core:jar:1.3.8:compile
+[DEBUG]             antlr:antlr:jar:2.7.2:compile
+[DEBUG]          org.apache.struts:struts-taglib:jar:1.3.8:compile
+[DEBUG]          org.apache.struts:struts-tiles:jar:1.3.8:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.4:compile
+[DEBUG]    org.beanshell:bsh:jar:2.0b4:runtime
+[DEBUG]    org.codehaus.groovy:groovy-all:jar:2.4.8:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:compile
+[DEBUG]    org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG] Created new class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG]   Imported:  &lt; maven.api
+[DEBUG] Populating class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-impl:jar:2.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.6
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: xerces:xercesImpl:jar:2.9.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0.2
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0.1
+[DEBUG]   Included: xmlunit:xmlunit:jar:1.5
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.4.1
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.8.3
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.8.1
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.2
+[DEBUG]   Included: org.apache.maven.shared:maven-script-interpreter:jar:1.2
+[DEBUG]   Included: org.apache.ant:ant:jar:1.8.1
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-skin-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.2
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.7
+[DEBUG]   Included: org.apache.velocity:velocity-tools:jar:2.0
+[DEBUG]   Included: commons-chain:commons-chain:jar:1.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.1
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: sslext:sslext:jar:1.2-0
+[DEBUG]   Included: org.apache.struts:struts-core:jar:1.3.8
+[DEBUG]   Included: antlr:antlr:jar:2.7.2
+[DEBUG]   Included: org.apache.struts:struts-taglib:jar:1.3.8
+[DEBUG]   Included: org.apache.struts:struts-tiles:jar:1.3.8
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.4
+[DEBUG]   Included: org.beanshell:bsh:jar:2.0b4
+[DEBUG]   Included: org.codehaus.groovy:groovy-all:jar:2.4.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo &apos;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test&apos; with basic configurator --&gt;
+[DEBUG]   (f) addTestClassPath = false
+[DEBUG]   (f) cloneAllFiles = false
+[DEBUG]   (f) cloneClean = true
+[DEBUG]   (f) cloneProjectsTo = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) disableReports = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) goals = [validate]
+[DEBUG]   (f) invokerPropertiesFile = invoker.properties
+[DEBUG]   (f) junitPackageName = maven.invoker.it
+[DEBUG]   (f) localRepositoryPath = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[DEBUG]   (f) mergeUserSettings = false
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test {execution: integration-test}
+[DEBUG]   (f) noLog = false
+[DEBUG]   (f) parallelThreads = 1
+[DEBUG]   (f) pluginArtifacts = [org.apache.maven.plugins:maven-invoker-plugin:maven-plugin:3.2.1-SNAPSHOT:, org.apache.maven.shared:maven-invoker:jar:3.0.1:compile, org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile, org.apache.maven:maven-core:jar:3.0:compile, org.apache.maven:maven-settings-builder:jar:3.0:compile, org.apache.maven:maven-repository-metadata:jar:3.0:compile, org.apache.maven:maven-model-builder:jar:3.0:compile, org.apache.maven:maven-aether-provider:jar:3.0:runtime, org.sonatype.aether:aether-impl:jar:1.7:compile, org.sonatype.aether:aether-spi:jar:1.7:compile, org.sonatype.aether:aether-api:jar:1.7:compile, org.sonatype.aether:aether-util:jar:1.7:compile, org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile, org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile, org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile, org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile, org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile, org.sonatype.plexus:plexus-cipher:jar:1.4:compile, org.apache.maven:maven-model:jar:3.0:compile, org.apache.maven:maven-plugin-api:jar:3.0:compile, org.apache.maven:maven-artifact:jar:3.0:compile, org.apache.maven:maven-settings:jar:3.0:compile, org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile, org.apache.maven.reporting:maven-reporting-impl:jar:2.4:compile, org.apache.maven.doxia:doxia-core:jar:1.6:compile, org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30:compile, junit:junit:jar:3.8.1:compile, xerces:xercesImpl:jar:2.9.1:compile, xml-apis:xml-apis:jar:1.3.04:compile, org.apache.httpcomponents:httpclient:jar:4.0.2:compile, org.apache.httpcomponents:httpcore:jar:4.0.1:compile, xmlunit:xmlunit:jar:1.5:compile, commons-validator:commons-validator:jar:1.4.1:compile, commons-beanutils:commons-beanutils:jar:1.8.3:compile, commons-digester:commons-digester:jar:1.8.1:compile, commons-logging:commons-logging:jar:1.2:compile, org.apache.maven.shared:maven-script-interpreter:jar:1.2:compile, org.apache.ant:ant:jar:1.8.1:compile, org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:compile, org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile, commons-codec:commons-codec:jar:1.6:compile, org.slf4j:slf4j-api:jar:1.7.5:compile, org.apache.maven.doxia:doxia-sink-api:jar:1.7:compile, org.apache.maven.doxia:doxia-logging-api:jar:1.7:compile, org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4:compile, org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4:compile, org.apache.maven.doxia:doxia-skin-model:jar:1.7.4:compile, org.apache.maven.doxia:doxia-module-xhtml:jar:1.7:compile, org.codehaus.plexus:plexus-velocity:jar:1.2:compile, org.apache.velocity:velocity:jar:1.7:compile, org.apache.velocity:velocity-tools:jar:2.0:compile, commons-chain:commons-chain:jar:1.1:compile, dom4j:dom4j:jar:1.1:compile, oro:oro:jar:2.0.8:compile, sslext:sslext:jar:1.2-0:compile, org.apache.struts:struts-core:jar:1.3.8:compile, antlr:antlr:jar:2.7.2:compile, org.apache.struts:struts-taglib:jar:1.3.8:compile, org.apache.struts:struts-tiles:jar:1.3.8:compile, commons-collections:commons-collections:jar:3.2.1:compile, commons-lang:commons-lang:jar:2.4:compile, org.beanshell:bsh:jar:2.0b4:runtime, org.codehaus.groovy:groovy-all:jar:2.4.8:runtime, org.codehaus.plexus:plexus-utils:jar:3.1.0:compile, commons-io:commons-io:jar:2.5:compile, org.codehaus.plexus:plexus-interpolation:jar:1.26:compile, org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile, org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile]
+[DEBUG]   (f) pomIncludes = [*/pom.xml]
+[DEBUG]   (f) postBuildHookScript = postbuild
+[DEBUG]   (f) preBuildHookScript = prebuild
+[DEBUG]   (f) project = MavenProject: org.apache.maven.plugins.invoker:fail-build:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/pom.xml
+[DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/src/it
+[DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/invoker-reports
+[DEBUG]   (f) selectorScript = selector
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5d05ef57
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@213deac2
+[DEBUG]   (f) showErrors = false
+[DEBUG]   (f) showVersion = false
+[DEBUG]   (f) skipInvocation = false
+[DEBUG]   (f) streamLogs = false
+[DEBUG]   (f) suppressSummaries = false
+[DEBUG]   (f) testClassPath = [/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/test-classes, /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/classes]
+[DEBUG]   (f) testPropertiesFile = test.properties
+[DEBUG]   (f) timeoutInSeconds = 0
+[DEBUG]   (f) writeJunitReport = false
+[DEBUG] -- end configuration --
+[DEBUG] Setup projects: []
+[DEBUG] Collecting parent/child projects of project/pom.xml
+[DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/pom.xml
+[DEBUG] Setup projects: []
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5843738175312800306.xml
+[INFO] Building: project/pom.xml
+[DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project
+[DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project
+[INFO] run pre-build script prebuild.bsh
+[DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/prebuild.bsh
+[DEBUG] Using MAVEN_OPTS: null
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5843738175312800306.xml validate
+[DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project
+[INFO]   The build exited with code 1. See /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/build.log for details.
+[INFO]           project/pom.xml .................................. FAILED (1.8 s)
+[INFO] 
+[INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test) @ fail-build ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo &apos;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify&apos; with basic configurator --&gt;
+[DEBUG]   (f) ignoreFailures = false
+[DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/invoker-reports
+[DEBUG]   (f) skipInvocation = false
+[DEBUG]   (f) suppressSummaries = false
+[DEBUG] -- end configuration --
+[INFO] -------------------------------------------------
+[INFO] Build Summary:
+[INFO]   Passed: 0, Failed: 1, Errors: 0, Skipped: 0
+[INFO] -------------------------------------------------
+[ERROR] The following builds failed:
+[ERROR] *  project/pom.xml
+[INFO] -------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.891 s
+[INFO] Finished at: 2019-07-17T16:54:15+10:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test) on project fail-build: 1 build failed. See console output above for details. -&gt; [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test) on project fail-build: 1 build failed. See console output above for details.
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:215)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+Caused by: org.apache.maven.plugin.MojoFailureException: 1 build failed. See console output above for details.
+    at org.apache.maven.plugins.invoker.InvokerSession.handleFailures (InvokerSession.java:260)
+    at org.apache.maven.plugins.invoker.VerifyMojo.execute (VerifyMojo.java:140)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:137)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:210)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:156)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:148)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:117)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:81)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:128)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:305)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:192)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:956)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:288)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:192)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:282)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:225)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:406)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:347)
+[ERROR] 
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/verify.bsh
+Checking for existence of touch file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/touch.txt
+Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/verify.bsh
+]]&gt;</system-out>
+  </testcase>
+</testsuite>

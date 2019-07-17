@@ -1,0 +1,288 @@
+<testsuite tests="1" time="2.295">
+  <testcase classname="maven.invoker.it.staging-pom" name="staging-pom">
+    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
+Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
+Default locale: en_AU, platform encoding: UTF-8
+OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&quot;, family: &quot;mac&quot;
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* &lt; plexus.core
+[DEBUG]   Imported: javax.annotation.security.* &lt; plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* &lt; plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* &lt; plexus.core
+[DEBUG]   Imported: javax.inject.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.cli &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.exception &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.execution &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.model &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.project &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.repository &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.settings &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.usability &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository &lt; plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException &lt; plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer &lt; plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version &lt; plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.event.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* &lt; plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* &lt; plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: plain
+[DEBUG] Reading global settings from /Users/olamy/softs/maven/apache-maven-3.6.1/conf/settings.xml
+[DEBUG] Reading user settings from /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/interpolated-settings.xml
+[DEBUG] Reading global toolchains from /Users/olamy/softs/maven/apache-maven-3.6.1/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /Users/olamy/.m2/toolchains.xml
+[DEBUG] Using local repository at /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project test:pom-packaging:pom:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: test:pom-packaging:pom:1.0-SNAPSHOT
+[DEBUG] Tasks:   [verify]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] -------------------------&lt; test:pom-packaging &gt;-------------------------
+[INFO] Building pom-packaging 1.0-SNAPSHOT
+[INFO] --------------------------------[ pom ]---------------------------------
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
+[DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       test:pom-packaging:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [runtime]
+[DEBUG] Repositories (dependencies): [local.central (file:///Users/olamy/.m2/repository, default, releases+snapshots), apache.snapshots (http://repository.apache.org/content/groups/snapshots-group/, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [local.central (file:///Users/olamy/.m2/repository, default, releases+snapshots), apache.snapshots (http://repository.apache.org/content/groups/snapshots-group/, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:install (integration-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;configuration&gt;
+  &lt;localRepository&gt;${localRepository}&lt;/localRepository&gt;
+  &lt;localRepositoryPath default-value=&quot;${session.localRepository.basedir}&quot;&gt;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo&lt;/localRepositoryPath&gt;
+  &lt;project default-value=&quot;${project}&quot;/&gt;
+  &lt;reactorProjects default-value=&quot;${reactorProjects}&quot;/&gt;
+  &lt;session default-value=&quot;${session}&quot;/&gt;
+  &lt;skipInstallation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInstallation&gt;
+&lt;/configuration&gt;
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=52365, ConflictMarker.markTime=341397, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=57874, ConflictIdSorter.topsortTime=502920, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1066210, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=248256, DefaultDependencyCollector.transformTime=3842792}
+[DEBUG] test:pom-packaging:pom:1.0-SNAPSHOT
+[INFO] 
+[INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:install (integration-test) @ pom-packaging ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1560541, ConflictMarker.markTime=352835, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=688795, ConflictIdSorter.topsortTime=71339, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=19461433, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=499788195, DefaultDependencyCollector.transformTime=22292621}
+[DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
+[DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-api:jar:3.0:compile
+[DEBUG]    org.apache.maven.reporting:maven-reporting-impl:jar:2.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-core:jar:1.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-30:compile
+[DEBUG]             junit:junit:jar:3.8.1:compile
+[DEBUG]          xerces:xercesImpl:jar:2.9.1:compile
+[DEBUG]             xml-apis:xml-apis:jar:1.3.04:compile
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.0.2:compile
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.0.1:compile
+[DEBUG]          xmlunit:xmlunit:jar:1.5:compile
+[DEBUG]       commons-validator:commons-validator:jar:1.4.1:compile
+[DEBUG]          commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[DEBUG]          commons-digester:commons-digester:jar:1.8.1:compile
+[DEBUG]          commons-logging:commons-logging:jar:1.2:compile
+[DEBUG]    org.apache.maven.shared:maven-script-interpreter:jar:1.2:compile
+[DEBUG]       org.apache.ant:ant:jar:1.8.1:compile
+[DEBUG]    org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile
+[DEBUG]       commons-codec:commons-codec:jar:1.6:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.5:compile
+[DEBUG]    org.apache.maven.doxia:doxia-sink-api:jar:1.7:compile
+[DEBUG]       org.apache.maven.doxia:doxia-logging-api:jar:1.7:compile
+[DEBUG]    org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-skin-model:jar:1.7.4:compile
+[DEBUG]       org.apache.maven.doxia:doxia-module-xhtml:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-velocity:jar:1.2:compile
+[DEBUG]       org.apache.velocity:velocity:jar:1.7:compile
+[DEBUG]       org.apache.velocity:velocity-tools:jar:2.0:compile
+[DEBUG]          commons-chain:commons-chain:jar:1.1:compile
+[DEBUG]          dom4j:dom4j:jar:1.1:compile
+[DEBUG]          oro:oro:jar:2.0.8:compile
+[DEBUG]          sslext:sslext:jar:1.2-0:compile
+[DEBUG]          org.apache.struts:struts-core:jar:1.3.8:compile
+[DEBUG]             antlr:antlr:jar:2.7.2:compile
+[DEBUG]          org.apache.struts:struts-taglib:jar:1.3.8:compile
+[DEBUG]          org.apache.struts:struts-tiles:jar:1.3.8:compile
+[DEBUG]       commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]       commons-lang:commons-lang:jar:2.4:compile
+[DEBUG]    org.beanshell:bsh:jar:2.0b4:runtime
+[DEBUG]    org.codehaus.groovy:groovy-all:jar:2.4.8:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.1.0:compile
+[DEBUG]    commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:compile
+[DEBUG]    org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG] Created new class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG]   Imported:  &lt; maven.api
+[DEBUG] Populating class realm plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT
+[DEBUG]   Included: org.apache.maven.shared:maven-invoker:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:3.0
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-impl:jar:2.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-core:jar:1.6
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: xerces:xercesImpl:jar:2.9.1
+[DEBUG]   Included: xml-apis:xml-apis:jar:1.3.04
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.0.2
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.0.1
+[DEBUG]   Included: xmlunit:xmlunit:jar:1.5
+[DEBUG]   Included: commons-validator:commons-validator:jar:1.4.1
+[DEBUG]   Included: commons-beanutils:commons-beanutils:jar:1.8.3
+[DEBUG]   Included: commons-digester:commons-digester:jar:1.8.1
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.2
+[DEBUG]   Included: org.apache.maven.shared:maven-script-interpreter:jar:1.2
+[DEBUG]   Included: org.apache.ant:ant:jar:1.8.1
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-logging-api:jar:1.7
+[DEBUG]   Included: org.apache.maven.doxia:doxia-site-renderer:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-decoration-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-skin-model:jar:1.7.4
+[DEBUG]   Included: org.apache.maven.doxia:doxia-module-xhtml:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-velocity:jar:1.2
+[DEBUG]   Included: org.apache.velocity:velocity:jar:1.7
+[DEBUG]   Included: org.apache.velocity:velocity-tools:jar:2.0
+[DEBUG]   Included: commons-chain:commons-chain:jar:1.1
+[DEBUG]   Included: dom4j:dom4j:jar:1.1
+[DEBUG]   Included: oro:oro:jar:2.0.8
+[DEBUG]   Included: sslext:sslext:jar:1.2-0
+[DEBUG]   Included: org.apache.struts:struts-core:jar:1.3.8
+[DEBUG]   Included: antlr:antlr:jar:2.7.2
+[DEBUG]   Included: org.apache.struts:struts-taglib:jar:1.3.8
+[DEBUG]   Included: org.apache.struts:struts-tiles:jar:1.3.8
+[DEBUG]   Included: commons-collections:commons-collections:jar:3.2.1
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.4
+[DEBUG]   Included: org.beanshell:bsh:jar:2.0b4
+[DEBUG]   Included: org.codehaus.groovy:groovy-all:jar:2.4.8
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.1.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-i18n:jar:1.0-beta-7
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:install from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo &apos;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:install&apos; with basic configurator --&gt;
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/
+   layout: default
+snapshots: [enabled =&gt; true, update =&gt; always]
+ releases: [enabled =&gt; true, update =&gt; always]
+
+[DEBUG]   (f) localRepositoryPath = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo
+[DEBUG]   (f) project = MavenProject: test:pom-packaging:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/pom.xml
+[DEBUG]   (f) reactorProjects = [MavenProject: test:pom-packaging:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/pom.xml]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@127d7908
+[DEBUG]   (f) skipInstallation = false
+[DEBUG] -- end configuration --
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo
+[INFO] Installing /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo/test/pom-packaging/1.0-SNAPSHOT/pom-packaging-1.0-SNAPSHOT.pom
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo/test/pom-packaging/1.0-SNAPSHOT/_remote.repositories
+[DEBUG] Installing test:pom-packaging:1.0-SNAPSHOT/maven-metadata.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo/test/pom-packaging/1.0-SNAPSHOT/maven-metadata-local.xml
+[DEBUG] Installing test:pom-packaging/maven-metadata.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo/test/pom-packaging/maven-metadata-local.xml
+[DEBUG] Not re-installing test:pom-packaging:pom:1.0-SNAPSHOT, /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/pom.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.993 s
+[INFO] Finished at: 2019-07-17T16:49:33+10:00
+[INFO] ------------------------------------------------------------------------
+Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/verify.bsh
+Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo
+Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo/test/pom-packaging/1.0-SNAPSHOT/pom-packaging-1.0-SNAPSHOT.pom
+Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/verify.bsh
+]]&gt;</system-out>
+  </testcase>
+</testsuite>
