@@ -1,4 +1,4 @@
-<testsuite tests="1" time="1.902">
+<testsuite tests="1" time="1.997">
   <testcase classname="maven.invoker.it.staging-pom" name="staging-pom">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -123,11 +123,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;skipInstallation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInstallation&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=60189, ConflictMarker.markTime=294378, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26068, ConflictIdSorter.topsortTime=388025, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1012498, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=330139, DefaultDependencyCollector.transformTime=3148115}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=47363, ConflictMarker.markTime=278075, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23880, ConflictIdSorter.topsortTime=391113, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1271869, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=315469, DefaultDependencyCollector.transformTime=3845070}
 [DEBUG] test:pom-packaging:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:install (integration-test) @ pom-packaging ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1867545, ConflictMarker.markTime=602192, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=714235, ConflictIdSorter.topsortTime=119545, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7761746, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=389642388, DefaultDependencyCollector.transformTime=11183957}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2026958, ConflictMarker.markTime=608352, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=702483, ConflictIdSorter.topsortTime=120067, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9425424, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=397141885, DefaultDependencyCollector.transformTime=13016844}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -263,7 +263,7 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG]   (f) localRepositoryPath = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo
 [DEBUG]   (f) project = MavenProject: test:pom-packaging:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/pom.xml
 [DEBUG]   (f) reactorProjects = [MavenProject: test:pom-packaging:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/pom.xml]
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@127d7908
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6b9c69a9
 [DEBUG]   (f) skipInstallation = false
 [DEBUG] -- end configuration --
 [DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo
@@ -276,8 +276,8 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.870 s
-[INFO] Finished at: 2019-07-17T17:10:38+10:00
+[INFO] Total time:  0.918 s
+[INFO] Finished at: 2019-07-17T17:39:27+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/verify.bsh
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo

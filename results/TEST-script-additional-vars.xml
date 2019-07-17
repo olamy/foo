@@ -1,4 +1,4 @@
-<testsuite tests="1" time="5.984">
+<testsuite tests="1" time="4.449">
   <testcase classname="maven.invoker.it.script-additional-vars" name="script-additional-vars">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -190,11 +190,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=36715, ConflictMarker.markTime=316174, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23331, ConflictIdSorter.topsortTime=385821, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1130641, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=173189, DefaultDependencyCollector.transformTime=3033230}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=46748, ConflictMarker.markTime=435611, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=33221, ConflictIdSorter.topsortTime=421078, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1409302, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=177891, DefaultDependencyCollector.transformTime=3566291}
 [DEBUG] org.apache.maven.plugins.invoker:script-additional-vars:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ script-additional-vars ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=834607, ConflictMarker.markTime=73463, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=130173, ConflictIdSorter.topsortTime=29685, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1542324, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=29819549, DefaultDependencyCollector.transformTime=2718827}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=668791, ConflictMarker.markTime=68009, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=103152, ConflictIdSorter.topsortTime=24895, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1405372, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20874122, DefaultDependencyCollector.transformTime=2334803}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -222,7 +222,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ script-additional-vars ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=847926, ConflictMarker.markTime=724735, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=460478, ConflictIdSorter.topsortTime=121213, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11530182, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=606868489, DefaultDependencyCollector.transformTime=13804863}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1193990, ConflictMarker.markTime=629475, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=593662, ConflictIdSorter.topsortTime=90992, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8429446, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=393039059, DefaultDependencyCollector.transformTime=11002240}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -373,8 +373,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/target/invoker-reports
 [DEBUG]   (f) scriptVariables = {hello=world, version=1.0-SNAPSHOT}
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -390,7 +390,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of beanshell/pom.xml
 [WARNING] Filtering of parent/child POMs is not supported without cloning the projects
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2853206909392704736.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2085578297530066576.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/groovy/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/groovy/interpolated-pom.xml
 [INFO] Building: groovy/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/groovy
@@ -399,10 +399,10 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] run pre-build script prebuild.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/groovy/prebuild.groovy
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/groovy &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2853206909392704736.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/groovy &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2085578297530066576.xml validate
 [INFO] run post-build script postbuild.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/groovy/postbuild.groovy
-[INFO]           groovy/pom.xml ................................... SUCCESS (2.1 s)
+[INFO]           groovy/pom.xml ................................... SUCCESS (1.5 s)
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/beanshell/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/beanshell/interpolated-pom.xml
 [INFO] Building: beanshell/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/beanshell
@@ -411,10 +411,10 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] run pre-build script prebuild.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/beanshell/prebuild.bsh
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/beanshell &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2853206909392704736.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/beanshell &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2085578297530066576.xml validate
 [INFO] run post-build script postbuild.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-additional-vars/src/it/beanshell/postbuild.bsh
-[INFO]           beanshell/pom.xml ................................ SUCCESS (1.2 s)
+[INFO]           beanshell/pom.xml ................................ SUCCESS (1.1 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 2, Failed: 0, Errors: 0, Skipped: 0
@@ -422,8 +422,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.585 s
-[INFO] Finished at: 2019-07-17T17:13:01+10:00
+[INFO] Total time:  3.485 s
+[INFO] Finished at: 2019-07-17T17:41:31+10:00
 [INFO] ------------------------------------------------------------------------
 </system-out>
   </testcase>

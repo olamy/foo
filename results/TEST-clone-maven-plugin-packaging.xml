@@ -1,4 +1,4 @@
-<testsuite tests="1" time="3.112">
+<testsuite tests="1" time="2.863">
   <testcase classname="maven.invoker.it.clone-maven-plugin-packaging" name="clone-maven-plugin-packaging">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -164,11 +164,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=35005, ConflictMarker.markTime=263202, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=32364, ConflictIdSorter.topsortTime=348662, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1041220, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=174571, DefaultDependencyCollector.transformTime=2822645}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=44127, ConflictMarker.markTime=277143, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=25227, ConflictIdSorter.topsortTime=385187, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=975945, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=175762, DefaultDependencyCollector.transformTime=2945075}
 [DEBUG] org.apache.maven.plugins.invoker:clone-maven-plugin-packaging:maven-plugin:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ clone-maven-plugin-packaging ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1888646, ConflictMarker.markTime=363054, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=435482, ConflictIdSorter.topsortTime=63995, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7118720, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=356417355, DefaultDependencyCollector.transformTime=9960336}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1887431, ConflictMarker.markTime=429967, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=492076, ConflictIdSorter.topsortTime=70165, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7614883, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=355192979, DefaultDependencyCollector.transformTime=10583548}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -335,15 +335,15 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of clone-clean/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3762612463100208238.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5462787720615792792.xml
 [INFO] Building: clone-clean/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3762612463100208238.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5462787720615792792.xml validate
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/target/it/clone-clean
-[INFO]           clone-clean/pom.xml .............................. SUCCESS (1.4 s)
+[INFO]           clone-clean/pom.xml .............................. SUCCESS (1.1 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -351,8 +351,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.167 s
-[INFO] Finished at: 2019-07-17T17:09:29+10:00
+[INFO] Total time:  1.840 s
+[INFO] Finished at: 2019-07-17T17:38:22+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/verify.bsh
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/clone-maven-plugin-packaging/verify.bsh

@@ -1,4 +1,4 @@
-<testsuite tests="1" time="6.41">
+<testsuite tests="1" time="4.8">
   <testcase classname="maven.invoker.it.pom-filtering-encoding" name="pom-filtering-encoding">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -192,11 +192,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=143419, ConflictMarker.markTime=531062, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=57549, ConflictIdSorter.topsortTime=832504, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2108897, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=298733, DefaultDependencyCollector.transformTime=5711910}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=75513, ConflictMarker.markTime=378433, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=32700, ConflictIdSorter.topsortTime=422259, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=982496, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=164493, DefaultDependencyCollector.transformTime=3146299}
 [DEBUG] org.apache.maven.plugins.invoker:pom-filtering-encoding:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ pom-filtering-encoding ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=747401, ConflictMarker.markTime=74028, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=119732, ConflictIdSorter.topsortTime=27223, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2124808, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=30937967, DefaultDependencyCollector.transformTime=3189943}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=689133, ConflictMarker.markTime=69512, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=113160, ConflictIdSorter.topsortTime=27159, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1032742, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=18781081, DefaultDependencyCollector.transformTime=1982621}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -224,7 +224,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ pom-filtering-encoding ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1207439, ConflictMarker.markTime=590658, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=571561, ConflictIdSorter.topsortTime=98257, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6718208, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=418970941, DefaultDependencyCollector.transformTime=9253419}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1212274, ConflictMarker.markTime=520758, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=500684, ConflictIdSorter.topsortTime=79601, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6481582, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=454671639, DefaultDependencyCollector.transformTime=8836922}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -395,21 +395,21 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5983674461404348730.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2299718232834975865.xml
 [INFO] Building: latin-1/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5983674461404348730.xml process-resources
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2299718232834975865.xml process-resources
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1
-[INFO]           latin-1/pom.xml .................................. SUCCESS (2.7 s)
+[INFO]           latin-1/pom.xml .................................. SUCCESS (1.4 s)
 [INFO] Building: utf-8/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5983674461404348730.xml process-resources
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2299718232834975865.xml process-resources
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/utf-8
 [INFO]           utf-8/pom.xml .................................... SUCCESS (1.4 s)
 [INFO] -------------------------------------------------
@@ -419,8 +419,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.281 s
-[INFO] Finished at: 2019-07-17T17:11:42+10:00
+[INFO] Total time:  3.804 s
+[INFO] Finished at: 2019-07-17T17:40:28+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/verify.bsh
 Checking for existence of original IT POM: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-encoding/target/it/latin-1/pom.xml

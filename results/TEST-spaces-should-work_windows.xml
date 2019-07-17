@@ -1,5 +1,6 @@
 <testsuite tests="1" time="0.0" skipped="1">
   <testcase classname="maven.invoker.it.spaces-should-work_windows" name="spaces-should-work_windows">
+    <skipped>Skipped due to OS</skipped>
     <system-out/>
   </testcase>
 </testsuite>

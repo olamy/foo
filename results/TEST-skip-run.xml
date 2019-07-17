@@ -1,4 +1,4 @@
-<testsuite tests="1" time="2.288">
+<testsuite tests="1" time="2.34">
   <testcase classname="maven.invoker.it.skip-run" name="skip-run">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;true&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=52169, ConflictMarker.markTime=464712, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=37271, ConflictIdSorter.topsortTime=711710, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1120626, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=327502, DefaultDependencyCollector.transformTime=4030452}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=33338, ConflictMarker.markTime=251690, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=22010, ConflictIdSorter.topsortTime=329015, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1146067, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=261629, DefaultDependencyCollector.transformTime=2977319}
 [DEBUG] org.apache.maven.plugins.invoker:skip-run:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ skip-run ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=668107, ConflictMarker.markTime=48234, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=82159, ConflictIdSorter.topsortTime=18102, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=973555, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=21574346, DefaultDependencyCollector.transformTime=1856403}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=497955, ConflictMarker.markTime=48687, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=83562, ConflictIdSorter.topsortTime=18883, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1340521, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=21173881, DefaultDependencyCollector.transformTime=2052013}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-run/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ skip-run ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1289482, ConflictMarker.markTime=539543, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=681368, ConflictIdSorter.topsortTime=119725, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11048876, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=437848755, DefaultDependencyCollector.transformTime=13733770}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1632271, ConflictMarker.markTime=620512, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=568873, ConflictIdSorter.topsortTime=198521, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8268112, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=373622422, DefaultDependencyCollector.transformTime=11329265}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -369,8 +369,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-run/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-run/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@23eee4b8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@28952dea
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = true
@@ -385,8 +385,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.009 s
-[INFO] Finished at: 2019-07-17T17:09:56+10:00
+[INFO] Total time:  0.792 s
+[INFO] Finished at: 2019-07-17T17:38:46+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-run/verify.bsh
 Checking for non-existence of touch file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-run/target/it/project/touch.txt

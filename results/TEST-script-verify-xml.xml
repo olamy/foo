@@ -1,4 +1,4 @@
-<testsuite tests="1" time="2.014">
+<testsuite tests="1" time="1.993">
   <testcase classname="maven.invoker.it.script-verify-xml" name="script-verify-xml">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -146,7 +146,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] =======================================================================
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ script-verify-xml ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=468661, ConflictMarker.markTime=303937, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=418194, ConflictIdSorter.topsortTime=371792, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2857497, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=19297040, DefaultDependencyCollector.transformTime=6082429}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=502445, ConflictMarker.markTime=304302, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=279213, ConflictIdSorter.topsortTime=224716, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2459837, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=21214266, DefaultDependencyCollector.transformTime=5180196}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -174,7 +174,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-verify-xml/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test) @ script-verify-xml ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1123245, ConflictMarker.markTime=386805, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=436195, ConflictIdSorter.topsortTime=71843, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6943987, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=347319601, DefaultDependencyCollector.transformTime=9017536}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1354842, ConflictMarker.markTime=380171, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=368531, ConflictIdSorter.topsortTime=57959, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7171636, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=339955423, DefaultDependencyCollector.transformTime=9382371}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -310,8 +310,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.775 s
-[INFO] Finished at: 2019-07-17T17:14:49+10:00
+[INFO] Total time:  0.795 s
+[INFO] Finished at: 2019-07-17T17:43:28+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-verify-xml/verify.groovy
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-verify-xml/verify.groovy

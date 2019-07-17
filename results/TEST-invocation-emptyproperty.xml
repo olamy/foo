@@ -1,4 +1,4 @@
-<testsuite tests="1" time="9.27">
+<testsuite tests="1" time="9.691">
   <testcase classname="maven.invoker.it.invocation-emptyproperty" name="invocation-emptyproperty">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -189,11 +189,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=36472, ConflictMarker.markTime=264345, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=22873, ConflictIdSorter.topsortTime=352502, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=924778, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=167592, DefaultDependencyCollector.transformTime=2774470}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=69574, ConflictMarker.markTime=298460, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=27899, ConflictIdSorter.topsortTime=656037, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1286771, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=297737, DefaultDependencyCollector.transformTime=3818952}
 [DEBUG] org.apache.maven.plugins.invoker.its:invocation-emptyporperty:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ invocation-emptyporperty ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=594683, ConflictMarker.markTime=62597, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=322498, ConflictIdSorter.topsortTime=38338, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1471039, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=21533043, DefaultDependencyCollector.transformTime=2572316}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=557198, ConflictMarker.markTime=72625, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=115092, ConflictIdSorter.topsortTime=27548, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1500233, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=24116517, DefaultDependencyCollector.transformTime=2333311}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -221,7 +221,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invocation-emptyporperty ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=936302, ConflictMarker.markTime=396869, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=396396, ConflictIdSorter.topsortTime=56402, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6884287, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=384462092, DefaultDependencyCollector.transformTime=8709137}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3238712, ConflictMarker.markTime=1380090, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=4096216, ConflictIdSorter.topsortTime=104131, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10772094, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=604047540, DefaultDependencyCollector.transformTime=19686057}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -371,8 +371,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {empty.property=null, https.protocols=null, key=value, some.property=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a183d02
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5d05ef57
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -387,16 +387,16 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of minvoker-118/pom.xml
 [WARNING] Filtering of parent/child POMs is not supported without cloning the projects
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5417702135979945968.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings6624716011871423530.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118/interpolated-pom.xml
 [INFO] Building: minvoker-118/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5417702135979945968.xml -D key=value validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings6624716011871423530.xml -D key=value validate
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-emptyproperty/src/it/minvoker-118
-[INFO]           minvoker-118/pom.xml ............................. SUCCESS (7.3 s)
+[INFO]           minvoker-118/pom.xml ............................. SUCCESS (7.2 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -404,8 +404,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  8.197 s
-[INFO] Finished at: 2019-07-17T17:08:59+10:00
+[INFO] Total time:  8.506 s
+[INFO] Finished at: 2019-07-17T17:37:54+10:00
 [INFO] ------------------------------------------------------------------------
 </system-out>
   </testcase>

@@ -1,4 +1,4 @@
-<testsuite tests="1" time="7.548">
+<testsuite tests="1" time="3.928">
   <testcase classname="maven.invoker.it.spaces-should-work_non-windows" name="spaces-should-work_non-windows">
     <system-out>Running pre-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/setup.groovy
 Finished pre-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/setup.groovy
@@ -166,11 +166,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=51748, ConflictMarker.markTime=324196, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=28052, ConflictIdSorter.topsortTime=487148, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1523340, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=340674, DefaultDependencyCollector.transformTime=4100206}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=38054, ConflictMarker.markTime=292861, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24958, ConflictIdSorter.topsortTime=356859, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=984572, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=170205, DefaultDependencyCollector.transformTime=2922580}
 [DEBUG] org.apache.maven.plugins.invoker.its:basedir-with-spaces:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ basedir-with-spaces ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2728663, ConflictMarker.markTime=641030, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=6702210, ConflictIdSorter.topsortTime=125194, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16340175, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=764097806, DefaultDependencyCollector.transformTime=26641519}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1604699, ConflictMarker.markTime=413613, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=498423, ConflictIdSorter.topsortTime=76865, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7418372, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=415795626, DefaultDependencyCollector.transformTime=10117944}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -320,8 +320,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6ea94d6a
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@28486680
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28486680
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@4d7e7435
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -336,7 +336,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of test-Ééê- &amp; -Ééê-test/pom.xml
 [WARNING] Filtering of parent/child POMs is not supported without cloning the projects
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings8929120007015893316.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7704618996903110501.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/src/it/test-Ééê- &amp; -Ééê-test/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/src/it/test-Ééê- &amp; -Ééê-test/interpolated-pom.xml
 [INFO] Building: test-Ééê- &amp; -Ééê-test/pom.xml
 [DEBUG] Using invoker properties:
@@ -346,10 +346,10 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/src/it/test-Ééê- &amp; -Ééê-test
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/src/it/test-Ééê- &amp; -Ééê-test
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd &quot;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/src/it/test-Ééê- &amp; -Ééê-test&quot; &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings8929120007015893316.xml verify
+[DEBUG] Executing: /bin/sh -c cd &quot;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/src/it/test-Ééê- &amp; -Ééê-test&quot; &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7704618996903110501.xml verify
 [INFO] run post-build script verify.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/spaces-should-work_non-windows/src/it/test-Ééê- &amp; -Ééê-test/verify.groovy
-[INFO]           test-Ééê- &amp; -Ééê-test/pom.xml .................... SUCCESS (4.1 s)
+[INFO]           test-Ééê- &amp; -Ééê-test/pom.xml .................... SUCCESS (2.0 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -357,8 +357,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.629 s
-[INFO] Finished at: 2019-07-17T17:11:26+10:00
+[INFO] Total time:  2.805 s
+[INFO] Finished at: 2019-07-17T17:40:15+10:00
 [INFO] ------------------------------------------------------------------------
 </system-out>
   </testcase>

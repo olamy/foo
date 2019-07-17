@@ -1,4 +1,4 @@
-<testsuite tests="1" time="3.363">
+<testsuite tests="1" time="3.234">
   <testcase classname="maven.invoker.it.settings-inherit" name="settings-inherit">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -183,11 +183,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=45170, ConflictMarker.markTime=284334, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26707, ConflictIdSorter.topsortTime=515379, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1406396, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=172412, DefaultDependencyCollector.transformTime=3510053}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43033, ConflictMarker.markTime=266769, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24252, ConflictIdSorter.topsortTime=361221, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1057576, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=166793, DefaultDependencyCollector.transformTime=3193070}
 [DEBUG] org.apache.maven.plugins.invoker:settings-inherit:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ settings-inherit ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=551625, ConflictMarker.markTime=51364, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=129226, ConflictIdSorter.topsortTime=31168, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1391792, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23131908, DefaultDependencyCollector.transformTime=2208108}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=505156, ConflictMarker.markTime=50388, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=74111, ConflictIdSorter.topsortTime=19515, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=943171, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=19346168, DefaultDependencyCollector.transformTime=1642368}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -215,7 +215,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ settings-inherit ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1276338, ConflictMarker.markTime=585357, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=591712, ConflictIdSorter.topsortTime=60857, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7655163, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=389928503, DefaultDependencyCollector.transformTime=10220534}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1220863, ConflictMarker.markTime=660596, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=425249, ConflictIdSorter.topsortTime=59194, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7531931, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=349287674, DefaultDependencyCollector.transformTime=9949598}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -365,8 +365,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a183d02
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5d05ef57
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -381,13 +381,13 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of project/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2767457035868977019.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2235549983678845737.xml
 [INFO] Building: project/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2767457035868977019.xml package
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2235549983678845737.xml package
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-inherit/target/it/project
 [INFO]           project/pom.xml .................................. SUCCESS (1.4 s)
 [INFO] -------------------------------------------------
@@ -397,8 +397,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.333 s
-[INFO] Finished at: 2019-07-17T17:13:47+10:00
+[INFO] Total time:  2.273 s
+[INFO] Finished at: 2019-07-17T17:42:18+10:00
 [INFO] ------------------------------------------------------------------------
 </system-out>
   </testcase>

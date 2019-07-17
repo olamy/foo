@@ -1,4 +1,4 @@
-<testsuite tests="1" time="1.708">
+<testsuite tests="1" time="1.968">
   <testcase classname="maven.invoker.it.skip-install" name="skip-install">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -145,11 +145,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;skipInstallation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInstallation&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=46175, ConflictMarker.markTime=309020, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=41795, ConflictIdSorter.topsortTime=374919, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=896540, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=171864, DefaultDependencyCollector.transformTime=2849684}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=34449, ConflictMarker.markTime=250496, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=21902, ConflictIdSorter.topsortTime=329435, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=922352, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=161649, DefaultDependencyCollector.transformTime=2790776}
 [DEBUG] org.apache.maven.plugins.invoker:skip-install:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ skip-install ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=688707, ConflictMarker.markTime=71045, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=125310, ConflictIdSorter.topsortTime=27189, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1313915, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23552630, DefaultDependencyCollector.transformTime=2289920}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=713312, ConflictMarker.markTime=96205, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=95520, ConflictIdSorter.topsortTime=18379, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1418152, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20370205, DefaultDependencyCollector.transformTime=2411094}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -177,7 +177,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-install/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:install (integration-test) @ skip-install ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1147362, ConflictMarker.markTime=736106, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=360061, ConflictIdSorter.topsortTime=56485, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6267654, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=347262644, DefaultDependencyCollector.transformTime=8607507}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=874394, ConflictMarker.markTime=420229, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=372260, ConflictIdSorter.topsortTime=55836, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6614018, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=449337848, DefaultDependencyCollector.transformTime=8378029}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -313,15 +313,15 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG]   (f) localRepositoryPath = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-install/target/it-repo
 [DEBUG]   (f) project = MavenProject: org.apache.maven.plugins.invoker:skip-install:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-install/pom.xml
 [DEBUG]   (f) reactorProjects = [MavenProject: org.apache.maven.plugins.invoker:skip-install:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-install/pom.xml]
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6e28bb87
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@27e32fe4
 [DEBUG]   (f) skipInstallation = true
 [DEBUG] -- end configuration --
 [INFO] Skipping artifact installation per configuration.
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.757 s
-[INFO] Finished at: 2019-07-17T17:14:42+10:00
+[INFO] Total time:  0.876 s
+[INFO] Finished at: 2019-07-17T17:43:19+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-install/verify.bsh
 Checking for absence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/skip-install/target/it-repo

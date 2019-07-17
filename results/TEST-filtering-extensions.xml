@@ -1,4 +1,4 @@
-<testsuite tests="1" time="3.383">
+<testsuite tests="1" time="3.066">
   <testcase classname="maven.invoker.it.filtering-extensions" name="filtering-extensions">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -189,11 +189,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43976, ConflictMarker.markTime=278968, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26561, ConflictIdSorter.topsortTime=395556, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=977559, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=172986, DefaultDependencyCollector.transformTime=2887533}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43670, ConflictMarker.markTime=276281, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24006, ConflictIdSorter.topsortTime=395629, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=995655, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=174137, DefaultDependencyCollector.transformTime=3082806}
 [DEBUG] org.apache.maven.plugins.invoker:pom-filtering:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ pom-filtering ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=486148, ConflictMarker.markTime=48190, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=72414, ConflictIdSorter.topsortTime=17785, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1127211, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=17048277, DefaultDependencyCollector.transformTime=1799119}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=527643, ConflictMarker.markTime=47007, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=86189, ConflictIdSorter.topsortTime=19996, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1326814, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22031175, DefaultDependencyCollector.transformTime=2068470}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -221,7 +221,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ pom-filtering ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=824494, ConflictMarker.markTime=770085, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=555633, ConflictIdSorter.topsortTime=84744, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6068072, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=341946488, DefaultDependencyCollector.transformTime=8344077}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=804567, ConflictMarker.markTime=381933, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=377652, ConflictIdSorter.topsortTime=60237, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6450666, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=354817047, DefaultDependencyCollector.transformTime=8116769}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -373,8 +373,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5d05ef57
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@213deac2
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -390,15 +390,15 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project/.mvn/extensions.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project/.mvn/extensions.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2841534561340423862.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2579820436892533551.xml
 [INFO] Building: project/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2841534561340423862.xml process-resources
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2579820436892533551.xml process-resources
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/target/it/project
-[INFO]           project/pom.xml .................................. SUCCESS (1.4 s)
+[INFO]           project/pom.xml .................................. SUCCESS (1.3 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -406,8 +406,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.396 s
-[INFO] Finished at: 2019-07-17T17:09:33+10:00
+[INFO] Total time:  2.096 s
+[INFO] Finished at: 2019-07-17T17:38:25+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/filtering-extensions/verify.bsh
 Checking for existence of filtered extensions.xml

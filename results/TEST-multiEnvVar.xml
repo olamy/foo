@@ -1,4 +1,4 @@
-<testsuite tests="1" time="3.437">
+<testsuite tests="1" time="3.371">
   <testcase classname="maven.invoker.it.multiEnvVar" name="multiEnvVar">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -199,11 +199,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=48898, ConflictMarker.markTime=284226, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23969, ConflictIdSorter.topsortTime=522258, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1161573, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=257188, DefaultDependencyCollector.transformTime=3742562}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=67659, ConflictMarker.markTime=393572, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=40137, ConflictIdSorter.topsortTime=555008, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1556169, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=282130, DefaultDependencyCollector.transformTime=4374250}
 [DEBUG] org.apache.maven.plugins.invoker.its:maven-env-test:jar:0.1-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ maven-env-test ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=684804, ConflictMarker.markTime=85621, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=115601, ConflictIdSorter.topsortTime=28042, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1261510, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=21126026, DefaultDependencyCollector.transformTime=2236568}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=526393, ConflictMarker.markTime=48074, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=74538, ConflictIdSorter.topsortTime=17619, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1234769, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=24530797, DefaultDependencyCollector.transformTime=1964239}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -231,7 +231,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:install (default) @ maven-env-test ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1412930, ConflictMarker.markTime=410260, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=448599, ConflictIdSorter.topsortTime=97998, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8718968, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=418381804, DefaultDependencyCollector.transformTime=11132137}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=698307, ConflictMarker.markTime=318359, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=346584, ConflictIdSorter.topsortTime=51516, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6026188, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=341814697, DefaultDependencyCollector.transformTime=7488463}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -367,7 +367,7 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG]   (f) localRepositoryPath = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
 [DEBUG]   (f) project = MavenProject: org.apache.maven.plugins.invoker.its:maven-env-test:0.1-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/pom.xml
 [DEBUG]   (f) reactorProjects = [MavenProject: org.apache.maven.plugins.invoker.its:maven-env-test:0.1-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/pom.xml]
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@49096b06
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@41d7b27f
 [DEBUG]   (f) skipInstallation = false
 [DEBUG] -- end configuration --
 [DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo
@@ -404,8 +404,8 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@49096b06
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@6ecd665
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@41d7b27f
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@736ac09a
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -420,7 +420,7 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG] Collecting parent/child projects of project/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/it/project/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/it/project/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5555561445563531455.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2950107548957424440.xml
 [INFO] Building: project/pom.xml
 [DEBUG] Using invoker properties:
 [DEBUG]   invoker.goals = process-sources
@@ -429,9 +429,9 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/it/project
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/it/project
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5555561445563531455.xml process-sources
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2950107548957424440.xml process-sources
 [DEBUG] post-build script: no script &apos;verify&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/multiEnvVar/target/it/project
-[INFO]           project/pom.xml .................................. SUCCESS (1.6 s)
+[INFO]           project/pom.xml .................................. SUCCESS (1.5 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -439,8 +439,8 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.502 s
-[INFO] Finished at: 2019-07-17T17:10:16+10:00
+[INFO] Total time:  2.419 s
+[INFO] Finished at: 2019-07-17T17:39:05+10:00
 [INFO] ------------------------------------------------------------------------
 </system-out>
   </testcase>

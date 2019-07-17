@@ -1,4 +1,4 @@
-<testsuite tests="1" time="2.998">
+<testsuite tests="1" time="3.339">
   <testcase classname="maven.invoker.it.fail-build-with-verify" name="fail-build-with-verify">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -195,11 +195,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;suppressSummaries default-value=&quot;false&quot;/&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43667, ConflictMarker.markTime=279678, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23867, ConflictIdSorter.topsortTime=363315, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=963034, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=171473, DefaultDependencyCollector.transformTime=2825854}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43216, ConflictMarker.markTime=271688, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26450, ConflictIdSorter.topsortTime=371925, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=962220, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=179572, DefaultDependencyCollector.transformTime=2889788}
 [DEBUG] org.apache.maven.plugins.invoker:fail-build:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fail-build ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=681763, ConflictMarker.markTime=66311, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=101744, ConflictIdSorter.topsortTime=24467, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1023245, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20330484, DefaultDependencyCollector.transformTime=1948713}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=547716, ConflictMarker.markTime=48138, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=74768, ConflictIdSorter.topsortTime=19287, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=940016, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23196947, DefaultDependencyCollector.transformTime=1682694}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -227,7 +227,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test (integration-test) @ fail-build ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=860824, ConflictMarker.markTime=371243, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=379248, ConflictIdSorter.topsortTime=57789, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5884484, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=335646982, DefaultDependencyCollector.transformTime=7592057}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=822753, ConflictMarker.markTime=358505, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=378161, ConflictIdSorter.topsortTime=72089, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6800400, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=361106048, DefaultDependencyCollector.transformTime=8474084}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -377,8 +377,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@23eee4b8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@28952dea
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -393,17 +393,17 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of project/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4881560718947093111.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3986102224681612557.xml
 [INFO] Building: project/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project
 [INFO] run pre-build script prebuild.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/prebuild.bsh
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4881560718947093111.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3986102224681612557.xml validate
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project
 [INFO]   The build exited with code 1. See /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-build-with-verify/target/it/project/build.log for details.
-[INFO]           project/pom.xml .................................. FAILED (1.2 s)
+[INFO]           project/pom.xml .................................. FAILED (1.5 s)
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test) @ fail-build ---
 [DEBUG] Configuring mojo org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify from plugin realm ClassRealm[plugin&gt;org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
@@ -423,8 +423,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.028 s
-[INFO] Finished at: 2019-07-17T17:14:53+10:00
+[INFO] Total time:  2.317 s
+[INFO] Finished at: 2019-07-17T17:43:31+10:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test) on project fail-build: 1 build failed. See console output above for details. -&gt; [Help 1]
 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:verify (integration-test) on project fail-build: 1 build failed. See console output above for details.

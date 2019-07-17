@@ -1,4 +1,4 @@
-<testsuite tests="1" time="3.345">
+<testsuite tests="1" time="3.764">
   <testcase classname="maven.invoker.it.pom-filtering-reactor" name="pom-filtering-reactor">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;true&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=45524, ConflictMarker.markTime=287007, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24906, ConflictIdSorter.topsortTime=370145, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1084465, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=186568, DefaultDependencyCollector.transformTime=3247927}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=90684, ConflictMarker.markTime=449678, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=35271, ConflictIdSorter.topsortTime=612628, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1573939, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=374215, DefaultDependencyCollector.transformTime=5559570}
 [DEBUG] org.apache.maven.plugins.invoker:pom-filtering-reactor:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ pom-filtering-reactor ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=684081, ConflictMarker.markTime=73595, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=113158, ConflictIdSorter.topsortTime=26548, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1224603, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20493764, DefaultDependencyCollector.transformTime=2173246}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1037060, ConflictMarker.markTime=93536, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=154486, ConflictIdSorter.topsortTime=37522, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2110113, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=30719725, DefaultDependencyCollector.transformTime=3524970}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ pom-filtering-reactor ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=917008, ConflictMarker.markTime=436927, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=416318, ConflictIdSorter.topsortTime=62874, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9353236, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=467527030, DefaultDependencyCollector.transformTime=11225421}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3715248, ConflictMarker.markTime=427737, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=552026, ConflictIdSorter.topsortTime=196705, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16790152, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=422281063, DefaultDependencyCollector.transformTime=21767701}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -393,15 +393,15 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent/mod2/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent/mod2/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent/mod3/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent/mod3/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings6936401626140372873.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5917323888750865925.xml
 [INFO] Building: mod2-parent/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings6936401626140372873.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5917323888750865925.xml validate
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent
-[INFO]           mod2-parent/pom.xml .............................. SUCCESS (1.2 s)
+[INFO]           mod2-parent/pom.xml .............................. SUCCESS (1.4 s)
 [INFO] fileLogger:/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent/build.log
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
@@ -410,8 +410,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.237 s
-[INFO] Finished at: 2019-07-17T17:10:41+10:00
+[INFO] Total time:  2.682 s
+[INFO] Finished at: 2019-07-17T17:39:31+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/verify.bsh
 Checking for existence of filtered POM: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-filtering-reactor/target/it/mod2-parent/pom.xml

@@ -1,4 +1,4 @@
-<testsuite tests="1" time="1.84">
+<testsuite tests="1" time="1.729">
   <testcase classname="maven.invoker.it.fail-noprojects_integration-test" name="fail-noprojects_integration-test">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -181,11 +181,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43985, ConflictMarker.markTime=394098, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26143, ConflictIdSorter.topsortTime=411918, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1326538, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=168871, DefaultDependencyCollector.transformTime=3442576}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=45666, ConflictMarker.markTime=284334, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=25978, ConflictIdSorter.topsortTime=416734, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=981092, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=174388, DefaultDependencyCollector.transformTime=2965556}
 [DEBUG] org.apache.maven.plugins.invoker:fail-noprojects_integration-test:jar:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fail-noprojects_integration-test ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=513352, ConflictMarker.markTime=47271, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=73864, ConflictIdSorter.topsortTime=17991, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1020694, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=17770039, DefaultDependencyCollector.transformTime=1732721}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=684307, ConflictMarker.markTime=70317, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=122273, ConflictIdSorter.topsortTime=25498, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1285675, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=19528162, DefaultDependencyCollector.transformTime=2241600}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -213,7 +213,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-noprojects_integration-test/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test (integration-test) @ fail-noprojects_integration-test ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=772680, ConflictMarker.markTime=377171, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=399674, ConflictIdSorter.topsortTime=58350, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5666047, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=351550764, DefaultDependencyCollector.transformTime=7310836}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=716397, ConflictMarker.markTime=499934, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=441670, ConflictIdSorter.topsortTime=59022, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6546283, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=342968040, DefaultDependencyCollector.transformTime=8313925}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -362,8 +362,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-noprojects_integration-test/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-noprojects_integration-test/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -379,8 +379,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.812 s
-[INFO] Finished at: 2019-07-17T17:09:51+10:00
+[INFO] Total time:  0.771 s
+[INFO] Finished at: 2019-07-17T17:38:40+10:00
 [INFO] ------------------------------------------------------------------------
 </system-out>
   </testcase>

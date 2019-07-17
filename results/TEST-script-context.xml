@@ -1,4 +1,4 @@
-<testsuite tests="1" time="4.969">
+<testsuite tests="1" time="5.232">
   <testcase classname="maven.invoker.it.script-context" name="script-context">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=52260, ConflictMarker.markTime=279590, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24920, ConflictIdSorter.topsortTime=377510, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=969969, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=200690, DefaultDependencyCollector.transformTime=3060560}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=69683, ConflictMarker.markTime=554708, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=52738, ConflictIdSorter.topsortTime=641847, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1554779, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=173736, DefaultDependencyCollector.transformTime=4280434}
 [DEBUG] org.apache.maven.plugins.invoker:script-context:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ script-context ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=721053, ConflictMarker.markTime=77422, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=117388, ConflictIdSorter.topsortTime=27392, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1391606, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=21190432, DefaultDependencyCollector.transformTime=2398543}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=840489, ConflictMarker.markTime=87288, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=120093, ConflictIdSorter.topsortTime=24239, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1406849, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23723190, DefaultDependencyCollector.transformTime=2539372}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ script-context ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=851368, ConflictMarker.markTime=553854, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=376528, ConflictIdSorter.topsortTime=80312, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7845837, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=491798056, DefaultDependencyCollector.transformTime=9750484}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1252396, ConflictMarker.markTime=706908, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=637776, ConflictIdSorter.topsortTime=99159, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10331761, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=398171345, DefaultDependencyCollector.transformTime=13089370}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -369,8 +369,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a183d02
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5d05ef57
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5d05ef57
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@213deac2
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -387,27 +387,27 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7896660788598868410.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7006235133811238615.xml
 [INFO] Building: groovy/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy
 [INFO] run pre-build script setup.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy/setup.groovy
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7896660788598868410.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7006235133811238615.xml validate
 [INFO] run post-build script verify.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/groovy/verify.groovy
-[INFO]           groovy/pom.xml ................................... SUCCESS (1.6 s)
+[INFO]           groovy/pom.xml ................................... SUCCESS (1.9 s)
 [INFO] Building: beanshell/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell
 [INFO] run pre-build script setup.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell/setup.bsh
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7896660788598868410.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7006235133811238615.xml validate
 [INFO] run post-build script verify.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell/verify.bsh
-[INFO]           beanshell/pom.xml ................................ SUCCESS (1.2 s)
+[INFO]           beanshell/pom.xml ................................ SUCCESS (1.3 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 2, Failed: 0, Errors: 0, Skipped: 0
@@ -415,8 +415,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.965 s
-[INFO] Finished at: 2019-07-17T17:11:12+10:00
+[INFO] Total time:  4.121 s
+[INFO] Finished at: 2019-07-17T17:40:06+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/verify.bsh
 Checking for existence of touch file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-context/target/its/beanshell/touch.txt

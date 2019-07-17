@@ -1,4 +1,4 @@
-<testsuite tests="1" time="4.891">
+<testsuite tests="1" time="4.281">
   <testcase classname="maven.invoker.it.invocation-offline" name="invocation-offline">
     <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -189,11 +189,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=40985, ConflictMarker.markTime=345427, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=42850, ConflictIdSorter.topsortTime=441468, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=975995, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=172367, DefaultDependencyCollector.transformTime=3037813}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=34538, ConflictMarker.markTime=295229, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=20590, ConflictIdSorter.topsortTime=325463, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=977115, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=155682, DefaultDependencyCollector.transformTime=2879751}
 [DEBUG] org.apache.maven.plugins.invoker:invocation-offline:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ invocation-offline ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=855640, ConflictMarker.markTime=68088, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=117179, ConflictIdSorter.topsortTime=28016, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1485793, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22177520, DefaultDependencyCollector.transformTime=2627050}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=506766, ConflictMarker.markTime=48063, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=81111, ConflictIdSorter.topsortTime=19430, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=922484, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=18303477, DefaultDependencyCollector.transformTime=1627899}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -221,7 +221,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-offline/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invocation-offline ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=753041, ConflictMarker.markTime=368602, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=356096, ConflictIdSorter.topsortTime=54214, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7465613, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=337718388, DefaultDependencyCollector.transformTime=9056441}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=698495, ConflictMarker.markTime=769067, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=492231, ConflictIdSorter.topsortTime=81619, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6062522, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=361528089, DefaultDependencyCollector.transformTime=8143968}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -407,7 +407,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Using MAVEN_OPTS: null
 [DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-offline/src/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-offline/target/it-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-offline/src/it/interpolated-settings.xml clean
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-offline/src/it/project
-[INFO]           project/pom.xml .................................. SUCCESS (3.0 s)
+[INFO]           project/pom.xml .................................. SUCCESS (2.5 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -415,8 +415,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.836 s
-[INFO] Finished at: 2019-07-17T17:09:47+10:00
+[INFO] Total time:  3.337 s
+[INFO] Finished at: 2019-07-17T17:38:37+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-offline/verify.bsh
 Checking for existence of test repo: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-offline/target/it-repo
