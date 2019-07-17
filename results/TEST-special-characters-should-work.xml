@@ -1,6 +1,6 @@
-<testsuite tests="1" time="3.993">
+<testsuite tests="1" time="4.059">
   <testcase classname="maven.invoker.it.special-characters-should-work" name="special-characters-should-work">
-    <system-out>&lt;![CDATA[Running pre-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/setup.groovy
+    <system-out>Running pre-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/setup.groovy
 Finished pre-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/setup.groovy
 Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
@@ -166,11 +166,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=33674, ConflictMarker.markTime=253684, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=21088, ConflictIdSorter.topsortTime=316904, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=948778, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=225100, DefaultDependencyCollector.transformTime=2994646}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=38685, ConflictMarker.markTime=273712, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24299, ConflictIdSorter.topsortTime=363702, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1114725, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=174952, DefaultDependencyCollector.transformTime=2947452}
 [DEBUG] org.apache.maven.plugins.invoker.its:accents-debug:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ accents-debug ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1372825, ConflictMarker.markTime=658588, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=489451, ConflictIdSorter.topsortTime=71704, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7843068, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=368979952, DefaultDependencyCollector.transformTime=10519832}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1530318, ConflictMarker.markTime=448185, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=521682, ConflictIdSorter.topsortTime=74029, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8585034, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=393125608, DefaultDependencyCollector.transformTime=11247038}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -336,7 +336,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of test-Ééê-more-Ééê-test/pom.xml
 [WARNING] Filtering of parent/child POMs is not supported without cloning the projects
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4672806199398519318.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5021576943429371658.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/src/it/test-Ééê-more-Ééê-test/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/src/it/test-Ééê-more-Ééê-test/interpolated-pom.xml
 [INFO] Building: test-Ééê-more-Ééê-test/pom.xml
 [DEBUG] Using invoker properties:
@@ -346,7 +346,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/src/it/test-Ééê-more-Ééê-test
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/src/it/test-Ééê-more-Ééê-test
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/src/it/test-Ééê-more-Ééê-test &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4672806199398519318.xml verify
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/src/it/test-Ééê-more-Ééê-test &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5021576943429371658.xml verify
 [INFO] run post-build script verify.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/special-characters-should-work/src/it/test-Ééê-more-Ééê-test/verify.groovy
 [INFO]           test-Ééê-more-Ééê-test/pom.xml ................... SUCCESS (2.1 s)
@@ -357,9 +357,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.868 s
-[INFO] Finished at: 2019-07-17T16:49:58+10:00
+[INFO] Total time:  2.948 s
+[INFO] Finished at: 2019-07-17T17:11:03+10:00
 [INFO] ------------------------------------------------------------------------
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

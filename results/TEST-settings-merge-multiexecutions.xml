@@ -1,6 +1,6 @@
-<testsuite tests="1" time="8.851">
+<testsuite tests="1" time="5.4">
   <testcase classname="maven.invoker.it.settings-merge-multiexecutions" name="settings-merge-multiexecutions">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -233,11 +233,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=69689, ConflictMarker.markTime=425059, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=40595, ConflictIdSorter.topsortTime=593727, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1408059, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=258724, DefaultDependencyCollector.transformTime=4242081}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=37872, ConflictMarker.markTime=264016, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23819, ConflictIdSorter.topsortTime=361773, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=966374, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=174724, DefaultDependencyCollector.transformTime=2791449}
 [DEBUG] org.apache.maven.plugins.invoker.its:settings-merge-multiexecutions:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ settings-merge-multiexecutions ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1182654, ConflictMarker.markTime=87329, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=190664, ConflictIdSorter.topsortTime=34834, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2240665, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=41239773, DefaultDependencyCollector.transformTime=3857494}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=709343, ConflictMarker.markTime=72793, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=116448, ConflictIdSorter.topsortTime=28154, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1038103, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=21645900, DefaultDependencyCollector.transformTime=2017043}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -265,7 +265,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (first-run) @ settings-merge-multiexecutions ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1426798, ConflictMarker.markTime=571402, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=470039, ConflictIdSorter.topsortTime=87511, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9664668, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=1225892508, DefaultDependencyCollector.transformTime=12284982}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1150769, ConflictMarker.markTime=643368, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=535794, ConflictIdSorter.topsortTime=83894, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8701819, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=349333108, DefaultDependencyCollector.transformTime=11170379}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -414,8 +414,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a183d02
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5d05ef57
 [DEBUG]   (f) settingsFile = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/src/it/settings.xml
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
@@ -439,15 +439,15 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] sourceLevelSet: false
 [DEBUG] sourceLevelSet: false
 [DEBUG] Merged specified settings file with settings of invoking process
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2407703897708467933.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings1822720118277856669.xml
 [INFO] Building: minvoker-133/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2407703897708467933.xml package
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings1822720118277856669.xml package
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
-[INFO]           minvoker-133/pom.xml ............................. SUCCESS (2.7 s)
+[INFO]           minvoker-133/pom.xml ............................. SUCCESS (1.8 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -478,8 +478,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a183d02
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5d05ef57
 [DEBUG]   (f) settingsFile = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/src/it/settings.xml
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
@@ -503,15 +503,15 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] sourceLevelSet: false
 [DEBUG] sourceLevelSet: false
 [DEBUG] Merged specified settings file with settings of invoking process
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7551393601364151833.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings9099463984636408366.xml
 [INFO] Building: minvoker-133/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7551393601364151833.xml package
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings9099463984636408366.xml package
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-merge-multiexecutions/target/it/minvoker-133
-[INFO]           minvoker-133/pom.xml ............................. SUCCESS (2.5 s)
+[INFO]           minvoker-133/pom.xml ............................. SUCCESS (1.7 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -519,9 +519,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  7.445 s
-[INFO] Finished at: 2019-07-17T16:53:51+10:00
+[INFO] Total time:  4.423 s
+[INFO] Finished at: 2019-07-17T17:14:35+10:00
 [INFO] ------------------------------------------------------------------------
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

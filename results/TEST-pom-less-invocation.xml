@@ -1,6 +1,6 @@
-<testsuite tests="1" time="2.249">
+<testsuite tests="1" time="2.338">
   <testcase classname="maven.invoker.it.pom-less-invocation" name="pom-less-invocation">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=47399, ConflictMarker.markTime=276783, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=25213, ConflictIdSorter.topsortTime=391215, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1502277, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=281833, DefaultDependencyCollector.transformTime=3658314}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=45780, ConflictMarker.markTime=314463, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26519, ConflictIdSorter.topsortTime=385071, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=991551, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=178481, DefaultDependencyCollector.transformTime=3010822}
 [DEBUG] org.apache.maven.plugins.invoker:pom-less-invocation:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ pom-less-invocation ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=563148, ConflictMarker.markTime=59049, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=152383, ConflictIdSorter.topsortTime=32821, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4529932, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=25215996, DefaultDependencyCollector.transformTime=5430604}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=672225, ConflictMarker.markTime=68280, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=107677, ConflictIdSorter.topsortTime=26355, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=951479, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20543261, DefaultDependencyCollector.transformTime=1883704}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ pom-less-invocation ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1243337, ConflictMarker.markTime=687880, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=639980, ConflictIdSorter.topsortTime=86811, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8434494, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=417751117, DefaultDependencyCollector.transformTime=11137315}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1224945, ConflictMarker.markTime=530535, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=557795, ConflictIdSorter.topsortTime=93205, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9318351, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=470774380, DefaultDependencyCollector.transformTime=11803099}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -369,8 +369,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -383,13 +383,13 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] -- end configuration --
 [DEBUG] Setup projects: []
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings862155974447934217.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7925822275732367782.xml
 [INFO] Building: no-pom
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/it/no-pom
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/it/no-pom
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/it/no-pom
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/it/no-pom &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings862155974447934217.xml --version
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/it/no-pom &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7925822275732367782.xml --version
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/target/it/no-pom
 [INFO]           no-pom ........................................... SUCCESS (0.3 s)
 [INFO] -------------------------------------------------
@@ -399,11 +399,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.275 s
-[INFO] Finished at: 2019-07-17T16:48:41+10:00
+[INFO] Total time:  1.362 s
+[INFO] Finished at: 2019-07-17T17:09:42+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/verify.bsh
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/pom-less-invocation/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

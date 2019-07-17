@@ -1,6 +1,6 @@
-<testsuite tests="1" time="8.705">
+<testsuite tests="1" time="7.685">
   <testcase classname="maven.invoker.it.invocation-group-properties" name="invocation-group-properties">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=49260, ConflictMarker.markTime=283983, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26894, ConflictIdSorter.topsortTime=386935, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1019353, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=238530, DefaultDependencyCollector.transformTime=3215871}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=41235, ConflictMarker.markTime=275948, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24784, ConflictIdSorter.topsortTime=363956, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1005952, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=174949, DefaultDependencyCollector.transformTime=2856966}
 [DEBUG] org.apache.maven.plugins.invoker:invocation-project:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ invocation-project ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=522549, ConflictMarker.markTime=48491, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=79963, ConflictIdSorter.topsortTime=34997, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1507851, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23658307, DefaultDependencyCollector.transformTime=2261814}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=531555, ConflictMarker.markTime=49589, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=142587, ConflictIdSorter.topsortTime=27796, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1409512, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=18834627, DefaultDependencyCollector.transformTime=2227634}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invocation-project ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2847939, ConflictMarker.markTime=1824124, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=962375, ConflictIdSorter.topsortTime=428785, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7799073, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=514565754, DefaultDependencyCollector.transformTime=13924545}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1386342, ConflictMarker.markTime=699338, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=627483, ConflictIdSorter.topsortTime=196716, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=9939355, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=379127180, DefaultDependencyCollector.transformTime=12916072}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -391,7 +391,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-1/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-1/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-2/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-2/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4934631297815201476.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3367172097620968090.xml
 [INFO] Building: group-2/sub-1/pom.xml
 [DEBUG] Using invoker properties:
 [DEBUG]   invoker.buildResult = failure
@@ -400,9 +400,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-1
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-1
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-1 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4934631297815201476.xml initialize
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-1 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3367172097620968090.xml initialize
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-1
-[INFO]           group-2/sub-1/pom.xml ............................ SUCCESS (1.9 s)
+[INFO]           group-2/sub-1/pom.xml ............................ SUCCESS (2.0 s)
 [INFO] Building: group-2/sub-2/pom.xml
 [DEBUG] Using invoker properties:
 [DEBUG]   invoker.goals = initialize
@@ -410,9 +410,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-2
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-2
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-2 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4934631297815201476.xml initialize
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-2 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3367172097620968090.xml initialize
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-2/sub-2
-[INFO]           group-2/sub-2/pom.xml ............................ SUCCESS (1.4 s)
+[INFO]           group-2/sub-2/pom.xml ............................ SUCCESS (1.0 s)
 [INFO] Building: group-1/sub-1/pom.xml
 [DEBUG] Using invoker properties:
 [DEBUG]   invoker.buildResult = success
@@ -421,9 +421,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-1
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-1
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-1 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4934631297815201476.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-1 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3367172097620968090.xml validate
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-1
-[INFO]           group-1/sub-1/pom.xml ............................ SUCCESS (1.2 s)
+[INFO]           group-1/sub-1/pom.xml ............................ SUCCESS (1.0 s)
 [INFO] Building: group-1/sub-2/pom.xml
 [DEBUG] Using invoker properties:
 [DEBUG]   invoker.buildResult = failure
@@ -432,9 +432,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-2
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-2
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-2 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4934631297815201476.xml initialize
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-2 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3367172097620968090.xml initialize
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/target/it/group-1/sub-2
-[INFO]           group-1/sub-2/pom.xml ............................ SUCCESS (2.0 s)
+[INFO]           group-1/sub-2/pom.xml ............................ SUCCESS (1.7 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 4, Failed: 0, Errors: 0, Skipped: 0
@@ -442,11 +442,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  7.564 s
-[INFO] Finished at: 2019-07-17T16:51:58+10:00
+[INFO] Total time:  6.692 s
+[INFO] Finished at: 2019-07-17T17:13:15+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/verify.groovy
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-group-properties/verify.groovy
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

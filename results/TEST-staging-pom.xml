@@ -1,6 +1,6 @@
-<testsuite tests="1" time="2.295">
+<testsuite tests="1" time="1.902">
   <testcase classname="maven.invoker.it.staging-pom" name="staging-pom">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -123,11 +123,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;skipInstallation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInstallation&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=52365, ConflictMarker.markTime=341397, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=57874, ConflictIdSorter.topsortTime=502920, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1066210, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=248256, DefaultDependencyCollector.transformTime=3842792}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=60189, ConflictMarker.markTime=294378, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26068, ConflictIdSorter.topsortTime=388025, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1012498, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=330139, DefaultDependencyCollector.transformTime=3148115}
 [DEBUG] test:pom-packaging:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:install (integration-test) @ pom-packaging ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1560541, ConflictMarker.markTime=352835, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=688795, ConflictIdSorter.topsortTime=71339, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=19461433, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=499788195, DefaultDependencyCollector.transformTime=22292621}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1867545, ConflictMarker.markTime=602192, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=714235, ConflictIdSorter.topsortTime=119545, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7761746, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=389642388, DefaultDependencyCollector.transformTime=11183957}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -276,13 +276,13 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.993 s
-[INFO] Finished at: 2019-07-17T16:49:33+10:00
+[INFO] Total time:  0.870 s
+[INFO] Finished at: 2019-07-17T17:10:38+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/verify.bsh
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/target/it-repo/test/pom-packaging/1.0-SNAPSHOT/pom-packaging-1.0-SNAPSHOT.pom
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/staging-pom/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

@@ -1,6 +1,6 @@
-<testsuite tests="1" time="3.968">
+<testsuite tests="1" time="3.122">
   <testcase classname="maven.invoker.it.settings-auto-exclude" name="settings-auto-exclude">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=42599, ConflictMarker.markTime=279111, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26943, ConflictIdSorter.topsortTime=519273, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3594606, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=176079, DefaultDependencyCollector.transformTime=5647234}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=31254, ConflictMarker.markTime=262291, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=21135, ConflictIdSorter.topsortTime=326474, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1547971, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=162760, DefaultDependencyCollector.transformTime=3352494}
 [DEBUG] org.apache.maven.plugins.invoker:settings-auto-exclude:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ settings-auto-exclude ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=745963, ConflictMarker.markTime=71673, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=115501, ConflictIdSorter.topsortTime=28145, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1494824, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=35389278, DefaultDependencyCollector.transformTime=2524759}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=813508, ConflictMarker.markTime=75036, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=125691, ConflictIdSorter.topsortTime=29666, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1289416, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22472902, DefaultDependencyCollector.transformTime=2388806}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-auto-exclude/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ settings-auto-exclude ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1062937, ConflictMarker.markTime=429403, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=476799, ConflictIdSorter.topsortTime=95563, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8204051, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=508139976, DefaultDependencyCollector.transformTime=10325228}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=813064, ConflictMarker.markTime=703031, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=443566, ConflictIdSorter.topsortTime=62085, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=10919184, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=366160916, DefaultDependencyCollector.transformTime=12992796}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -396,7 +396,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Using MAVEN_OPTS: null
 [DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-auto-exclude/src/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-auto-exclude/src/it/interpolated-settings.xml validate
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/settings-auto-exclude/src/it/project
-[INFO]           project/pom.xml .................................. SUCCESS (1.3 s)
+[INFO]           project/pom.xml .................................. SUCCESS (1.2 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -404,9 +404,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.476 s
-[INFO] Finished at: 2019-07-17T16:52:39+10:00
+[INFO] Total time:  2.116 s
+[INFO] Finished at: 2019-07-17T17:13:43+10:00
 [INFO] ------------------------------------------------------------------------
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

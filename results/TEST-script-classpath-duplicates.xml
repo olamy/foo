@@ -1,6 +1,6 @@
-<testsuite tests="1" time="5.489">
+<testsuite tests="1" time="4.735">
   <testcase classname="maven.invoker.it.script-classpath-duplicates" name="script-classpath-duplicates">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -186,13 +186,13 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=464733, ConflictMarker.markTime=292106, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=253117, ConflictIdSorter.topsortTime=217285, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2561196, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=11136989, DefaultDependencyCollector.transformTime=5354253}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=437773, ConflictMarker.markTime=289605, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=241643, ConflictIdSorter.topsortTime=212145, ConflictIdSorter.conflictIdCount=2, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1989177, ConflictResolver.conflictItemCount=2, DefaultDependencyCollector.collectTime=9967456, DefaultDependencyCollector.transformTime=4809924}
 [DEBUG] org.apache.maven.plugins.invoker:script-classpath-duplicates:pom:1.0-SNAPSHOT
 [DEBUG]    org.beanshell:bsh:jar:2.0b4:test
 [DEBUG]    org.codehaus.groovy:groovy-all:jar:2.4.8:test
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ script-classpath-duplicates ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=19762, ConflictMarker.markTime=45002, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=23075, ConflictIdSorter.topsortTime=8152, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=81162, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=19391903, DefaultDependencyCollector.transformTime=229493}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=28924, ConflictMarker.markTime=64450, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=35058, ConflictIdSorter.topsortTime=10935, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=114063, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=15665022, DefaultDependencyCollector.transformTime=325355}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -220,7 +220,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ script-classpath-duplicates ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1321220, ConflictMarker.markTime=386899, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=379215, ConflictIdSorter.topsortTime=57319, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7357489, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=368128840, DefaultDependencyCollector.transformTime=9544028}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=994299, ConflictMarker.markTime=657959, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=633711, ConflictIdSorter.topsortTime=97119, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6663496, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=358159945, DefaultDependencyCollector.transformTime=9088809}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -371,8 +371,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@70807224
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@7e97551f
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@143d9a93
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@40226788
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -389,24 +389,24 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4773054440417148190.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings1748463082435713043.xml
 [INFO] Building: groovy/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy
 [INFO] run pre-build script prebuild.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy/prebuild.groovy
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4773054440417148190.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings1748463082435713043.xml validate
 [INFO] run post-build script postbuild.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy/postbuild.groovy
-[INFO]           groovy/pom.xml ................................... SUCCESS (2.1 s)
+[INFO]           groovy/pom.xml ................................... SUCCESS (1.6 s)
 [INFO] Building: beanshell/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell
 [INFO] run pre-build script prebuild.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell/prebuild.bsh
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4773054440417148190.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings1748463082435713043.xml validate
 [INFO] run post-build script postbuild.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell/postbuild.bsh
 [INFO]           beanshell/pom.xml ................................ SUCCESS (1.1 s)
@@ -417,8 +417,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.191 s
-[INFO] Finished at: 2019-07-17T16:49:46+10:00
+[INFO] Total time:  3.535 s
+[INFO] Finished at: 2019-07-17T17:10:49+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/verify.bsh
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/beanshell/target/created-by-prebuild.bsh
@@ -426,6 +426,6 @@ Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy/target/created-by-prebuild.groovy
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/target/it/groovy/target/created-by-postbuild.groovy
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-classpath-duplicates/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

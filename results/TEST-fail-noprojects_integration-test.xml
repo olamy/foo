@@ -1,6 +1,6 @@
-<testsuite tests="1" time="2.037">
+<testsuite tests="1" time="1.84">
   <testcase classname="maven.invoker.it.fail-noprojects_integration-test" name="fail-noprojects_integration-test">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -181,11 +181,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=50133, ConflictMarker.markTime=333602, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=48903, ConflictIdSorter.topsortTime=436103, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=967992, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=174989, DefaultDependencyCollector.transformTime=3675264}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43985, ConflictMarker.markTime=394098, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26143, ConflictIdSorter.topsortTime=411918, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1326538, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=168871, DefaultDependencyCollector.transformTime=3442576}
 [DEBUG] org.apache.maven.plugins.invoker:fail-noprojects_integration-test:jar:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fail-noprojects_integration-test ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=673579, ConflictMarker.markTime=72725, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=117678, ConflictIdSorter.topsortTime=28551, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1453637, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20552686, DefaultDependencyCollector.transformTime=2399012}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=513352, ConflictMarker.markTime=47271, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=73864, ConflictIdSorter.topsortTime=17991, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1020694, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=17770039, DefaultDependencyCollector.transformTime=1732721}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -213,7 +213,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-noprojects_integration-test/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:integration-test (integration-test) @ fail-noprojects_integration-test ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1427865, ConflictMarker.markTime=849135, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=391722, ConflictIdSorter.topsortTime=59095, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8971098, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=384745402, DefaultDependencyCollector.transformTime=11748625}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=772680, ConflictMarker.markTime=377171, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=399674, ConflictIdSorter.topsortTime=58350, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5666047, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=351550764, DefaultDependencyCollector.transformTime=7310836}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -362,8 +362,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-noprojects_integration-test/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-noprojects_integration-test/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@143d9a93
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@40226788
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -379,9 +379,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  0.910 s
-[INFO] Finished at: 2019-07-17T16:48:50+10:00
+[INFO] Total time:  0.812 s
+[INFO] Finished at: 2019-07-17T17:09:51+10:00
 [INFO] ------------------------------------------------------------------------
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

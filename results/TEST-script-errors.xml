@@ -1,6 +1,6 @@
-<testsuite tests="1" time="2.339">
+<testsuite tests="1" time="2.313">
   <testcase classname="maven.invoker.it.script-errors" name="script-errors">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;true&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=39249, ConflictMarker.markTime=267899, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26570, ConflictIdSorter.topsortTime=518032, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1076101, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=166617, DefaultDependencyCollector.transformTime=3074669}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=41530, ConflictMarker.markTime=272375, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23146, ConflictIdSorter.topsortTime=377511, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1036178, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=183875, DefaultDependencyCollector.transformTime=2987221}
 [DEBUG] org.apache.maven.plugins.invoker:script-errors:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ script-errors ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=684696, ConflictMarker.markTime=70201, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=104891, ConflictIdSorter.topsortTime=26247, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1049788, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=18830040, DefaultDependencyCollector.transformTime=2007992}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=542281, ConflictMarker.markTime=56552, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=87659, ConflictIdSorter.topsortTime=19348, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=951615, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=19214252, DefaultDependencyCollector.transformTime=1704946}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ script-errors ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1285092, ConflictMarker.markTime=622455, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=408244, ConflictIdSorter.topsortTime=58165, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5725483, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=380631143, DefaultDependencyCollector.transformTime=8140777}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1104107, ConflictMarker.markTime=537700, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=554621, ConflictIdSorter.topsortTime=95292, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6243274, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=329282506, DefaultDependencyCollector.transformTime=8578314}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -369,8 +369,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -387,7 +387,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/groovy/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/groovy/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/beanshell/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/beanshell/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5970640486620321305.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7177917376848566366.xml
 [INFO] Building: groovy/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/groovy
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/groovy
@@ -411,7 +411,7 @@ java.lang.AssertionError: This should not cause the main build to fail
     at org.apache.maven.shared.scriptinterpreter.GroovyScriptInterpreter.evaluateScript (GroovyScriptInterpreter.java:83)
     at org.apache.maven.shared.scriptinterpreter.ScriptRunner.executeRun (ScriptRunner.java:256)
     at org.apache.maven.shared.scriptinterpreter.ScriptRunner.run (ScriptRunner.java:180)
-    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1997)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1998)
     at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1665)
     at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuilds (AbstractInvokerMojo.java:1373)
     at org.apache.maven.plugins.invoker.AbstractInvokerMojo.execute (AbstractInvokerMojo.java:784)
@@ -464,7 +464,7 @@ java.lang.OutOfMemoryError: Requested array size exceeds VM limit
     at org.apache.maven.shared.scriptinterpreter.BeanShellScriptInterpreter.evaluateScript (BeanShellScriptInterpreter.java:116)
     at org.apache.maven.shared.scriptinterpreter.ScriptRunner.executeRun (ScriptRunner.java:256)
     at org.apache.maven.shared.scriptinterpreter.ScriptRunner.run (ScriptRunner.java:180)
-    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1997)
+    at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1998)
     at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuild (AbstractInvokerMojo.java:1665)
     at org.apache.maven.plugins.invoker.AbstractInvokerMojo.runBuilds (AbstractInvokerMojo.java:1373)
     at org.apache.maven.plugins.invoker.AbstractInvokerMojo.execute (AbstractInvokerMojo.java:784)
@@ -492,13 +492,13 @@ java.lang.OutOfMemoryError: Requested array size exceeds VM limit
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.324 s
-[INFO] Finished at: 2019-07-17T16:53:24+10:00
+[INFO] Total time:  1.292 s
+[INFO] Finished at: 2019-07-17T17:14:17+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/verify.bsh
 Checking for existence of touch file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/beanshell/touch.txt
 Checking for existence of touch file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/target/its/groovy/touch.txt
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/script-errors/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

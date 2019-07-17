@@ -1,6 +1,6 @@
-<testsuite tests="1" time="8.407">
+<testsuite tests="1" time="7.064">
   <testcase classname="maven.invoker.it.invocation-spaces" name="invocation-spaces">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -193,11 +193,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=41601, ConflictMarker.markTime=283515, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=23457, ConflictIdSorter.topsortTime=600713, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1072374, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=183298, DefaultDependencyCollector.transformTime=3282048}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=42253, ConflictMarker.markTime=354454, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=26278, ConflictIdSorter.topsortTime=397584, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1324858, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=167461, DefaultDependencyCollector.transformTime=3415650}
 [DEBUG] org.apache.maven.plugins.invoker:invocation-spaces:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ invocation-spaces ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=760931, ConflictMarker.markTime=51014, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=89233, ConflictIdSorter.topsortTime=60989, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=963369, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=28139546, DefaultDependencyCollector.transformTime=1979896}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=883823, ConflictMarker.markTime=119654, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=144762, ConflictIdSorter.topsortTime=39052, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1608727, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22763786, DefaultDependencyCollector.transformTime=2852906}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -225,7 +225,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invocation-spaces ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1349592, ConflictMarker.markTime=686193, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=592424, ConflictIdSorter.topsortTime=93328, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13158244, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=516736787, DefaultDependencyCollector.transformTime=15938636}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=810788, ConflictMarker.markTime=367593, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=358547, ConflictIdSorter.topsortTime=59093, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5399134, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=361224761, DefaultDependencyCollector.transformTime=7048750}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -405,7 +405,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Using MAVEN_OPTS: null
 [DEBUG] Executing: /bin/sh -c cd &quot;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/target/it projects/project&quot; &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D &apos;maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/target/it repo&apos; -f &apos;spacy pom.xml&apos; -s &apos;/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/target/it projects/interpolated-settings.xml&apos; -D &apos;propertyFromCommandLine=value with spaces from cli&apos; install
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/target/it projects/project
-[INFO]           project/spacy pom.xml ............................ SUCCESS (6.0 s)
+[INFO]           project/spacy pom.xml ............................ SUCCESS (5.2 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -413,8 +413,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  7.139 s
-[INFO] Finished at: 2019-07-17T16:51:36+10:00
+[INFO] Total time:  6.069 s
+[INFO] Finished at: 2019-07-17T17:12:55+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/verify.bsh
 Checking for existence of test file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/target/it projects/project/target/classes/test.txt
@@ -422,6 +422,6 @@ Checking for occurrence of: value with spaces from settings
 Checking for occurrence of: value with spaces from cli
 Checking for existence of installed file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/target/it repo/test/spacy-pom/0.1-SNAPSHOT/spacy-pom-0.1-SNAPSHOT.jar
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-spaces/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

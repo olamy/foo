@@ -1,6 +1,6 @@
-<testsuite tests="1" time="3.972">
+<testsuite tests="1" time="4.042">
   <testcase classname="maven.invoker.it.local-repo-path" name="local-repo-path">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -100,6 +100,30 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Lifecycle default -&gt; [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
 [DEBUG] Lifecycle clean -&gt; [pre-clean, clean, post-clean]
 [DEBUG] Lifecycle site -&gt; [pre-site, site, post-site, site-deploy]
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.pom (3.4 kB at 107 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/plugins/maven-clean-plugin/2.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/plugins/maven-plugins/10/maven-plugins-10.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/plugins/maven-plugins/10/maven-plugins-10.pom (7.5 kB at 1.5 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/plugins/maven-plugins/10/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/plugins/maven-plugins/10/maven-plugins-10.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-parent/7/maven-parent-7.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-parent/7/maven-parent-7.pom (21 kB at 2.4 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-parent/7/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-parent/7/maven-parent-7.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.jar (12 kB at 3.0 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/plugins/maven-clean-plugin/2.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/plugins/maven-clean-plugin/2.2/maven-clean-plugin-2.2.jar.lastUpdated
 [DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
 [DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
 [DEBUG] Skipped remote request for org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT/maven-metadata.xml locally installed metadata up-to-date.
@@ -188,11 +212,71 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=59434, ConflictMarker.markTime=572770, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=61997, ConflictIdSorter.topsortTime=508140, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1879307, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=461617, DefaultDependencyCollector.transformTime=4965918}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43190, ConflictMarker.markTime=395002, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=75003, ConflictIdSorter.topsortTime=392880, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1036914, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=183010, DefaultDependencyCollector.transformTime=3177974}
 [DEBUG] org.apache.maven.plugins.invoker:local-repo-path:jar:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.2:clean (default-clean) @ local-repo-path ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1161448, ConflictMarker.markTime=167238, ConflictMarker.nodeCount=45, ConflictIdSorter.graphTime=353355, ConflictIdSorter.topsortTime=61881, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4108804, ConflictResolver.conflictItemCount=33, DefaultDependencyCollector.collectTime=131985000, DefaultDependencyCollector.transformTime=5990472}
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.pom (3.9 kB at 963 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/file-management/1.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/file-management/1.2/file-management-1.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom (2.7 kB at 668 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-components/8/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-components/8/maven-shared-components-8.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom (4.1 kB at 1.0 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-io/1.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom (765 B at 255 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-artifact/2.0.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven/2.0.2/maven-2.0.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven/2.0.2/maven-2.0.2.pom (13 kB at 4.2 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven/2.0.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven/2.0.2/maven-2.0.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom (1.4 kB at 349 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-artifact-manager/2.0.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom (1.3 kB at 436 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-repository-metadata/2.0.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom (588 B at 196 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom (6.4 kB at 1.6 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon/1.0-alpha-6/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon/1.0-alpha-6/wagon-1.0-alpha-6.pom.lastUpdated
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom (2.3 kB at 755 kB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.4.6/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/codehaus/plexus/plexus-utils/1.4.6/plexus-utils-1.4.6.pom.lastUpdated
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=692404, ConflictMarker.markTime=78586, ConflictMarker.nodeCount=45, ConflictIdSorter.graphTime=151607, ConflictIdSorter.topsortTime=25680, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1807651, ConflictResolver.conflictItemCount=33, DefaultDependencyCollector.collectTime=133911944, DefaultDependencyCollector.transformTime=2811175}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.2:
 [DEBUG]    org.apache.maven:maven-project:jar:2.0:compile
 [DEBUG]       org.apache.maven:maven-profile:jar:2.0:compile
@@ -208,6 +292,20 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]       org.apache.maven.shared:maven-shared-io:jar:1.1:compile
 [DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:1.0-alpha-6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:1.1:compile
+[DEBUG] Using transporter WagonTransporter with priority -1.0 for file:///Users/olamy/.m2/repository
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for file:///Users/olamy/.m2/repository
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar
+[INFO] Downloading from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar (37 kB at 7.5 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar (39 kB at 6.6 MB/s)
+[INFO] Downloaded from local.central: file:///Users/olamy/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar (43 kB at 8.5 MB/s)
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/file-management/1.2/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/file-management/1.2/file-management-1.2.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-io/1.1/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar.lastUpdated
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/_remote.repositories
+[DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar.lastUpdated
 [DEBUG] Created new class realm plugin&gt;org.apache.maven.plugins:maven-clean-plugin:2.2
 [DEBUG] Importing foreign packages into class realm plugin&gt;org.apache.maven.plugins:maven-clean-plugin:2.2
 [DEBUG]   Imported:  &lt; maven.api
@@ -231,7 +329,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] -- end configuration --
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ local-repo-path ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1266895, ConflictMarker.markTime=595906, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=677388, ConflictIdSorter.topsortTime=545461, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8757909, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=380418185, DefaultDependencyCollector.transformTime=11967327}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1350243, ConflictMarker.markTime=470445, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=601258, ConflictIdSorter.topsortTime=61001, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7955466, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=317309651, DefaultDependencyCollector.transformTime=10479989}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -382,8 +480,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3d7fa3ae
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@3605c4d3
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6f099cef
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@4bff2185
 [DEBUG]   (f) settingsFile = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/src/it/settings.xml
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
@@ -410,7 +508,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Using MAVEN_OPTS: null
 [DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/src/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/target/it-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/src/it/interpolated-settings.xml org.apache.maven.plugins:maven-clean-plugin:2.2:clean
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/src/it/project
-[INFO]           project/pom.xml .................................. SUCCESS (1.8 s)
+[INFO]           project/pom.xml .................................. SUCCESS (1.9 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -418,12 +516,12 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.909 s
-[INFO] Finished at: 2019-07-17T16:49:00+10:00
+[INFO] Total time:  2.936 s
+[INFO] Finished at: 2019-07-17T17:10:01+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/verify.bsh
 Checking for existence of test repo: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/target/it-repo
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-path/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

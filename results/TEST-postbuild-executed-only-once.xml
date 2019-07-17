@@ -1,6 +1,6 @@
-<testsuite tests="1" time="10.646">
+<testsuite tests="1" time="9.898">
   <testcase classname="maven.invoker.it.postbuild-executed-only-once" name="postbuild-executed-only-once">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -191,11 +191,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=50608, ConflictMarker.markTime=359847, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=53078, ConflictIdSorter.topsortTime=602369, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1407919, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=211083, DefaultDependencyCollector.transformTime=3979055}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=44719, ConflictMarker.markTime=273925, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24621, ConflictIdSorter.topsortTime=379385, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1006302, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=168893, DefaultDependencyCollector.transformTime=2897496}
 [DEBUG] org.apache.maven.plugins.invoker:fail-postbuild:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fail-postbuild ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=792035, ConflictMarker.markTime=72542, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=116056, ConflictIdSorter.topsortTime=30101, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1573225, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=25054538, DefaultDependencyCollector.transformTime=2653944}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=757627, ConflictMarker.markTime=71451, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=110149, ConflictIdSorter.topsortTime=27584, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1475862, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23008084, DefaultDependencyCollector.transformTime=2507432}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -223,7 +223,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ fail-postbuild ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1425502, ConflictMarker.markTime=677904, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=577453, ConflictIdSorter.topsortTime=89709, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6143293, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=437531586, DefaultDependencyCollector.transformTime=8958176}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1465171, ConflictMarker.markTime=412964, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=381423, ConflictIdSorter.topsortTime=61421, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6784028, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=386980827, DefaultDependencyCollector.transformTime=9146771}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -375,8 +375,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null, maven.compiler.source=1.7, maven.compiler.target=1.7}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@23eee4b8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@28952dea
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5d05ef57
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@213deac2
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -391,7 +391,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of project/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4921951040217006166.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings8801508500153968042.xml
 [INFO] Building: project/pom.xml
 [DEBUG] Using invoker properties:
 [DEBUG]   invoker.goals.1 = test
@@ -401,12 +401,12 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4921951040217006166.xml -D maven.compiler.source=1.7 -D maven.compiler.target=1.7 test
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings8801508500153968042.xml -D maven.compiler.source=1.7 -D maven.compiler.target=1.7 test
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings4921951040217006166.xml -D create_touch_file=true -D maven.compiler.source=1.7 -D maven.compiler.target=1.7 test
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings8801508500153968042.xml -D create_touch_file=true -D maven.compiler.source=1.7 -D maven.compiler.target=1.7 test
 [INFO] run post-build script postbuild.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project/postbuild.bsh
-[INFO]           project/pom.xml .................................. SUCCESS (7.4 s)
+[INFO]           project/pom.xml .................................. SUCCESS (7.6 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -414,12 +414,12 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  8.438 s
-[INFO] Finished at: 2019-07-17T16:50:43+10:00
+[INFO] Total time:  8.680 s
+[INFO] Finished at: 2019-07-17T17:11:52+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/verify.bsh
 Checking for existence of touch file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/target/it/project/target/touch.txt
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/postbuild-executed-only-once/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

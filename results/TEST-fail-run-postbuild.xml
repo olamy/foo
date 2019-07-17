@@ -1,6 +1,6 @@
-<testsuite tests="1" time="5.586">
+<testsuite tests="1" time="4.11">
   <testcase classname="maven.invoker.it.fail-run-postbuild" name="fail-run-postbuild">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=73883, ConflictMarker.markTime=457597, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=43176, ConflictIdSorter.topsortTime=700535, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1994177, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=485452, DefaultDependencyCollector.transformTime=5573939}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=47280, ConflictMarker.markTime=417296, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=38808, ConflictIdSorter.topsortTime=524255, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1490963, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=176293, DefaultDependencyCollector.transformTime=4209714}
 [DEBUG] org.apache.maven.plugins.invoker:fail-run-postbuild:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ fail-run-postbuild ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1278694, ConflictMarker.markTime=98701, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=167327, ConflictIdSorter.topsortTime=35846, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2350985, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=127158971, DefaultDependencyCollector.transformTime=4029827}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=525127, ConflictMarker.markTime=50882, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=86306, ConflictIdSorter.topsortTime=19316, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1001567, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20557022, DefaultDependencyCollector.transformTime=1734599}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ fail-run-postbuild ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1336143, ConflictMarker.markTime=667657, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=607823, ConflictIdSorter.topsortTime=99412, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8860984, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=647637841, DefaultDependencyCollector.transformTime=11634579}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=913681, ConflictMarker.markTime=616853, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=523644, ConflictIdSorter.topsortTime=75338, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5792309, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=356946888, DefaultDependencyCollector.transformTime=7960766}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -369,8 +369,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@28952dea
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5a9800f8
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@213deac2
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@23eee4b8
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -385,17 +385,17 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of project/pom.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project/pom.xml
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3519728379325534306.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5276108517278744281.xml
 [INFO] Building: project/pom.xml
 [DEBUG] Build log initialized in: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings3519728379325534306.xml package
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings5276108517278744281.xml package
 [INFO] run post-build script postbuild.bsh
 [DEBUG] Running script with BeanShellScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project/postbuild.bsh
 [INFO]   The build exited with code 1. See /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project/build.log for details.
-[INFO]           project/pom.xml .................................. FAILED (2.5 s)
+[INFO]           project/pom.xml .................................. FAILED (2.1 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 0, Failed: 1, Errors: 0, Skipped: 0
@@ -406,8 +406,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.168 s
-[INFO] Finished at: 2019-07-17T16:49:31+10:00
+[INFO] Total time:  2.984 s
+[INFO] Finished at: 2019-07-17T17:10:36+10:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) on project fail-run-postbuild: 1 build failed. See console output above for details. -&gt; [Help 1]
 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) on project fail-run-postbuild: 1 build failed. See console output above for details.
@@ -465,6 +465,6 @@ Caused by: org.apache.maven.plugin.MojoFailureException: 1 build failed. See con
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/verify.bsh
 Checking for existence of touch file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/target/it/project/touch.txt
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/fail-run-postbuild/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

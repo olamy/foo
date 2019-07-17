@@ -1,6 +1,6 @@
-<testsuite tests="1" time="3.735">
+<testsuite tests="1" time="3.507">
   <testcase classname="maven.invoker.it.local-repo-url" name="local-repo-url">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -183,11 +183,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=58691, ConflictMarker.markTime=443811, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=67194, ConflictIdSorter.topsortTime=682320, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1569277, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=313805, DefaultDependencyCollector.transformTime=4691061}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=43206, ConflictMarker.markTime=278025, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=24288, ConflictIdSorter.topsortTime=374054, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=996904, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=172834, DefaultDependencyCollector.transformTime=2885335}
 [DEBUG] org.apache.maven.plugins.invoker:local-repo-url:jar:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ local-repo-url ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=753755, ConflictMarker.markTime=109249, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=143276, ConflictIdSorter.topsortTime=27733, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1662282, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=25567779, DefaultDependencyCollector.transformTime=2763134}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=655562, ConflictMarker.markTime=47884, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=81352, ConflictIdSorter.topsortTime=18602, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=921256, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=18713557, DefaultDependencyCollector.transformTime=1772453}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -215,7 +215,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-url/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ local-repo-url ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=904713, ConflictMarker.markTime=511875, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=455672, ConflictIdSorter.topsortTime=58437, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5925072, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=414265683, DefaultDependencyCollector.transformTime=7892883}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=951479, ConflictMarker.markTime=714563, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=479469, ConflictIdSorter.topsortTime=74363, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6259063, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=390063474, DefaultDependencyCollector.transformTime=8528340}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -393,7 +393,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-url/src/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-url/target/it-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-url/src/it/interpolated-settings.xml validate
 [INFO] run post-build script postbuild.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-url/src/it/project/postbuild.groovy
-[INFO]           project/pom.xml .................................. SUCCESS (1.8 s)
+[INFO]           project/pom.xml .................................. SUCCESS (1.6 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -401,11 +401,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  2.690 s
-[INFO] Finished at: 2019-07-17T16:52:59+10:00
+[INFO] Total time:  2.479 s
+[INFO] Finished at: 2019-07-17T17:14:01+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-url/verify.groovy
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/local-repo-url/verify.groovy
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

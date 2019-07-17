@@ -1,6 +1,6 @@
-<testsuite tests="1" time="4.204">
+<testsuite tests="1" time="3.687">
   <testcase classname="maven.invoker.it.invocation-debug" name="invocation-debug">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -186,11 +186,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=112052, ConflictMarker.markTime=464549, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=38328, ConflictIdSorter.topsortTime=1058675, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1559037, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=213959, DefaultDependencyCollector.transformTime=5338597}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=84377, ConflictMarker.markTime=388835, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=80851, ConflictIdSorter.topsortTime=566668, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1005519, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=236983, DefaultDependencyCollector.transformTime=3997023}
 [DEBUG] org.apache.maven.plugins.invoker.its:invocation-debug:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ invocation-debug ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=601079, ConflictMarker.markTime=48082, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=76371, ConflictIdSorter.topsortTime=19434, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=959869, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20875375, DefaultDependencyCollector.transformTime=1756415}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2316115, ConflictMarker.markTime=152845, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=124555, ConflictIdSorter.topsortTime=29647, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1386933, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=19947302, DefaultDependencyCollector.transformTime=4115139}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -218,7 +218,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invocation-debug ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1074271, ConflictMarker.markTime=710821, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=615009, ConflictIdSorter.topsortTime=119246, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7987097, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=398789494, DefaultDependencyCollector.transformTime=10597081}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1227673, ConflictMarker.markTime=589824, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=444309, ConflictIdSorter.topsortTime=63586, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7051726, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=374252388, DefaultDependencyCollector.transformTime=9419515}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -368,8 +368,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@4a183d02
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5d05ef57
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@23eee4b8
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@28952dea
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -384,7 +384,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Collecting parent/child projects of minvoker-142/pom.xml
 [WARNING] Filtering of parent/child POMs is not supported without cloning the projects
 [DEBUG] Setup projects: []
-[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7680094478680878990.xml
+[DEBUG] Created temporary file for invoker settings.xml: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2202770464697263394.xml
 [DEBUG] Interpolate /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/src/it/minvoker-142/pom.xml to /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/src/it/minvoker-142/interpolated-pom.xml
 [INFO] Building: minvoker-142/pom.xml
 [DEBUG] Using invoker properties:
@@ -393,10 +393,10 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] selector script: no script &apos;selector&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/src/it/minvoker-142
 [DEBUG] pre-build script: no script &apos;prebuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/src/it/minvoker-142
 [DEBUG] Using MAVEN_OPTS: null
-[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/src/it/minvoker-142 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings7680094478680878990.xml validate
+[DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/src/it/minvoker-142 &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -f interpolated-pom.xml -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/invoker-settings2202770464697263394.xml validate
 [INFO] run post-build script verify.groovy
 [DEBUG] Running script with GroovyScriptInterpreter: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-debug/src/it/minvoker-142/verify.groovy
-[INFO]           minvoker-142/pom.xml ............................. SUCCESS (2.2 s)
+[INFO]           minvoker-142/pom.xml ............................. SUCCESS (1.8 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -404,9 +404,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.115 s
-[INFO] Finished at: 2019-07-17T16:52:47+10:00
+[INFO] Total time:  2.693 s
+[INFO] Finished at: 2019-07-17T17:13:50+10:00
 [INFO] ------------------------------------------------------------------------
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

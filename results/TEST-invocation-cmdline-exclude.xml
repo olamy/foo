@@ -1,6 +1,6 @@
-<testsuite tests="1" time="2.372">
+<testsuite tests="1" time="2.075">
   <testcase classname="maven.invoker.it.invocation-cmdline-exclude" name="invocation-cmdline-exclude">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -183,11 +183,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=37285, ConflictMarker.markTime=336349, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=22927, ConflictIdSorter.topsortTime=383927, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1183156, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=367462, DefaultDependencyCollector.transformTime=3506555}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=79285, ConflictMarker.markTime=491834, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=51225, ConflictIdSorter.topsortTime=619951, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1480780, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=315969, DefaultDependencyCollector.transformTime=4960981}
 [DEBUG] org.apache.maven.plugins.invoker.its:invocation-cmdline-exclude:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ invocation-cmdline-exclude ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=682913, ConflictMarker.markTime=72492, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=128774, ConflictIdSorter.topsortTime=27552, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1361222, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=28676642, DefaultDependencyCollector.transformTime=2341340}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1350338, ConflictMarker.markTime=139988, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=109214, ConflictIdSorter.topsortTime=28441, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1437570, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=29806441, DefaultDependencyCollector.transformTime=3132381}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -215,7 +215,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-cmdline-exclude/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invocation-cmdline-exclude ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1555018, ConflictMarker.markTime=421319, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=518975, ConflictIdSorter.topsortTime=86728, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8620217, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=458925447, DefaultDependencyCollector.transformTime=11247011}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1117960, ConflictMarker.markTime=677596, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=380795, ConflictIdSorter.topsortTime=53138, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6812077, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=410521341, DefaultDependencyCollector.transformTime=9081744}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -365,8 +365,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) projectsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-cmdline-exclude/src/it
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-cmdline-exclude/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5d05ef57
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@213deac2
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
 [DEBUG]   (f) skipInvocation = false
@@ -381,9 +381,9 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.065 s
-[INFO] Finished at: 2019-07-17T16:51:18+10:00
+[INFO] Total time:  0.921 s
+[INFO] Finished at: 2019-07-17T17:12:40+10:00
 [INFO] ------------------------------------------------------------------------
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

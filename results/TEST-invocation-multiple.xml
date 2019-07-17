@@ -1,6 +1,6 @@
-<testsuite tests="1" time="16.989">
+<testsuite tests="1" time="12.242">
   <testcase classname="maven.invoker.it.invocation-multiple" name="invocation-multiple">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -194,11 +194,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;writeJunitReport default-value=&quot;false&quot;&gt;${invoker.writeJunitReport}&lt;/writeJunitReport&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=54378, ConflictMarker.markTime=439578, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=41682, ConflictIdSorter.topsortTime=482681, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1249042, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=235393, DefaultDependencyCollector.transformTime=4036734}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=90313, ConflictMarker.markTime=318181, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=25923, ConflictIdSorter.topsortTime=392225, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1115074, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=173123, DefaultDependencyCollector.transformTime=3254118}
 [DEBUG] org.apache.maven.plugins.invoker:invocation-multiple:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ invocation-multiple ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3255504, ConflictMarker.markTime=90894, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=251638, ConflictIdSorter.topsortTime=31491, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2800894, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=29168395, DefaultDependencyCollector.transformTime=6507775}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=790877, ConflictMarker.markTime=48476, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=114623, ConflictIdSorter.topsortTime=51586, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1070417, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22473718, DefaultDependencyCollector.transformTime=2126894}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -226,7 +226,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:run (integration-test) @ invocation-multiple ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1258739, ConflictMarker.markTime=992579, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=1108264, ConflictIdSorter.topsortTime=106729, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11679666, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=656235903, DefaultDependencyCollector.transformTime=15217199}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1218223, ConflictMarker.markTime=369017, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=376027, ConflictIdSorter.topsortTime=59902, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6673165, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=371446577, DefaultDependencyCollector.transformTime=8737938}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -379,8 +379,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG]   (f) properties = {https.protocols=null, maven.compiler.source=1.7, maven.compiler.target=1.7}
 [DEBUG]   (f) reportsDirectory = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/target/invoker-reports
 [DEBUG]   (f) selectorScript = selector
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@213deac2
-[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@23eee4b8
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5a9800f8
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@143d9a93
 [DEBUG]   (f) settingsFile = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/src/it/settings.xml
 [DEBUG]   (f) showErrors = false
 [DEBUG]   (f) showVersion = false
@@ -419,7 +419,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Using MAVEN_OPTS: null
 [DEBUG] Executing: /bin/sh -c cd /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/target/it/project &amp;&amp; /Users/olamy/softs/maven/apache-maven-3.6.1/bin/mvn -B -X -D maven.repo.local=/Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/local-repo -s /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/target/it/interpolated-settings.xml -D maven.invoker.test=ISO-8859-1 -D maven.compiler.source=1.7 -D maven.compiler.target=1.7 -P plugin,profile0 test:test-maven-plugin:0.1-SNAPSHOT:test
 [DEBUG] post-build script: no script &apos;postbuild&apos; found in directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/target/it/project
-[INFO]           project/pom.xml .................................. SUCCESS (13.8 s)
+[INFO]           project/pom.xml .................................. SUCCESS (10.3 s)
 [INFO] -------------------------------------------------
 [INFO] Build Summary:
 [INFO]   Passed: 1, Failed: 0, Errors: 0, Skipped: 0
@@ -427,8 +427,8 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  15.347 s
-[INFO] Finished at: 2019-07-17T16:52:35+10:00
+[INFO] Total time:  11.247 s
+[INFO] Finished at: 2019-07-17T17:13:40+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/verify.bsh
 Checking for existence of first test file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/target/it/project/target/test0.txt
@@ -436,6 +436,6 @@ Checking contents of first test file: ISO-8859-1
 Checking for existence of second test file: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/target/it/project/target/test1.txt
 Checking contents of second test file: UTF-8
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/invocation-multiple/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>

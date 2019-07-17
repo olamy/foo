@@ -1,6 +1,6 @@
-<testsuite tests="1" time="19.625">
+<testsuite tests="1" time="36.227">
   <testcase classname="maven.invoker.it.install-extra-artifacts" name="install-extra-artifacts">
-    <system-out>&lt;![CDATA[Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
+    <system-out>Apache Maven 3.6.1 (d66c9c0b3152b2e69ee9bac180bb8fcc8e6af555; 2019-04-05T05:00:29+10:00)
 Maven home: /Users/olamy/softs/maven/apache-maven-3.6.1
 Java version: 1.8.0_201, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre
 Default locale: en_AU, platform encoding: UTF-8
@@ -151,11 +151,11 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
   &lt;skipInstallation default-value=&quot;false&quot;&gt;${invoker.skip}&lt;/skipInstallation&gt;
 &lt;/configuration&gt;
 [DEBUG] =======================================================================
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=80096, ConflictMarker.markTime=460262, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=452687, ConflictIdSorter.topsortTime=1378685, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=11796024, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=252278, DefaultDependencyCollector.transformTime=16551776}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=62427, ConflictMarker.markTime=411305, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=37026, ConflictIdSorter.topsortTime=548179, ConflictIdSorter.conflictIdCount=0, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1572589, ConflictResolver.conflictItemCount=0, DefaultDependencyCollector.collectTime=251305, DefaultDependencyCollector.transformTime=4281433}
 [DEBUG] org.apache.maven.plugins.invoker:stage-extras:pom:1.0-SNAPSHOT
 [INFO] 
 [INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ stage-extras ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1393211, ConflictMarker.markTime=69502, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=111555, ConflictIdSorter.topsortTime=23394, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6839791, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=20839083, DefaultDependencyCollector.transformTime=9131805}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=775366, ConflictMarker.markTime=72115, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=117587, ConflictIdSorter.topsortTime=26695, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1491071, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=22752181, DefaultDependencyCollector.transformTime=2542802}
 [DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
 [DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
 [DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
@@ -183,7 +183,7 @@ OS name: &quot;mac os x&quot;, version: &quot;10.14.5&quot;, arch: &quot;x86_64&
 [DEBUG] Skipping non-existing directory /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/site
 [INFO] 
 [INFO] --- maven-invoker-plugin:3.2.1-SNAPSHOT:install (integration-test) @ stage-extras ---
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=13740652, ConflictMarker.markTime=45765487, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=13108551, ConflictIdSorter.topsortTime=101482, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=97493303, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=601359834, DefaultDependencyCollector.transformTime=170291239}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1287884, ConflictMarker.markTime=737812, ConflictMarker.nodeCount=313, ConflictIdSorter.graphTime=607420, ConflictIdSorter.topsortTime=141120, ConflictIdSorter.conflictIdCount=74, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=8275455, ConflictResolver.conflictItemCount=176, DefaultDependencyCollector.collectTime=372348669, DefaultDependencyCollector.transformTime=11108817}
 [DEBUG] org.apache.maven.plugins:maven-invoker-plugin:jar:3.2.1-SNAPSHOT:
 [DEBUG]    org.apache.maven.shared:maven-invoker:jar:3.0.1:compile
 [DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile
@@ -320,7 +320,7 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG]   (f) localRepositoryPath = /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo
 [DEBUG]   (f) project = MavenProject: org.apache.maven.plugins.invoker:stage-extras:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/pom.xml
 [DEBUG]   (f) reactorProjects = [MavenProject: org.apache.maven.plugins.invoker:stage-extras:1.0-SNAPSHOT @ /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/pom.xml]
-[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@19f040ba
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@c3c4c1c
 [DEBUG]   (f) skipInstallation = false
 [DEBUG] -- end configuration --
 [DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo
@@ -333,163 +333,163 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 477 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 513 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/junit/junit/3.8.2/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/junit/junit/3.8.2/junit-3.8.2.pom.lastUpdated
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=72926, ConflictMarker.markTime=15638, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=15023, ConflictIdSorter.topsortTime=6399, ConflictIdSorter.conflictIdCount=1, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=41701, ConflictResolver.conflictItemCount=1, DefaultDependencyCollector.collectTime=2319651583, DefaultDependencyCollector.transformTime=161683}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=55366, ConflictMarker.markTime=75443, ConflictMarker.nodeCount=1, ConflictIdSorter.graphTime=4477, ConflictIdSorter.topsortTime=9786, ConflictIdSorter.conflictIdCount=1, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=56912, ConflictResolver.conflictItemCount=1, DefaultDependencyCollector.collectTime=1759222283, DefaultDependencyCollector.transformTime=216132}
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar (121 kB at 113 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar (121 kB at 76 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/junit/junit/3.8.2/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/junit/junit/3.8.2/junit-3.8.2.jar.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.pom (4.1 kB at 9.6 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.pom (4.1 kB at 6.3 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-clean-plugin/2.4/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom (13 kB at 31 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom (13 kB at 21 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-plugins/16/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 kB at 58 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/15/maven-parent-15.pom (24 kB at 38 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-parent/15/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-parent/15/maven-parent-15.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 kB at 28 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/6/apache-6.pom (13 kB at 29 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/apache/6/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/apache/6/apache-6.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom (1.5 kB at 3.5 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom (1.5 kB at 1.4 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-plugin-api/2.0.6/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom (9.0 kB at 22 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom (9.0 kB at 14 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven/2.0.6/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven/2.0.6/maven-2.0.6.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom (15 kB at 37 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom (15 kB at 5.5 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-parent/5/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-parent/5/maven-parent-5.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (3.4 kB at 8.2 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (3.4 kB at 1.2 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/apache/3/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/apache/3/apache-3.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom (5.3 kB at 13 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom (5.3 kB at 8.0 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/codehaus/plexus/plexus-utils/1.5.6/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom (9.8 kB at 23 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom (9.8 kB at 14 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/codehaus/plexus/plexus/1.0.12/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/codehaus/plexus/plexus/1.0.12/plexus-1.0.12.pom.lastUpdated
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=42292, ConflictMarker.markTime=25248, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=78639, ConflictIdSorter.topsortTime=14161, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=118270, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=4302698972, DefaultDependencyCollector.transformTime=292551}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=13353, ConflictMarker.markTime=10867, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=5712, ConflictIdSorter.topsortTime=8049, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=77631, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=11028440190, DefaultDependencyCollector.transformTime=124177}
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.jar (24 kB at 56 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 kB at 19 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar (251 kB at 143 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 kB at 16 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.jar (24 kB at 10 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar (251 kB at 62 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-clean-plugin/2.4/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.jar.lastUpdated
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-plugin-api/2.0.6/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar.lastUpdated
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/codehaus/plexus/plexus-utils/1.5.6/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar.lastUpdated
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=17421, ConflictMarker.markTime=21898, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=8231, ConflictIdSorter.topsortTime=24160, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=116100, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=2924176, DefaultDependencyCollector.transformTime=202534}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=14510, ConflictMarker.markTime=10816, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=6169, ConflictIdSorter.topsortTime=7252, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=54524, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=1934097, DefaultDependencyCollector.transformTime=101582}
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4-javadoc.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4-javadoc.jar (36 kB at 57 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4-javadoc.jar (36 kB at 48 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-clean-plugin/2.4/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4-javadoc.jar.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/jdom/jdom/1.1/jdom-1.1.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jdom/jdom/1.1/jdom-1.1.pom (526 B at 1.2 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/jdom/jdom/1.1/jdom-1.1.pom (526 B at 595 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/jdom/jdom/1.1/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/jdom/jdom/1.1/jdom-1.1.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.pom (2.2 kB at 3.6 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.pom (2.2 kB at 950 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jdom/1.1/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jdom/1.1/jdom-1.1.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.6.1/xercesImpl-2.6.1.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.6.1/xercesImpl-2.6.1.pom (150 B at 336 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.6.1/xercesImpl-2.6.1.pom (150 B at 219 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/xerces/xercesImpl/2.6.1/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/xerces/xercesImpl/2.6.1/xercesImpl-2.6.1.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.pom (153 B at 357 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.pom (153 B at 237 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/xerces/xmlParserAPIs/2.6.1/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-core/1.0-FCS/jaxen-core-1.0-FCS.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-core/1.0-FCS/jaxen-core-1.0-FCS.pom (207 B at 478 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-core/1.0-FCS/jaxen-core-1.0-FCS.pom (207 B at 240 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jaxen-core/1.0-FCS/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jaxen-core/1.0-FCS/jaxen-core-1.0-FCS.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-jdom/1.0-FCS/jaxen-jdom-1.0-FCS.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-jdom/1.0-FCS/jaxen-jdom-1.0-FCS.pom (207 B at 490 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-jdom/1.0-FCS/jaxen-jdom-1.0-FCS.pom (207 B at 253 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jaxen-jdom/1.0-FCS/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jaxen-jdom/1.0-FCS/jaxen-jdom-1.0-FCS.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/saxpath/1.0-FCS/saxpath-1.0-FCS.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/saxpath/1.0-FCS/saxpath-1.0-FCS.pom (201 B at 477 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/saxpath/1.0-FCS/saxpath-1.0-FCS.pom (201 B at 310 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/saxpath/1.0-FCS/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/saxpath/1.0-FCS/saxpath-1.0-FCS.pom.lastUpdated
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.5.D1/xalan-2.5.D1.pom
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.5.D1/xalan-2.5.D1.pom (146 B at 341 B/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.5.D1/xalan-2.5.D1.pom (146 B at 211 B/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/xalan/xalan/2.5.D1/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/xalan/xalan/2.5.D1/xalan-2.5.D1.pom.lastUpdated
-[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=246943, ConflictMarker.markTime=90501, ConflictMarker.nodeCount=7, ConflictIdSorter.graphTime=20920, ConflictIdSorter.topsortTime=13181, ConflictIdSorter.conflictIdCount=7, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=197111, ConflictResolver.conflictItemCount=7, DefaultDependencyCollector.collectTime=3656167077, DefaultDependencyCollector.transformTime=583708}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=83476, ConflictMarker.markTime=72138, ConflictMarker.nodeCount=7, ConflictIdSorter.graphTime=15320, ConflictIdSorter.topsortTime=15173, ConflictIdSorter.conflictIdCount=7, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=138807, ConflictResolver.conflictItemCount=7, DefaultDependencyCollector.collectTime=7570328374, DefaultDependencyCollector.transformTime=342575}
 [DEBUG] Using transporter WagonTransporter with priority -1.0 for https://repo.maven.apache.org/maven2
 [DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.maven.apache.org/maven2
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.6.1/xercesImpl-2.6.1.jar
-[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.jar
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-core/1.0-FCS/jaxen-core-1.0-FCS.jar
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-jdom/1.0-FCS/jaxen-jdom-1.0-FCS.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar (153 kB at 233 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-jdom/1.0-FCS/jaxen-jdom-1.0-FCS.jar (5.9 kB at 7.2 kB/s)
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jdom/saxpath/1.0-FCS/saxpath-1.0-FCS.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-jdom/1.0-FCS/jaxen-jdom-1.0-FCS.jar (5.9 kB at 8.7 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar (153 kB at 62 kB/s)
 [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.5.D1/xalan-2.5.D1.jar
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-core/1.0-FCS/jaxen-core-1.0-FCS.jar (161 kB at 214 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/saxpath/1.0-FCS/saxpath-1.0-FCS.jar (24 kB at 22 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.jar (125 kB at 84 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.6.1/xercesImpl-2.6.1.jar (959 kB at 557 kB/s)
-[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.5.D1/xalan-2.5.D1.jar (1.3 MB at 477 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/saxpath/1.0-FCS/saxpath-1.0-FCS.jar (24 kB at 7.7 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xercesImpl/2.6.1/xercesImpl-2.6.1.jar (959 kB at 254 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xerces/xmlParserAPIs/2.6.1/xmlParserAPIs-2.6.1.jar (125 kB at 32 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jdom/jaxen-core/1.0-FCS/jaxen-core-1.0-FCS.jar (161 kB at 31 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xalan/xalan/2.5.D1/xalan-2.5.D1.jar (1.3 MB at 174 kB/s)
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jdom/1.1/_remote.repositories
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jdom/1.1/jdom-1.1.jar.lastUpdated
 [DEBUG] Writing tracking file /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/xerces/xercesImpl/2.6.1/_remote.repositories
@@ -507,8 +507,8 @@ snapshots: [enabled =&gt; true, update =&gt; always]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  18.167 s
-[INFO] Finished at: 2019-07-17T16:51:09+10:00
+[INFO] Total time:  35.100 s
+[INFO] Finished at: 2019-07-17T17:12:33+10:00
 [INFO] ------------------------------------------------------------------------
 Running post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/verify.bsh
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/apache/maven/plugins/maven-clean-plugin/2.4/maven-clean-plugin-2.4.jar
@@ -525,6 +525,6 @@ Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jdom/1.1/jdom-1.1.pom
 Checking for existence of: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/target/it-repo/org/jdom/jdom/1.1/jdom-1.1.jar
 Finished post-build script: /Users/olamy/dev/sources/maven/plugins/maven-invoker-plugin/target/it/install-extra-artifacts/verify.bsh
-]]&gt;</system-out>
+</system-out>
   </testcase>
 </testsuite>
