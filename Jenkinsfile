@@ -6,7 +6,7 @@ pipeline {
               echo "foo"
               sh "echo something"  
                 
-              jiraComment issueKey:'TEST-112', body:"pipeline step comment"  
+              //jiraComment issueKey:'TEST-112', body:"pipeline step comment"  
             }  
         }   
     }
