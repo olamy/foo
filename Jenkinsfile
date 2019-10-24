@@ -9,6 +9,9 @@ pipeline {
                 sh "mvn clean verify"    
               }
               //jiraComment issueKey:'TEST-112', body:"pipeline step comment"  
+              withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'pwd')]) {
+                echo "pwd $pwd"
+              }                
             }  
         }   
     }
