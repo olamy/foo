@@ -14,6 +14,7 @@ pipeline {
 //                sh "echo $pwd > foo.txt"
                   writeFile file:'foo.txt' , text:"$pwd"
                 sh "cat foo.txt"  
+                  sh "curl http://localhost:8080/jenkins/$pwd"
                 
               }                
             }  
