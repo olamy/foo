@@ -1,14 +1,14 @@
 package org.olamy;
 
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.junit.jupiter.api.Test;
+
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
 
 
