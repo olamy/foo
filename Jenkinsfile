@@ -9,7 +9,7 @@ pipeline {
                 sh "mvn clean verify -Dmaven.test.failure.ignore=true"
               }
                 junit testResults: '**/target/surefire-reports/*.xml,**/target/invoker-reports/TEST*.xml'
-                junitFlakyResultArchiver()
+//                junitFlakyResultArchiver()
                 junitFlakyTestDataPublisher()
               //jiraComment issueKey:'TEST-112', body:"pipeline step comment"  
 //              withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'pwd')]) {
