@@ -6,7 +6,7 @@ pipeline {
               echo "foo"
               sh "echo something"  
               withMaven(maven: 'maven-3.6.1', jdk: 'jdk8'){
-                sh "mvn clean verify"
+                sh "mvn clean verify -Dmaven.test.failure.ignore=true"
               }
                 junit testResults: '**/target/surefire-reports/*.xml,**/target/invoker-reports/TEST*.xml'
                 junitFlakyResultArchiver()
