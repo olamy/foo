@@ -9,10 +9,10 @@ pipeline {
               //  sh "mvn clean verify"    
               //}
               //jiraComment issueKey:'TEST-112', body:"pipeline step comment"  
-              withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'pwd')]) {
-                echo "pwd $pwd"
+              withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'USERPASS')]) {
+                echo "pwd $USERPASS"
 //                sh "echo $pwd > foo.txt"
-                  writeFile file:'foo.txt' , text:"$pwd"
+                  writeFile file:'foo.txt' , text:"$USERPASS"
                 sh "cat foo.txt"  
                   sh "curl http://localhost:8080/jenkins/$pwd"
                     sh 'echo $USERPASS > out2.txt'
