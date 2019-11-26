@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage("echo"){
             steps {     
-              checkout changelog: false, poll: false
+              checkout changelog: false, poll: false,scm: [$class: 'GitSCM']
               echo "foo"
               sh "echo something"  
               //withMaven(maven: 'maven-3.6.1', jdk: 'jdk8'){
