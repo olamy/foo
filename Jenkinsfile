@@ -2,7 +2,8 @@ pipeline {
     agent any
     stages{
         stage("echo"){
-            steps {             
+            steps {     
+              checkout changelog: false, poll: false
               echo "foo"
               sh "echo something"  
               //withMaven(maven: 'maven-3.6.1', jdk: 'jdk8'){
