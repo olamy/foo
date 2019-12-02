@@ -65,7 +65,6 @@ pipeline {
       }  
     }
     stage("maven-surefire"){
-      dir("maven-surefire"){
         steps {
             git url: "https://github.com/apache/maven-surefire.git", branch: "master" 
             timeout( time: 180, unit: 'MINUTES' ) {
@@ -81,7 +80,6 @@ pipeline {
             }
           }  
         }    
-    }    
   }
 }  
   
