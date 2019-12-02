@@ -14,7 +14,6 @@ pipeline {
     
     stage("plexus-languages"){
         steps {
-          dir("plexus-languages"){
             git url: "https://github.com/codehaus-plexus/plexus-languages.git", branch: "master" 
             timeout( time: 180, unit: 'MINUTES' ) {
                 withMaven(
@@ -27,8 +26,7 @@ pipeline {
                     sh "mvn -V -B clean install -e"
                 }  
             }
-          }  
-        }   
+          }   
     }
     stage("maven-compiler-plugin"){
         steps {
