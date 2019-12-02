@@ -45,7 +45,6 @@ pipeline {
         } 
     }   
     stage("maven-javadoc-plugin"){
-      dir("maven-javadoc-plugin"){
         steps {
             git url: "https://github.com/apache/maven-javadoc-plugin.git", branch: "master" 
             timeout( time: 180, unit: 'MINUTES' ) {
@@ -60,7 +59,6 @@ pipeline {
                 }  
             }
         }
-      }  
     }
     stage("maven-surefire"){
         steps {
