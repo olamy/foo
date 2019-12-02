@@ -39,7 +39,7 @@ pipeline {
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
                       mavenLocalRepo: ".repository") {
-                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=$PLEXUS_JAVA_VERSION"
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=${params.PLEXUS_JAVA_VERSION}"
                 }  
             }
         }    
@@ -55,7 +55,7 @@ pipeline {
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
                       mavenLocalRepo: ".repository") {
-                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=$PLEXUS_JAVA_VERSION"
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=${params.PLEXUS_JAVA_VERSION}"
                 }  
             }
         }    
@@ -71,7 +71,7 @@ pipeline {
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
                       mavenLocalRepo: ".repository") {
-                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=$PLEXUS_JAVA_VERSION"
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=${params.PLEXUS_JAVA_VERSION}"
                 }  
             }
         }    
