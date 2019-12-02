@@ -1,5 +1,8 @@
 pipeline {
   agent { node { label 'linux' } }
+    parameters {
+        string(name: 'PLEXUS_JAVA_VERSION', defaultValue: '1.0.5-SNAPSHOT', description: 'Plexus Java version')
+    }  
   stages {
     stage("cleanup"){
         steps{
@@ -36,7 +39,7 @@ pipeline {
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
                       mavenLocalRepo: ".repository") {
-                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=1.0,5-SNAPSHOT"
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=$PLEXUS_JAVA_VERSION"
                 }  
             }
         }    
@@ -52,7 +55,7 @@ pipeline {
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
                       mavenLocalRepo: ".repository") {
-                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=1.0,5-SNAPSHOT"
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=$PLEXUS_JAVA_VERSION"
                 }  
             }
         }    
@@ -68,7 +71,7 @@ pipeline {
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
                       mavenLocalRepo: ".repository") {
-                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=1.0,5-SNAPSHOT"
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=$PLEXUS_JAVA_VERSION"
                 }  
             }
         }    
