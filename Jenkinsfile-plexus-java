@@ -1,0 +1,30 @@
+pipeline {
+  agent { node { label 'linux' } }
+  stages {
+    stage("cleanup"){
+        steps{
+            script{
+              sh "rm -rf *"        
+            }
+        }
+    }  
+    
+    stage("maven-plugin"){
+        steps {
+            git url: "https://github.com/codehaus-plexus/plexus-languages.git", branch: "master" 
+            timeout( time: 180, unit: 'MINUTES' ) {
+                withMaven(
+                      maven: 'maven3',
+                      jdk: "jdk11",
+                      publisherStrategy: 'EXPLICIT',
+                      mavenOpts: '-Xms8g -Xmx8g',
+                      options: [junitPublisher(disabled: false)],
+                      mavenLocalRepo: ".repository") {
+                    sh "mvn -V -B clean install -e"
+                }  
+            }
+        }    
+    }
+  }
+}  
+  
