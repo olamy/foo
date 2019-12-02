@@ -9,7 +9,7 @@ pipeline {
         }
     }  
     
-    stage("maven-plugin"){
+    stage("plexus-languages"){
         steps {
             git url: "https://github.com/codehaus-plexus/plexus-languages.git", branch: "master" 
             timeout( time: 180, unit: 'MINUTES' ) {
@@ -25,6 +25,54 @@ pipeline {
             }
         }    
     }
+    stage("maven-compiler-plugin"){
+        steps {
+            git url: "https://github.com/apache/maven-compiler-plugin.git", branch: "master" 
+            timeout( time: 180, unit: 'MINUTES' ) {
+                withMaven(
+                      maven: 'maven3',
+                      jdk: "jdk11",
+                      publisherStrategy: 'EXPLICIT',
+                      mavenOpts: '-Xms8g -Xmx8g',
+                      options: [junitPublisher(disabled: false)],
+                      mavenLocalRepo: ".repository") {
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=1.0,5-SNAPSHOT"
+                }  
+            }
+        }    
+    }   
+    stage("maven-javadoc-plugin"){
+        steps {
+            git url: "https://github.com/apache/maven-javadoc-plugin.git", branch: "master" 
+            timeout( time: 180, unit: 'MINUTES' ) {
+                withMaven(
+                      maven: 'maven3',
+                      jdk: "jdk11",
+                      publisherStrategy: 'EXPLICIT',
+                      mavenOpts: '-Xms8g -Xmx8g',
+                      options: [junitPublisher(disabled: false)],
+                      mavenLocalRepo: ".repository") {
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=1.0,5-SNAPSHOT"
+                }  
+            }
+        }    
+    }
+    stage("maven-surefire"){
+        steps {
+            git url: "https://github.com/apache/maven-surefire.git", branch: "master" 
+            timeout( time: 180, unit: 'MINUTES' ) {
+                withMaven(
+                      maven: 'maven3',
+                      jdk: "jdk11",
+                      publisherStrategy: 'EXPLICIT',
+                      mavenOpts: '-Xms8g -Xmx8g',
+                      options: [junitPublisher(disabled: false)],
+                      mavenLocalRepo: ".repository") {
+                    sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=1.0,5-SNAPSHOT"
+                }  
+            }
+        }    
+    }    
   }
 }  
   
