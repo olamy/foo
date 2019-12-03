@@ -74,7 +74,7 @@ pipeline {
               timeout( time: 180, unit: 'MINUTES' ) {
                   withMaven(
                         maven: 'maven3',
-                        jdk: "jdk11",
+                        jdk: "jdk8",
                         publisherStrategy: 'EXPLICIT',
                         mavenOpts: '-Xms8g -Xmx8g',
                         options: [junitPublisher(disabled: false)],
