@@ -22,7 +22,7 @@ pipeline {
                       publisherStrategy: 'EXPLICIT',
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
-                      mavenLocalRepo: "$WORKSPACE/.repository") {
+                      mavenLocalRepo: "$HOME/.repository") {
                     sh "mvn -V -B clean install -e"
                 }  
             }
@@ -30,6 +30,9 @@ pipeline {
     }
     stage("maven-compiler-plugin"){
         steps {
+            script{
+              sh "rm -rf *"        
+            }        
             git url: "https://github.com/apache/maven-compiler-plugin.git", branch: "master" 
             timeout( time: 180, unit: 'MINUTES' ) {
                 withMaven(
@@ -38,7 +41,7 @@ pipeline {
                       publisherStrategy: 'EXPLICIT',
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
-                      mavenLocalRepo: "$WORKSPACE/.repository") {
+                      mavenLocalRepo: "$HOME/.repository") {
                     sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=${params.PLEXUS_JAVA_VERSION} -Drat.skip=true"
                 }  
             }
@@ -46,6 +49,9 @@ pipeline {
     }   
     stage("maven-javadoc-plugin"){
         steps {
+            script{
+              sh "rm -rf *"        
+            }        
             git url: "https://github.com/apache/maven-javadoc-plugin.git", branch: "master" 
             timeout( time: 180, unit: 'MINUTES' ) {
                 withMaven(
@@ -54,7 +60,7 @@ pipeline {
                       publisherStrategy: 'EXPLICIT',
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
-                      mavenLocalRepo: "$WORKSPACE/.repository") {
+                      mavenLocalRepo: "$HOME/.repository") {
                     sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=${params.PLEXUS_JAVA_VERSION} -Drat.skip=true"
                 }  
             }
@@ -62,6 +68,9 @@ pipeline {
     }
     stage("maven-surefire"){
         steps {
+            script{
+              sh "rm -rf *"        
+            }        
             git url: "https://github.com/apache/maven-surefire.git", branch: "master" 
             timeout( time: 180, unit: 'MINUTES' ) {
                 withMaven(
@@ -70,7 +79,7 @@ pipeline {
                       publisherStrategy: 'EXPLICIT',
                       mavenOpts: '-Xms8g -Xmx8g',
                       options: [junitPublisher(disabled: false)],
-                      mavenLocalRepo: "$WORKSPACE/.repository") {
+                      mavenLocalRepo: "$HOME/.repository") {
                     sh "mvn -V -B clean install -e -Prun-its -Dplexus-java.version=${params.PLEXUS_JAVA_VERSION} -Drat.skip=true"
                 }  
             }
