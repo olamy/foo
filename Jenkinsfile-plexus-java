@@ -33,6 +33,7 @@ pipeline {
     stage("maven-compiler-plugin"){
         steps { 
           ws("maven-compiler-plugin"){
+              cleanWs()
               git url: "https://github.com/apache/maven-compiler-plugin.git", branch: "master" 
               timeout( time: 180, unit: 'MINUTES' ) {
                   withMaven(
