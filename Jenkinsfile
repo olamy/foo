@@ -1,5 +1,5 @@
 pipeline {
-    agent { node { label 'linux' } }
+    agent any
     stages{
         stage("echo"){
             steps {     
@@ -16,7 +16,7 @@ pipeline {
           archiveArtifacts artifacts: "${env.WORKSPACE}/JTReport/text/*.txt",allowEmptyArchive: true
           archiveArtifacts artifacts: "logs/*.*",allowEmptyArchive: true
           publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "${env.WORKSPACE}/JTReport/html", reportFiles: 'report.html', reportName: 'TCK Report', reportTitles: ''])
-          tckReportCopyResultsToParent()
+//          tckReportCopyResultsToParent()
         }
       }
         }   
