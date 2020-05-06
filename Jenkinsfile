@@ -13,6 +13,7 @@ pipeline {
           script{
             currentBuild.description = "Build branch foo"
           }
+          archiveArtifacts artifacts: "${env.WORKSPACE}/**/surefire-reports/*.xml",allowEmptyArchive: true            
           archiveArtifacts artifacts: "${env.WORKSPACE}/JTReport/text/*.txt",allowEmptyArchive: true
           archiveArtifacts artifacts: "logs/*.*",allowEmptyArchive: true
           publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: "${env.WORKSPACE}/JTReport/html", reportFiles: 'report.html', reportName: 'TCK Report', reportTitles: ''])
