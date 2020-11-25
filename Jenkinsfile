@@ -1,15 +1,5 @@
-pipeline {
-    agent any
-    stages{
-        stage("echo"){
-            steps {     
-                script{
-                    while(true){
-                                    echo "foo"                                      
-                    }
-                }
-
-            }  
-     }   
-    }
+node{
+    properties([parameters([string(defaultValue: 'master', description: 'the tag name', name: 'tagName', trim: false)])])
 }
+
+echo "tagName " + params.tagName
