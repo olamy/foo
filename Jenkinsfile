@@ -1,5 +1,5 @@
 // scripted
-//properties([parameters([string(defaultValue: 'master', description: 'the tag name', name: 'tagName', trim: false)])]
+//properties([parameters([string(defaultValue: 'Hello', description: 'How should I greet the world?', name: 'Greeting')])]
 //echo "tagName " + params.tagName
 
 pipeline {
