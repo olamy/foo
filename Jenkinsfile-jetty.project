@@ -2,31 +2,23 @@ pipeline {
   agent { node { label 'linux' } }
     parameters {
         string(name: 'PLEXUS_JAVA_VERSION', defaultValue: '1.0.5-SNAPSHOT', description: 'Plexus Java version')
-    }  
+  }  
   stages {
-    stage("cleanup the workspace"){
-        steps{
-            script{
-              sh "rm -rf *"        
-            }
-        }
-    }  
-    
     stage("plexus-languages"){
         steps {
             ws("jetty.project"){
               git url: "https://github.com/eclipse/jetty.project.git", branch: "jetty-10.0.x" 
-            container( 'jetty-build' ) {
-              timeout( time: 120, unit: 'MINUTES' ) {
-                mavenBuild( "jdk11", "clean install -Dspotbugs.skip=true -Djacoco.skip=true", "apache-maven-3.8.3")
-                recordIssues id: "jdk17", name: "Static Analysis jdk17", aggregatingResults: true, enabledForFailure: true, tools: [mavenConsole(), java(), checkStyle(), spotBugs(), pmdParser()]
+              container( 'jetty-build' ) {
+                timeout( time: 120, unit: 'MINUTES' ) {
+                  mavenBuild( "jdk11", "clean install -Dspotbugs.skip=true -Djacoco.skip=true", "apache-maven-3.8.3")
+                  recordIssues id: "jdk17", name: "Static Analysis jdk17", aggregatingResults: true, enabledForFailure: true, tools: [mavenConsole(), java(), checkStyle(), spotBugs(), pmdParser()]
+                }
               }
             }
-            }
-          }   
+        }   
     }
-}  
-
+  }
+}
 def mavenBuild(jdk, cmdline, mvnName) {
   script {
     try {
@@ -44,5 +36,4 @@ def mavenBuild(jdk, cmdline, mvnName) {
       junit testResults: '**/target/surefire-reports/*.xml,**/target/invoker-reports/TEST*.xml', allowEmptyResults: true
     }
   }
-}
 }
