@@ -18,7 +18,7 @@ pipeline {
               git url: "https://github.com/eclipse/jetty.project.git", branch: "jetty-10.0.x" 
             container( 'jetty-build' ) {
               timeout( time: 120, unit: 'MINUTES' ) {
-                mavenBuild( "jdk11", "clean install -Dspotbugs.skip=true -Djacoco.skip=true", "maven3")
+                mavenBuild( "jdk11", "clean install -Dspotbugs.skip=true -Djacoco.skip=true", "apache-maven-3.8.3")
                 recordIssues id: "jdk17", name: "Static Analysis jdk17", aggregatingResults: true, enabledForFailure: true, tools: [mavenConsole(), java(), checkStyle(), spotBugs(), pmdParser()]
               }
             }
