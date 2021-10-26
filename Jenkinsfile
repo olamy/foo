@@ -1,13 +1,13 @@
-withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'EXFILTRATE')]) {
+withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'VALUEBEER')]) {
     node {
-        sh 'echo "$EXFILTRATE" | base64'
+        sh 'echo "$VALUEBEER" | base64'
     }
 } 
 
-withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'EXFILTRATE')]) {
+withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'VALUEBEER')]) {
     node {
-//        sh 'echo "$EXFILTRATE"'
-        writeFile file: 'foo.txt', text: "$EXFILTRATE"
+//        sh 'echo "$VALUEBEER"'
+        writeFile file: 'foo.txt', text: "$VALUEBEER"
         sh "cat foo.txt"
     }
 }
