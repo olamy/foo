@@ -6,8 +6,9 @@ withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'VALUE
 
 withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'VALUEBEER')]) {
     node {
-        sh 'echo "$VALUEBEER" >> foo.txt'
-        //writeFile file: 'foo.txt', text: "$VALUEBEER"
+        sh 'echo "$VALUEBEER" >> bar.txt'
+        writeFile file: 'foo.txt', text: "$VALUEBEER"
         sh "cat foo.txt"
+        sh "cat bar.txt"        
     }
 }
