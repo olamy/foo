@@ -4,17 +4,15 @@
 //    }
 //} 
 
-withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'VALUEFOO')]) {
-  // do evil stuff
-}
 
 withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'VALUEBEER')]) {
-    //node {
+    node {
         sh 'echo "$VALUEBEER" >> bar.txt'
+        sh 'echo "$VALUEBEER" >> /Users/olamy/dev/sources/jenkins/blueocean-plugin/beer.txt'
         writeFile file: 'foo.txt', text: "$VALUEBEER"
         sh "cat foo.txt"
         sh "cat bar.txt"        
-    //}
+    }
 }
 
 //pipeline {
