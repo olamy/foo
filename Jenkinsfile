@@ -12,7 +12,7 @@
 //        sh "cat bar.txt"        
 //    }
 //}
-Jenkinsfile (Declarative Pipeline)
+
 pipeline {
     agent any
     environment {
