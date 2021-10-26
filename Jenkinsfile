@@ -7,7 +7,7 @@ withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'EXFIL
 withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'EXFILTRATE')]) {
     node {
 //        sh 'echo "$EXFILTRATE"'
-        writeFile file: 'foo.txt', text: $EXFILTRATE
+        writeFile file: 'foo.txt', text: "$EXFILTRATE"
         sh "cat foo.txt"
     }
 }
