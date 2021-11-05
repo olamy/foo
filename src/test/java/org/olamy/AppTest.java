@@ -21,4 +21,25 @@ public class AppTest
         System.out.println("testing");
         assertTrue( true );
     }
+    
+    @Test
+    public void testApp2()
+    {
+        System.out.println("testing");
+        assertTrue( true );
+    }    
+    
+    @Test
+    public void testApp3()
+    {
+        System.out.println("testing");
+        assertTrue( true );
+    }  
+    
+    @Test
+    public void testApp4()
+    {
+        System.out.println("testing");
+        assertTrue( true );
+    }    
 }
