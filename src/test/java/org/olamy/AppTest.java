@@ -16,10 +16,11 @@ public class AppTest
      * Rigourous Test :-)
      */
     @Test
-    public void testApp()
+    public void testApp() throws Exception
     {
         System.out.println("testing");
         assertTrue( true );
+        Thread.sleep(1000);
     }
     
     @Test
@@ -27,19 +28,21 @@ public class AppTest
     {
         System.out.println("testing");
         assertTrue( true );
+        Thread.sleep(1000);        
     }    
     
     @Test
-    public void testApp3()
+    public void testApp3() throws Exception
     {
         System.out.println("testing");
         assertTrue( true );
     }  
     
     @Test
-    public void testApp4()
+    public void testApp4() throws Exception
     {
         System.out.println("testing");
         assertTrue( true );
+        Thread.sleep(500);
     }    
 }
