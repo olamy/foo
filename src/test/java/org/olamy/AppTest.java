@@ -24,7 +24,7 @@ public class AppTest
     }
     
     @Test
-    public void testApp2()
+    public void testApp2() throws Exception
     {
         System.out.println("testing");
         assertTrue( true );
