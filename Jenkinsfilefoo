@@ -1,5 +1,13 @@
-withCredentials([usernameColonPassword(credentialsId: 'github', variable: 'EXFILTRATE')]) {
-    node {
-        sh 'echo "$EXFILTRATE" | base64'
+@Library('mylibrary') _
+
+pipeline {
+    agent any
+    stages {
+        stage('Demo') {
+            steps {
+                echo 'Hello, world'
+                sayHello 'Dave'
+            }
+        }
     }
-} 
+}
