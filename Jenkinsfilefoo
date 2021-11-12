@@ -8,14 +8,15 @@ pipeline {
           stage('Demo0') {
             steps {
               echo 'Hello, world0'
-              sleep 1000
+              sleep 3
             }
           }        
           stage('Demo1') {
             steps {
               echo 'Hello, world1'
+              sleep 15              
               sayHello 'Dave'
-              sleep 100
+              sleep 1
             }
           }
           stage('Demo2') {
@@ -26,7 +27,7 @@ pipeline {
           stage('Demo3') {
             steps {
               echo 'Hello, world3'
-              sleep 1000
+              sleep 10
             }
           }          
         }  
