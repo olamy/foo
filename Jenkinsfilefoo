@@ -1,13 +1,22 @@
 @Library('mylibrary') _
 
 pipeline {
-    agent any
+  agent any
     stages {
-        stage('Demo') {
+      stage("Parallel Stage") {
+        parallel {    
+          stage('Demo') {
             steps {
-                echo 'Hello, world'
-                sayHello 'Dave'
+              echo 'Hello, world'
+              sayHello 'Dave'
             }
-        }
+          }
+          stage('Demo2') {
+            steps {
+              echo 'Hello, world2'
+
+            }
+          }          
+        }  
     }
 }
