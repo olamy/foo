@@ -5,16 +5,28 @@ pipeline {
     stages {
       stage("Parallel Stage") {
         parallel {    
-          stage('Demo') {
+          stage('Demo0') {
             steps {
-              echo 'Hello, world'
+              echo 'Hello, world0'
+              sleep 1000
+            }
+          }        
+          stage('Demo1') {
+            steps {
+              echo 'Hello, world1'
               sayHello 'Dave'
+              sleep 100
             }
           }
           stage('Demo2') {
             steps {
               echo 'Hello, world2'
-
+            }
+          }    
+          stage('Demo3') {
+            steps {
+              echo 'Hello, world3'
+              sleep 1000
             }
           }          
         }  
