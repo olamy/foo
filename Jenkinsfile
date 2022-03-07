@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Message') {
       steps {
-        echo 'it works'
+        echo 'it works well'
       }
     }
 
