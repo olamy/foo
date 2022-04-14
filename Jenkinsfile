@@ -4,6 +4,7 @@ pipeline {
     stage('Message') {
       steps {
         echo 'it works well'
+        sh 'ls -lrt'
       }
     }
 
