@@ -7,8 +7,8 @@ node() {
         def MAVEN_GOAL='verify'
 
         stage('Configure deploy') {
-           echo "env.GIT_BRANCH:" + env.GIT_BRANCH
-           if (env.GIT_BRANCH in ['master', 'maven-3.8.x', 'maven-3.9.x']){
+           echo "env.CHANGE_BRANCH:" + env.CHANGE_BRANCH
+           if (env.CHANGE_BRANCH in ['master', 'maven-3.8.x', 'maven-3.9.x']){
                MAVEN_GOAL='deploy'
            }
         }
