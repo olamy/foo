@@ -7,6 +7,7 @@ node() {
         def MAVEN_GOAL='verify'
 
         stage('Configure deploy') {
+           echo "env.BRANCH_NAME:" + env.BRANCH_NAME
            if (env.BRANCH_NAME in ['master', 'maven-3.8.x', 'maven-3.9.x']){
                MAVEN_GOAL='deploy'
            }
