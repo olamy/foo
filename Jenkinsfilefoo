@@ -1,5 +1,6 @@
+node() {
         stage('Checkout') {
-            checkout scm
+        checkout scm
         }
 
         def WORK_DIR=pwd()
@@ -11,3 +12,4 @@
            }
         }
         echo "MAVEN_GOAL: $MAVEN_GOAL"
+}
