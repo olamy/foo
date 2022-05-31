@@ -1,36 +1,13 @@
-@Library('mylibrary') _
+        stage('Checkout') {
+            checkout scm
+        }
 
-pipeline {
-  agent any
-    stages {
-      stage("Parallel Stage") {
-        parallel {    
-          stage('Demo0') {
-            steps {
-              echo 'Hello, world0'
-              sleep 3
-            }
-          }        
-          stage('Demo1') {
-            steps {
-              echo 'Hello, world1'
-              sleep 15              
-              sayHello 'Dave'
-              sleep 1
-            }
-          }
-          stage('Demo2') {
-            steps {
-              echo 'Hello, world2'
-            }
-          }    
-          stage('Demo3') {
-            steps {
-              echo 'Hello, world3'
-              sleep 10
-            }
-          }          
-        }  
-    }       
-  }
-}
+        def WORK_DIR=pwd()
+        def MAVEN_GOAL='verify'
+
+        stage('Configure deploy') {
+           if (env.BRANCH_NAME in ['master', 'maven-3.8.x', 'maven-3.9.x']){
+               MAVEN_GOAL='deploy'
+           }
+        }
+        echo "MAVEN_GOAL: $MAVEN_GOAL"
