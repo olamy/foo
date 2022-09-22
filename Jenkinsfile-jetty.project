@@ -1,4 +1,5 @@
 pipeline {
+  // foo	
   agent { node { label 'linux' } }
     parameters {
         string(name: 'PLEXUS_JAVA_VERSION', defaultValue: '1.0.5-SNAPSHOT', description: 'Plexus Java version')
