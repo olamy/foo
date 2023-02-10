@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'it works well'
         sh 'ls -lrt'
+        sleep(time:3,unit:"MINUTES")
       }
     }
 
