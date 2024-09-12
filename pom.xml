@@ -26,6 +26,11 @@
       <version>5.5.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>io.jenkins.test.fips</groupId>
+      <artifactId>lib-fips-bundle-test</artifactId>
+      <version>-rc16.e95456a_916d7</version>
+    </dependency>           
   </dependencies>
 
   <build>
