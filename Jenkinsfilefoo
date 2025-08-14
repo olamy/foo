@@ -1,16 +1,29 @@
-node() {
-        stage('Checkout') {
-        checkout scm
-        }
+pipeline {
+    agent any
 
-        def WORK_DIR=pwd()
-        def MAVEN_GOAL='verify'
-
-        stage('Configure deploy') {
-           echo "env.BRANCH_NAME:" + env.BRANCH_NAME
-           if (env.BRANCH_NAME in ['master', 'maven-3.8.x', 'maven-3.9.x']){
-               MAVEN_GOAL='deploy'
-           }
+    stages {
+        stage('Hello world') {
+            steps {
+                echo 'Hello world'
+            }
+        } 
+        stage('Random Fail') {
+            steps {
+                script {
+                    
+                    def shouldFail = new Random().nextBoolean()
+                    echo "Random failure check: shouldFail=${shouldFail}"
+                    
+                    if (shouldFail) {
+                        error("Failing randomly")
+                    }
+                }
+            }
         }
-        echo "MAVEN_GOAL: $MAVEN_GOAL"
+        stage('Always Runs If Above Succeeds') {
+            steps {
+                echo 'This runs only if Random Fail passed'
+            }
+        }        
+    }
 }
